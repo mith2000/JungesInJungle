@@ -126,6 +126,11 @@ public class GameMaster : MonoBehaviour
         playerStat.maxArmor = info.maxArmor;
         playerStat.delayRegenEnergy = info.delayRegenEnergy;
         playerStat.currentCoin = info.currentCoin;
+        playerStat.firstTimeHealthPotion = info.firstTimeHealthPotion;
+        playerStat.firstTimeHealthCrystal = info.firstTimeHealthCrystal;
+        playerStat.firstTimeArmorCrystal = info.firstTimeArmorCrystal;
+        playerStat.firstTimeAttackSpeedCrystal = info.firstTimeAttackSpeedCrystal;
+        playerStat.firstTimeRainbowCrystal = info.firstTimeRainbowCrystal;
     }
 
     public enum CharacterRole
@@ -163,5 +168,11 @@ public class GameMaster : MonoBehaviour
         public int useCrystalTime = 0;
 
         public int currentCoin = 0;
+
+        public bool firstTimeHealthPotion = true;
+        public bool firstTimeHealthCrystal = true;
+        public bool firstTimeArmorCrystal = true;
+        public bool firstTimeAttackSpeedCrystal = true;
+        public bool firstTimeRainbowCrystal = true;
     }
 }

@@ -38,7 +38,17 @@ public class PlayerInfo : Entity
     public bool isGotSeriousInjury = false;
     private float woundRecoveryTime = 0.5f;
 
-    //Test github line
+    [HideInInspector]
+    public bool firstTimeHealthPotion = true;
+    [HideInInspector]
+    public bool firstTimeHealthCrystal = true;
+    [HideInInspector]
+    public bool firstTimeArmorCrystal = true;
+    [HideInInspector]
+    public bool firstTimeAttackSpeedCrystal = true;
+    [HideInInspector]
+    public bool firstTimeRainbowCrystal = true;
+
     public override void Start()
     {
         base.Start();
@@ -52,6 +62,12 @@ public class PlayerInfo : Entity
             maxArmor = GameMaster.GetInstance().playerStat.maxArmor;
             delayRegenEnergy = GameMaster.GetInstance().playerStat.delayRegenEnergy;
             currentCoin = GameMaster.GetInstance().playerStat.currentCoin;
+
+            firstTimeHealthPotion = GameMaster.GetInstance().playerStat.firstTimeHealthPotion;
+            firstTimeHealthCrystal = GameMaster.GetInstance().playerStat.firstTimeHealthCrystal;
+            firstTimeArmorCrystal = GameMaster.GetInstance().playerStat.firstTimeArmorCrystal;
+            firstTimeAttackSpeedCrystal = GameMaster.GetInstance().playerStat.firstTimeAttackSpeedCrystal;
+            firstTimeRainbowCrystal = GameMaster.GetInstance().playerStat.firstTimeRainbowCrystal;
         }
 
         maxEnergy = energyPerBar * energyBar.Length;

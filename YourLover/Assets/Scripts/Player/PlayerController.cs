@@ -152,51 +152,117 @@ public class PlayerController : MonoBehaviour
 
     public void Interact_OnClick()
     {
+        PlayerInfo info = this.gameObject.GetComponent<PlayerInfo>();
         if (interactObject.tag == "HealthPotion")
         {
-            this.gameObject.GetComponent<PlayerInfo>().ApplyHealth(-interactObject.GetComponent<HealthPotion>().healthAmount);
-            interactObject.GetComponent<HealthPotion>().DestroyPotion();
-        }
-        else if (interactObject.tag == "HealthCrystal")
-        {
-            if (GameMaster.GetInstance().playerStat.useCrystalTime >= GameMaster.GetInstance().maxCrystalPlayerUse) return;
-            GameMaster.GetInstance().playerStat.useCrystalTime++;
-
-            this.gameObject.GetComponent<PlayerInfo>().IncreaseHealth(interactObject.GetComponent<HealthCrystal>().healthAmount);
-            interactObject.GetComponent<HealthCrystal>().DestroyPotion();
-        }
-        else if (interactObject.tag == "ArmorCrystal")
-        {
-            if (GameMaster.GetInstance().playerStat.useCrystalTime >= GameMaster.GetInstance().maxCrystalPlayerUse) return;
-            GameMaster.GetInstance().playerStat.useCrystalTime++;
-
-            this.gameObject.GetComponent<PlayerInfo>().IncreaseArmor(interactObject.GetComponent<ArmorCrystal>().armorAmount);
-            interactObject.GetComponent<ArmorCrystal>().DestroyPotion();
-        }
-        else if (interactObject.tag == "AttackSpeedCrystal")
-        {
-            if (GameMaster.GetInstance().playerStat.useCrystalTime >= GameMaster.GetInstance().maxCrystalPlayerUse) return;
-            GameMaster.GetInstance().playerStat.useCrystalTime++;
-
-            this.gameObject.GetComponent<PlayerInfo>().IncreaseAttackSpeed(interactObject.GetComponent<AttackSpeedCrystal>().DecreaseDREPercent());
-            interactObject.GetComponent<AttackSpeedCrystal>().DestroyPotion();
-        }
-        else if (interactObject.tag == "RainbowCrystal")
-        {
-            if (GameMaster.GetInstance().playerStat.useCrystalTime >= GameMaster.GetInstance().maxCrystalPlayerUse) return;
-            GameMaster.GetInstance().playerStat.useCrystalTime++;
-
-            if (interactObject.GetComponent<RainbowCrystal>().isGood)
+            if (info.firstTimeHealthPotion == true)
             {
-                this.gameObject.GetComponent<PlayerInfo>().IncreaseHealth(interactObject.GetComponent<RainbowCrystal>().healthAmount);
-                this.gameObject.GetComponent<PlayerInfo>().IncreaseArmor(interactObject.GetComponent<RainbowCrystal>().armorAmount);
-                this.gameObject.GetComponent<PlayerInfo>().IncreaseAttackSpeed(interactObject.GetComponent<RainbowCrystal>().DecreaseDREPercent());
+                DialogSystem.GetInstance().AddSentences(DialogSystem.GetInstance().container.healthPotionSentences);
+                DialogSystem.GetInstance().StartText();
+                info.firstTimeHealthPotion = false;
             }
             else
             {
-                this.gameObject.GetComponent<PlayerInfo>().IncreaseHealth(interactObject.GetComponent<RainbowCrystal>().loseHealthAmount);
+                info.ApplyHealth(-interactObject.GetComponent<HealthPotion>().healthAmount);
+                interactObject.GetComponent<HealthPotion>().DestroyPotion();
             }
-            interactObject.GetComponent<RainbowCrystal>().DestroyPotion();
+        }
+        else if (interactObject.tag == "HealthCrystal")
+        {
+            if (GameMaster.GetInstance().playerStat.useCrystalTime >= GameMaster.GetInstance().maxCrystalPlayerUse)
+            {
+                DialogSystem.GetInstance().AddSentences(DialogSystem.GetInstance().container.enoughCrystalSentences);
+                DialogSystem.GetInstance().StartText();
+                return; 
+            }
+
+            if (info.firstTimeHealthCrystal == true)
+            {
+                DialogSystem.GetInstance().AddSentences(DialogSystem.GetInstance().container.healthCrystalSentences);
+                DialogSystem.GetInstance().StartText();
+                info.firstTimeHealthCrystal = false;
+            }
+            else
+            {
+                GameMaster.GetInstance().playerStat.useCrystalTime++;
+                info.IncreaseHealth(interactObject.GetComponent<HealthCrystal>().healthAmount);
+                interactObject.GetComponent<HealthCrystal>().DestroyPotion();
+            }
+        }
+        else if (interactObject.tag == "ArmorCrystal")
+        {
+            if (GameMaster.GetInstance().playerStat.useCrystalTime >= GameMaster.GetInstance().maxCrystalPlayerUse)
+            {
+                DialogSystem.GetInstance().AddSentences(DialogSystem.GetInstance().container.enoughCrystalSentences);
+                DialogSystem.GetInstance().StartText();
+                return;
+            }
+
+            if (info.firstTimeArmorCrystal == true)
+            {
+                DialogSystem.GetInstance().AddSentences(DialogSystem.GetInstance().container.armorCrystalSentences);
+                DialogSystem.GetInstance().StartText();
+                info.firstTimeArmorCrystal = false;
+            }
+            else
+            {
+                GameMaster.GetInstance().playerStat.useCrystalTime++;
+                info.IncreaseArmor(interactObject.GetComponent<ArmorCrystal>().armorAmount);
+                interactObject.GetComponent<ArmorCrystal>().DestroyPotion();
+            }
+        }
+        else if (interactObject.tag == "AttackSpeedCrystal")
+        {
+            if (GameMaster.GetInstance().playerStat.useCrystalTime >= GameMaster.GetInstance().maxCrystalPlayerUse)
+            {
+                DialogSystem.GetInstance().AddSentences(DialogSystem.GetInstance().container.enoughCrystalSentences);
+                DialogSystem.GetInstance().StartText();
+                return;
+            }
+
+            if (info.firstTimeAttackSpeedCrystal == true)
+            {
+                DialogSystem.GetInstance().AddSentences(DialogSystem.GetInstance().container.attackSpeedCrystalSentences);
+                DialogSystem.GetInstance().StartText();
+                info.firstTimeAttackSpeedCrystal = false;
+            }
+            else
+            {
+                GameMaster.GetInstance().playerStat.useCrystalTime++;
+                info.IncreaseAttackSpeed(interactObject.GetComponent<AttackSpeedCrystal>().DecreaseDREPercent());
+                interactObject.GetComponent<AttackSpeedCrystal>().DestroyPotion();
+            }
+        }
+        else if (interactObject.tag == "RainbowCrystal")
+        {
+            if (GameMaster.GetInstance().playerStat.useCrystalTime >= GameMaster.GetInstance().maxCrystalPlayerUse)
+            {
+                DialogSystem.GetInstance().AddSentences(DialogSystem.GetInstance().container.enoughCrystalSentences);
+                DialogSystem.GetInstance().StartText();
+                return;
+            }
+
+            if (info.firstTimeRainbowCrystal == true)
+            {
+                DialogSystem.GetInstance().AddSentences(DialogSystem.GetInstance().container.rainbowCrystalSentences);
+                DialogSystem.GetInstance().StartText();
+                info.firstTimeRainbowCrystal = false;
+            }
+            else
+            {
+                GameMaster.GetInstance().playerStat.useCrystalTime++;
+                if (interactObject.GetComponent<RainbowCrystal>().isGood)
+                {
+                    info.IncreaseHealth(interactObject.GetComponent<RainbowCrystal>().healthAmount);
+                    info.IncreaseArmor(interactObject.GetComponent<RainbowCrystal>().armorAmount);
+                    info.IncreaseAttackSpeed(interactObject.GetComponent<RainbowCrystal>().DecreaseDREPercent());
+                }
+                else
+                {
+                    info.IncreaseHealth(interactObject.GetComponent<RainbowCrystal>().loseHealthAmount);
+                }
+                interactObject.GetComponent<RainbowCrystal>().DestroyPotion();
+            }
         }
         else if (interactObject.tag == "NextStageGate")
         {
