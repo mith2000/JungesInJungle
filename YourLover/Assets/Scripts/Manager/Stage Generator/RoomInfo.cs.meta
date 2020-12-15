@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: 26de30b3e6a70d142ad46b21d2822793
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - doorTop: {instanceID: 0}
+  - doorBottom: {instanceID: 0}
+  - doorLeft: {instanceID: 0}
+  - doorRight: {instanceID: 0}
+  - portal: {fileID: 6649452944597733492, guid: 8f0965477638c1c429d84b393c9b9bd3, type: 3}
+  - roomChest: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

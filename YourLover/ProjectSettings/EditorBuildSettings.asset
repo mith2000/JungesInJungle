@@ -1,0 +1,65 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Title Scene.unity
+    guid: 30e73f51b621c9f4a96887870c5659f8
+  - enabled: 1
+    path: Assets/Scenes/Lobby Scene.unity
+    guid: 065ace369fd856d4bb6e1fed05f95bdd
+  - enabled: 1
+    path: Assets/Scenes/Stage 1-1.unity
+    guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/Stage 1-2.unity
+    guid: 129165e3ded5dfe4d872b37b21c15d4c
+  - enabled: 1
+    path: Assets/Scenes/Stage 1-3.unity
+    guid: add6537e77d9ac5439a0c0151e5e8468
+  - enabled: 1
+    path: Assets/Scenes/Stage 1-4.unity
+    guid: 5391e3cb6b4dd6948ab68029d52ee0d6
+  - enabled: 1
+    path: Assets/Scenes/Stage 1-5.unity
+    guid: 9c436ee265d8a954da9f965d9f175381
+  - enabled: 1
+    path: Assets/Scenes/Stage 2-1.unity
+    guid: 134e04454c111e2439a035bf720ff7fb
+  - enabled: 1
+    path: Assets/Scenes/Stage 2-2.unity
+    guid: a9f77fc1fae0f034b94ecb8d8151678a
+  - enabled: 1
+    path: Assets/Scenes/Stage 2-3.unity
+    guid: 617f67a953494f542bdf3947c59ff241
+  - enabled: 1
+    path: Assets/Scenes/Stage 2-4.unity
+    guid: f2751b5889a7fc84ea7895f2adaa85d6
+  - enabled: 1
+    path: Assets/Scenes/Stage 2-5.unity
+    guid: 6e1a123c9970831499a716771255597c
+  - enabled: 1
+    path: Assets/Scenes/End Scene.unity
+    guid: c7fee91e7c5a8c344aab494aca5c8f8d
+  - enabled: 0
+    path: Assets/Scenes/Stage 3-1.unity
+    guid: fa02adfc4d7ab854b851f95e63a94d71
+  - enabled: 0
+    path: Assets/Scenes/Stage 3-2.unity
+    guid: 8fea37af920cfa643bd4d99711220659
+  - enabled: 0
+    path: Assets/Scenes/Stage 3-3.unity
+    guid: fe7b3676f7fda214795804bd826cadbd
+  - enabled: 0
+    path: Assets/Scenes/Stage 3-4.unity
+    guid: 1a4cf1b441dd549469b2018b3d944bad
+  - enabled: 0
+    path: Assets/Scenes/Stage 3-5.unity
+    guid: 582937f23ec1aae4499dbe562285c4b3
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
+  m_configObjects: {}

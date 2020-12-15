@@ -1,0 +1,114 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - GM
+  - Block
+  - MoveJoystick
+  - AimJoystick
+  - PlayerHealthBar
+  - Chest
+  - SceneLoader
+  - PlayGate
+  - Enemy
+  - HealthPotion
+  - FxTemporaire
+  - Mercenary
+  - EnemyBullet
+  - NextStageGate
+  - Coin
+  - SpecialRoom
+  - EdgeRoom
+  - MonkeyClone
+  - ThemeManager
+  - GoldMine
+  - WaveSpawner
+  - SkillButton
+  - PrefabContainer
+  - HealthCrystal
+  - ArmorCrystal
+  - AttackSpeedCrystal
+  - RainbowCrystal
+  - PatrolPoint
+  - BossHealthBar
+  - Laser
+  - GameLoader
+  - Minimap
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - 
+  - 
+  - Player
+  - Enemy
+  - Mercenary
+  - Wall
+  - Obstacle
+  - Minimap
+  - NormalnMinimap
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: Background
+    uniqueID: 1384461351
+    locked: 0
+  - name: Ground
+    uniqueID: 1216631933
+    locked: 0
+  - name: OngroundObject
+    uniqueID: 3571345143
+    locked: 0
+  - name: Shadow
+    uniqueID: 1691090353
+    locked: 0
+  - name: Player
+    uniqueID: 2373639915
+    locked: 0
+  - name: Weapon
+    uniqueID: 420223209
+    locked: 0
+  - name: Mercenary
+    uniqueID: 1642941155
+    locked: 0
+  - name: Enemy
+    uniqueID: 1911870427
+    locked: 0
+  - name: Obstacle
+    uniqueID: 3237752385
+    locked: 0
+  - name: Trail
+    uniqueID: 2360948055
+    locked: 0
+  - name: Projectiles
+    uniqueID: 1607900739
+    locked: 0
+  - name: Lights
+    uniqueID: 1902649407
+    locked: 0
+  - name: Particles
+    uniqueID: 672329817
+    locked: 0
