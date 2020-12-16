@@ -2101,6 +2101,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2409774523225769919}
     m_Modifications:
+    - target: {fileID: 719023585513602206, guid: 38292008da6fcea40ade34cca91a1e03, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1540889809686906828, guid: 38292008da6fcea40ade34cca91a1e03, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1986625371663401690, guid: 38292008da6fcea40ade34cca91a1e03, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2124800662812022611, guid: 38292008da6fcea40ade34cca91a1e03, type: 3}
       propertyPath: hasDoorTop
       value: 1
@@ -2113,9 +2125,37 @@ PrefabInstance:
       propertyPath: hasDoorRight
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3078614508042512047, guid: 38292008da6fcea40ade34cca91a1e03, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3493959741745046998, guid: 38292008da6fcea40ade34cca91a1e03, type: 3}
       propertyPath: m_Name
       value: Big Room Manager
+      objectReference: {fileID: 0}
+    - target: {fileID: 3493959741745046998, guid: 38292008da6fcea40ade34cca91a1e03, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3562172535537312527, guid: 38292008da6fcea40ade34cca91a1e03, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4272235949832386812, guid: 38292008da6fcea40ade34cca91a1e03, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6410452607452513309, guid: 38292008da6fcea40ade34cca91a1e03, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7658334208755622935, guid: 38292008da6fcea40ade34cca91a1e03, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7927216518970351084, guid: 38292008da6fcea40ade34cca91a1e03, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8218328574587791835, guid: 38292008da6fcea40ade34cca91a1e03, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2159,6 +2199,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8218328574587791835, guid: 38292008da6fcea40ade34cca91a1e03, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8583935536931493635, guid: 38292008da6fcea40ade34cca91a1e03, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8639731489204168870, guid: 38292008da6fcea40ade34cca91a1e03, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8997020634265798636, guid: 38292008da6fcea40ade34cca91a1e03, type: 3}
+      propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []

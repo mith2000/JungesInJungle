@@ -13,6 +13,8 @@ public class PlayerController : MonoBehaviour
     [SerializeField]
     protected Joystick moveJoystick;
     [SerializeField]
+    protected Joystick aimJoystick;
+    [SerializeField]
     protected Button skillButton;
     [SerializeField]
     protected SkillCooldown skillCooldownScript;
@@ -73,6 +75,7 @@ public class PlayerController : MonoBehaviour
 
     public virtual void Moving()
     {
+        if (DialogSystem.GetInstance() != null && DialogSystem.GetInstance().isInDialog) return;
         if (!isStunned)
         {
             physicBody.MovePosition(physicBody.position + moveAmount * Time.fixedDeltaTime);
@@ -298,5 +301,20 @@ public class PlayerController : MonoBehaviour
     public void UnslowFromOther()
     {
         addSpeed = 1;
+    }
+
+    public void UnableControl()
+    {
+        moveJoystick.gameObject.SetActive(false);
+        aimJoystick.gameObject.SetActive(false);
+        skillButton.gameObject.SetActive(false);
+        interactButton.gameObject.SetActive(false);
+    }
+
+    public void EnableControl()
+    {
+        moveJoystick.gameObject.SetActive(true);
+        aimJoystick.gameObject.SetActive(true);
+        skillButton.gameObject.SetActive(true);
     }
 }

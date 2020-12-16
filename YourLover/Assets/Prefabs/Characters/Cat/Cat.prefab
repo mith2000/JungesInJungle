@@ -1029,6 +1029,11 @@ MonoBehaviour:
   currentCoin: 0
   coinText: {fileID: 2782274621639850211}
   isGotSeriousInjury: 0
+  firstTimeHealthPotion: 1
+  firstTimeHealthCrystal: 1
+  firstTimeArmorCrystal: 1
+  firstTimeAttackSpeedCrystal: 1
+  firstTimeRainbowCrystal: 1
 --- !u!114 &7042460065388983015
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1043,6 +1048,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 8
   moveJoystick: {fileID: 7574425013560081522}
+  aimJoystick: {fileID: 7574425013188091824}
   skillButton: {fileID: 7574425013223753282}
   skillCooldownScript: {fileID: 9043156809321457362}
   skillCooldown: 8

@@ -10,9 +10,7 @@ public class PauseMenu : MonoBehaviour
     private GameObject UI;
     [SerializeField]
     private GameObject pauseButton;
-    private GameObject moveJoystick;
-    private GameObject aimJoystick;
-    private GameObject[] skillButtons;
+    private GameObject playerController;
 
     SceneLoader sceneLoader;
 
@@ -40,15 +38,8 @@ public class PauseMenu : MonoBehaviour
     {
         UI.SetActive(true);
         pauseButton.SetActive(false);
-        moveJoystick = GameObject.FindGameObjectWithTag("MoveJoystick");
-        moveJoystick.SetActive(false);
-        aimJoystick = GameObject.FindGameObjectWithTag("AimJoystick");
-        aimJoystick.SetActive(false);
-        skillButtons = GameObject.FindGameObjectsWithTag("SkillButton");
-        foreach (GameObject button in skillButtons)
-        {
-            button.SetActive(false);
-        }
+        playerController = GameObject.FindGameObjectWithTag("Player");
+        playerController.GetComponent<PlayerController>().UnableControl();
         Time.timeScale = 0f;
         gamePause = true;
     }
@@ -58,12 +49,7 @@ public class PauseMenu : MonoBehaviour
         //FindObjectOfType<AudioManager>().Play("Click", true);
         UI.SetActive(false);
         pauseButton.SetActive(true);
-        moveJoystick.SetActive(true);
-        aimJoystick.SetActive(true);
-        foreach (GameObject button in skillButtons)
-        {
-            button.SetActive(true);
-        }
+        playerController.GetComponent<PlayerController>().EnableControl();
         Time.timeScale = 1f;
         gamePause = false;
     }

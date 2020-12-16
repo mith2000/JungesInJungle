@@ -109,10 +109,16 @@ public class RoomInfo : MonoBehaviour
             if (ThemeManager.GetInstance().stage1Theme == ThemeManager.Stage1Themes.Forest)
             {
                 boss = Instantiate(forestBossPrefab, transform.position, Quaternion.identity);
+
+                DialogSystem.GetInstance().AddSentences(DialogSystem.GetInstance().container.forestBossSentences);
+                DialogSystem.GetInstance().StartText();
             }
             else if (ThemeManager.GetInstance().stage1Theme == ThemeManager.Stage1Themes.Sand)
             {
                 boss = Instantiate(sandBossPrefab, transform.position, Quaternion.identity);
+
+                DialogSystem.GetInstance().AddSentences(DialogSystem.GetInstance().container.sandBossSentences);
+                DialogSystem.GetInstance().StartText();
             }
         }
         else if (GameMaster.GetInstance().currentStage == GameMaster.Stages.Stage_2_5)
@@ -120,6 +126,9 @@ public class RoomInfo : MonoBehaviour
             if (ThemeManager.GetInstance().stage2Theme == ThemeManager.Stage2Themes.Urban)
             {
                 boss = Instantiate(urbanBossPrefab, transform.position, Quaternion.identity);
+
+                DialogSystem.GetInstance().AddSentences(DialogSystem.GetInstance().container.urbanBossSentences);
+                DialogSystem.GetInstance().StartText();
             }
         }
         isStartFightBoss = true;

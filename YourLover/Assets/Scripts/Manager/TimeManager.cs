@@ -37,14 +37,15 @@ public class TimeManager : MonoBehaviour
         get { return slowdownFactor; }
     }
 
-    void Update()
-    {
-        if (!PauseMenu.gamePause)
-        {
-            Time.timeScale += (1 / slowdownLenght) * Time.unscaledDeltaTime;
-            Time.timeScale = Mathf.Clamp(Time.timeScale, 0f, 1f);
-        }
-    }
+    //void Update()
+    //{
+    //    //Its no problem the last time I test with Kat's skill
+    //    //if (!PauseMenu.gamePause)
+    //    //{
+    //    //    Time.timeScale += (1 / slowdownLenght) * Time.unscaledDeltaTime;
+    //    //    Time.timeScale = Mathf.Clamp(Time.timeScale, 0f, 1f);
+    //    //}
+    //}
 
     public void DoSlowmo(float lenght)
     {

@@ -35,6 +35,8 @@ public class Boss : Enemy
 
     public override void Update()
     {
+        if (DialogSystem.GetInstance().isInDialog) return;
+
         base.Update();
         
         if (target != null)

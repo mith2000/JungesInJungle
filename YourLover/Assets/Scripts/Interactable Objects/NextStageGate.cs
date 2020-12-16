@@ -11,6 +11,16 @@ public class NextStageGate : MonoBehaviour
         sceneLoader = GameObject.FindGameObjectWithTag("SceneLoader").GetComponent<SceneLoader>();
     }
 
+#if UNITY_EDITOR
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.N))
+        {
+            ExitStage();
+        }
+    }
+#endif
+
     public void ExitStage()
     {
         Debug.Log("Stage done");

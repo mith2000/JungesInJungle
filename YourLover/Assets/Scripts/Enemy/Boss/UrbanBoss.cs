@@ -34,13 +34,17 @@ public class UrbanBoss : MonoBehaviour
 
     private void Start()
     {
-        attackTime = Time.time; //not action when init
-
         originPosition = transform.position;
     }
 
     void Update()
     {
+        if (DialogSystem.GetInstance().isInDialog)
+        {
+            attackTime = Time.time; //not action when dialoging
+            return;
+        }
+
         AttackTarget();
     }
 

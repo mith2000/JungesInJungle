@@ -25,13 +25,15 @@ public class SandBoss : MonoBehaviour
     private int minNumberOfSummon = 2;
     private int maxNumberOfSummon = 4;
 
-    private void Start()
-    {
-        attackTime = Time.time; //not action when init
-    }
-
     void Update()
     {
+        if (DialogSystem.GetInstance().isInDialog)
+        {
+            attackTime = Time.time; //not action when dialoging
+            return;
+        }
+
+
         AttackTarget();
     }
 

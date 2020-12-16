@@ -15,6 +15,10 @@ public class DialogSystem : MonoBehaviour
     private int index = 0;
     private float typeSpeed = 0.02f;
     private Animator anim;
+    private GameObject playerController;
+
+    [HideInInspector]
+    public bool isInDialog = false;
 
     private void Awake()
     {
@@ -37,7 +41,10 @@ public class DialogSystem : MonoBehaviour
 
     public void StartText()
     {
+        isInDialog = true;
         continueButton.SetActive(false);
+        playerController = GameObject.FindGameObjectWithTag("Player");
+        playerController.GetComponent<PlayerController>().UnableControl();
         StartCoroutine(Type());
     }
 
@@ -75,10 +82,12 @@ public class DialogSystem : MonoBehaviour
         }
         else
         {
+            isInDialog = false;
             index++;
             textDisplay.text = "";
             continueButton.SetActive(false);
             background.SetActive(false);
+            playerController.GetComponent<PlayerController>().EnableControl();
         }
     }
 }

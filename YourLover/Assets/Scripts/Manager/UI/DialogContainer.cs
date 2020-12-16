@@ -16,4 +16,10 @@ public class DialogContainer : MonoBehaviour
     { "So pewtiful (*o*)", "But Dappy said 'There’s no rose without a thorn' (-3-)"};
     public List<string> enoughCrystalSentences = new List<string>
     { "Nooooo !!", "Overweight is a nightmare (;^;)", "Believe me !!"};
+    public List<string> forestBossSentences = new List<string>
+    { "Woof woof !!", "The memories come back every time you scream", "Try to hide !!"};
+    public List<string> sandBossSentences = new List<string>
+    { "I sense worthy prey..."};
+    public List<string> urbanBossSentences = new List<string>
+    { "*&^!!#%!^#*!^@^@!(!*&@#!&*^!#!)(#&!@!&%*!($^!*(&@!)", "(&$)!($&()!$&)$!)$*^!^$%^&%!@*!(@^($!"};
 }
