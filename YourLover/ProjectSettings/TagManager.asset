@@ -85,6 +85,9 @@ TagManager:
   - name: Shadow
     uniqueID: 1691090353
     locked: 0
+  - name: Obstacle Sub-Player
+    uniqueID: 3245488313
+    locked: 0
   - name: Player
     uniqueID: 2373639915
     locked: 0

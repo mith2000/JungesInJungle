@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 1277952373310590677}
   - component: {fileID: 1277952373310590679}
   - component: {fileID: 1277952373310590678}
-  - component: {fileID: 8888894110240453729}
   m_Layer: 0
   m_Name: Laser Gun
   m_TagString: Laser
@@ -71,12 +70,12 @@ LineRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 672329817
-  m_SortingLayer: 13
-  m_SortingOrder: 0
+  m_SortingLayerID: 1607900739
+  m_SortingLayer: 11
+  m_SortingOrder: 1
   m_Positions:
   - {x: 0, y: 0, z: 0}
-  - {x: 5.11, y: 0, z: 1}
+  - {x: 0, y: 5, z: 0}
   m_Parameters:
     serializedVersion: 3
     widthMultiplier: 1
@@ -139,7 +138,7 @@ LineRenderer:
     textureMode: 0
     shadowBias: 0.5
     generateLightingData: 0
-  m_UseWorldSpace: 1
+  m_UseWorldSpace: 0
   m_Loop: 0
 --- !u!114 &1277952373310590678
 MonoBehaviour:
@@ -153,29 +152,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f8c4bbb0da710140b0446d0c0a0f65d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defDistanceRay: 100
+  lineLenght: 10
+  line: {fileID: 1277952373310590679}
   layerMask:
     serializedVersion: 2
     m_Bits: 7424
-  laserPoint: {fileID: 1277952373601705537}
-  line: {fileID: 1277952373310590679}
   damage: 3
---- !u!70 &8888894110240453729
-CapsuleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1277952373310590676}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 20}
-  m_Size: {x: 0.5, y: 40}
-  m_Direction: 0
 --- !u!1 &1277952373601705536
 GameObject:
   m_ObjectHideFlags: 0

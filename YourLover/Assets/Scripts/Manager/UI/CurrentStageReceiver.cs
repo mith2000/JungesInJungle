@@ -6,8 +6,7 @@ using UnityEngine.UI;
 
 public class CurrentStageReceiver : MonoBehaviour
 {
-    [SerializeField]
-    private Text stageText; 
+    [SerializeField] Text stageText; 
 
     void Start()
     {

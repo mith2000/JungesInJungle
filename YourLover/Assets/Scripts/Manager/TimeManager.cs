@@ -8,10 +8,10 @@ public class TimeManager : MonoBehaviour
 {
     private static TimeManager instance;
 
-    private float slowdownFactor = 0.2f;
-    private float slowdownLenght = 3f;
+    float slowdownFactor = 0.2f;
+    float slowdownLenght = 3f;
 
-    private bool isSlowed = false;
+    bool isSlowed = false;
 
     private void Awake()
     {

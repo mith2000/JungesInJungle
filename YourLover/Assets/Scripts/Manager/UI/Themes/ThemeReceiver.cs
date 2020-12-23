@@ -4,11 +4,9 @@ using UnityEngine;
 
 public class ThemeReceiver : MonoBehaviour
 {
-    [SerializeField]
-    private SpriteRenderer[] blockSprites;
+    [SerializeField] SpriteRenderer[] blockSprites;
 
-    [SerializeField]
-    private SpriteRenderer[] grounds;
+    [SerializeField] SpriteRenderer[] grounds;
 
     private void Awake()
     {
@@ -35,14 +33,19 @@ public class ThemeReceiver : MonoBehaviour
                 Stage1ChangeTheme();
                 break;
             case GameMaster.Stages.Stage_2_1:
+                Stage2ChangeTheme();
                 break;
             case GameMaster.Stages.Stage_2_2:
+                Stage2ChangeTheme();
                 break;
             case GameMaster.Stages.Stage_2_3:
+                Stage2ChangeTheme();
                 break;
             case GameMaster.Stages.Stage_2_4:
+                Stage2ChangeTheme();
                 break;
             case GameMaster.Stages.Stage_2_5:
+                Stage2ChangeTheme();
                 break;
             case GameMaster.Stages.Stage_3_1:
                 break;
@@ -68,6 +71,14 @@ public class ThemeReceiver : MonoBehaviour
         else if (ThemeManager.GetInstance().stage1Theme == ThemeManager.Stage1Themes.Sand)
         {
             GetThemeSprites(ThemeManager.GetInstance().sandTheme);
+        }
+    }
+
+    private void Stage2ChangeTheme()
+    {
+        if (ThemeManager.GetInstance().stage2Theme == ThemeManager.Stage2Themes.Urban)
+        {
+            GetThemeSprites(ThemeManager.GetInstance().urbanTheme);
         }
     }
 

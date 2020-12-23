@@ -4,24 +4,18 @@ using UnityEngine;
 
 public class SpecialRoom : MonoBehaviour
 {
-    [HideInInspector]
-    public GameObject[] specialRooms;
-    [HideInInspector]
-    public GameObject[] edgeRooms;
+    //Finding room that setted in Boss Scripts
+    [HideInInspector] public GameObject[] specialRooms;
+    [HideInInspector] public GameObject[] edgeRooms;
 
-    [SerializeField]
-    private bool isBossStage = false;
+    [SerializeField] bool isBossStage = false;
 
-    [SerializeField]
-    private GameObject portal;
-    [SerializeField]
-    private GameObject[] chestRooms;
-    [SerializeField]
-    private GameObject[] interactRooms;
-    [SerializeField]
-    private GameObject chestRoomMinimapIcon;
-    [SerializeField]
-    private GameObject interactRoomMinimapIcon;
+    [Header ("Spawn Reference")]
+    [SerializeField] GameObject portal;
+    [SerializeField] GameObject[] chestRooms;
+    [SerializeField] GameObject[] interactRooms;
+    [SerializeField] GameObject chestRoomMinimapIcon;
+    [SerializeField] GameObject interactRoomMinimapIcon;
 
     private void Awake()
     {

@@ -4,9 +4,8 @@ using UnityEngine;
 
 public class Bomb : MonoBehaviour
 {
-    [SerializeField]
-    private GameObject explosion;
-    private float lifeTime = 3f;
+    [SerializeField] GameObject explosion;
+    float lifeTime = 3f;
     public bool isTaken = false;
     public Transform ownerTransform;
 

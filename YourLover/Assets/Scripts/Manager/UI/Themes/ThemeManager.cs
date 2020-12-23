@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class ThemeManager : MonoBehaviour
 {
-    private static ThemeManager instance;
+    static ThemeManager instance;
 
     public Stage1Themes stage1Theme;
     public Stage2Themes stage2Theme;

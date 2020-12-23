@@ -4,10 +4,8 @@ using UnityEngine;
 
 public class AttackSpeedCrystal : MonoBehaviour
 {
-    [SerializeField]
-    private float attackSpeedPercent = 20;
-    [SerializeField]
-    private GameObject attackSpeedUpVFX;
+    [SerializeField] float attackSpeedPercent = 20;
+    [SerializeField] GameObject attackSpeedUpVFX;
 
     public void DestroyPotion()
     {
@@ -15,6 +13,7 @@ public class AttackSpeedCrystal : MonoBehaviour
         Destroy(gameObject);
     }
 
+    //Decrease 'Delay Regen Energy' to make player regen faster
     public float DecreaseDREPercent()
     {
         return 1f - attackSpeedPercent / 100f;

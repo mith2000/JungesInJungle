@@ -4,10 +4,8 @@ using UnityEngine;
 
 public class PlayerStatus : MonoBehaviour
 {
-    [SerializeField]
-    private PlayerController player;
-    [SerializeField]
-    private GameObject stun;
+    [SerializeField] PlayerController player;
+    [SerializeField] GameObject stun;
 
     void Update()
     {

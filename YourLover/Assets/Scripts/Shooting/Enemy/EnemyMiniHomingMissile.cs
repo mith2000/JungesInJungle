@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class EnemyMiniHomingMissile : EnemyHomingMissile
 {
-    private float delayFollowing = 0.5f;
-    private float delayTime;
+    float delayFollowing = 0.5f;
+    float delayTime;
 
     public override void Start()
     {

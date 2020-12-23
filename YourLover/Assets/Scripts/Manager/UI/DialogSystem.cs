@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 
+[RequireComponent(typeof(Animator))]
 public class DialogSystem : MonoBehaviour
 {
     private static DialogSystem instance;
@@ -12,13 +13,12 @@ public class DialogSystem : MonoBehaviour
     public GameObject continueButton;
     public GameObject background;
     public DialogContainer container;
-    private int index = 0;
-    private float typeSpeed = 0.02f;
-    private Animator anim;
-    private GameObject playerController;
+    int index = 0;
+    float typeSpeed = 0.02f;
+    Animator anim;
+    GameObject playerController;
 
-    [HideInInspector]
-    public bool isInDialog = false;
+    [HideInInspector] public bool isInDialog = false;
 
     private void Awake()
     {

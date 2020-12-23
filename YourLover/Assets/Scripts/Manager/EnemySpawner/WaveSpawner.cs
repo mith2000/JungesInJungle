@@ -16,15 +16,11 @@ public class WaveSpawner : MonoBehaviour
     public Transform[] spawnPoints;
     public float delayBetweenWaves;
 
-    [HideInInspector]
-    public Wave currentWave;
-    [HideInInspector]
-    public int currentWaveIndex;
-    [HideInInspector]
-    public bool finishedSpawn;
+    [HideInInspector] public Wave currentWave;
+    [HideInInspector] public int currentWaveIndex;
+    [HideInInspector] public bool finishedSpawn;
 
-    [HideInInspector]
-    public bool finishedWave = false;
+    [HideInInspector] public bool finishedWave = false;
 
     void Start()
     {

@@ -3,16 +3,16 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+[RequireComponent(typeof(Animator))]
 public class Boss : Enemy
 {
-    [SerializeField]
-    private Transform enemyGFX;
-    [SerializeField]
-    private GameObject status;
-    [SerializeField]
-    private GameObject patrol;
-    [HideInInspector]
-    public Animator anim;
+    [Header ("Boss Settings")]
+    [SerializeField] Transform enemyGFX;
+    //Boss Status: Healthbar, ...
+    [SerializeField] GameObject status;
+    //Instantiate patrol points for animation Walking
+    [SerializeField] GameObject patrol;
+    [HideInInspector] public Animator anim;
 
     private void Awake()
     {
@@ -23,6 +23,7 @@ public class Boss : Enemy
     {
         Instantiate(status, transform.position, Quaternion.identity);
 
+        //Boss's health bar inside Boss Status
         healthBar = GameObject.FindGameObjectWithTag("BossHealthBar").GetComponent<Slider>();
         healthBar.gameObject.SetActive(true);
         base.Start();
@@ -39,6 +40,7 @@ public class Boss : Enemy
 
         base.Update();
         
+        //if found target, start walking potrol points
         if (target != null)
         {
             anim.SetBool("Walk", true);

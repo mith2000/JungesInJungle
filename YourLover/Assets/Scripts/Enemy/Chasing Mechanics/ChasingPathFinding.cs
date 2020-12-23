@@ -3,26 +3,22 @@ using System.Collections.Generic;
 using UnityEngine;
 using Pathfinding;
 
+//Link: https://www.youtube.com/watch?v=jvtFUfJ6CP8&ab_channel=Brackeys
 public class ChasingPathFinding : MonoBehaviour
 {
-    [SerializeField]
-    private Enemy brain;
-    [SerializeField]
-    private float speed = 300f;
-    [SerializeField]
-    private float nextWaypointDistance = 3f;
+    [SerializeField] Enemy brain;
+    [SerializeField] float speed = 300f;
+    [SerializeField] float nextWaypointDistance = 3f;
 
-    [SerializeField]
-    private Transform enemyGFX;
+    [SerializeField] Transform enemyGFX;
 
-    private Path path;
-    private int currentWaypoint = 0;
-    private bool reachedEndOfPath = false;
+    Path path;
+    int currentWaypoint = 0;
+    bool reachedEndOfPath = false;
 
-    private Seeker seeker;
-    private Rigidbody2D body;
+    Seeker seeker;
+    Rigidbody2D body;
 
-    // Start is called before the first frame update
     void Start()
     {
         seeker = GetComponent<Seeker>();
@@ -47,7 +43,6 @@ public class ChasingPathFinding : MonoBehaviour
         }
     }
 
-    // Update is called once per frame
     void FixedUpdate()
     {
         if (path == null) return;

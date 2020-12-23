@@ -6,11 +6,9 @@ public class PauseMenu : MonoBehaviour
 {
     public static bool gamePause = false;
 
-    [SerializeField]
-    private GameObject UI;
-    [SerializeField]
-    private GameObject pauseButton;
-    private GameObject playerController;
+    [SerializeField] GameObject UI;
+    [SerializeField] GameObject pauseButton;
+    GameObject playerController;
 
     SceneLoader sceneLoader;
 

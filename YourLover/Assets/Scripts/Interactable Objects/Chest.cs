@@ -2,15 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+[RequireComponent(typeof(Animator))]
 public class Chest : MonoBehaviour
 {
-    [SerializeField]
-    private GameObject dropper;
+    [SerializeField] GameObject dropper;
 
-    [HideInInspector]
-    public bool isOpened = false;
+    [HideInInspector] public bool isOpened = false;
 
-    private Animator anim;
+    Animator anim;
 
     private void Awake()
     {
@@ -20,7 +19,7 @@ public class Chest : MonoBehaviour
 
     public void OpenChest()
     {
-        //Instanciate rewards
+        //Instantiate rewards
         int rand = Random.Range(2, 5);
         for (int i = 0; i < rand; i++)
         {

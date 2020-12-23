@@ -5,23 +5,18 @@ using UnityEngine;
 
 public class Instantiater : MonoBehaviour
 {
-    [SerializeField]
-    private CharacterChoice choicer;
+    [SerializeField] CharacterChoice choicer;
 
-    [SerializeField]
-    private Transform monkeyInstantiatePosition;
-    [SerializeField]
-    private Transform catInstantiatePosition;
+    [Header ("Characters Instantiate Position")]
+    [SerializeField] Transform monkeyInstantiatePosition;
+    [SerializeField] Transform catInstantiatePosition;
 
-    [SerializeField]
-    private CinemachineStateDrivenCamera stateDrivenCamera;
-    [SerializeField]
-    private CinemachineVirtualCamera idleCamera;
-    [SerializeField]
-    private CinemachineVirtualCamera walkCamera;
+    [Header ("Cameras")]
+    [SerializeField] CinemachineStateDrivenCamera stateDrivenCamera;
+    [SerializeField] CinemachineVirtualCamera idleCamera;
+    [SerializeField] CinemachineVirtualCamera walkCamera;
 
-    [SerializeField]
-    private bool isPlayScene;
+    [SerializeField] bool isPlayScene;
 
     private void Start()
     {

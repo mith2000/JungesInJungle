@@ -6,14 +6,11 @@ using UnityEngine.Rendering.Universal;
 
 public class CatController : PlayerController
 {
-    private VolumeProfile profile;
+    VolumeProfile profile;
     ChromaticAberration chromaticAberration;
     Vignette vignette;
 
-    private bool usingSkill = false;
-
-    [SerializeField]
-    private float skillDuration = 1f;
+    [SerializeField] float skillDuration = 1f;
 
     public override void CacheReferences()
     {
@@ -33,7 +30,6 @@ public class CatController : PlayerController
         anim.SetTrigger("Skill");
 
         skillCooldownScript.isCooldown = true;
-        usingSkill = true;
 
         TimeManager.GetInstance().DoSlowmo(skillDuration);
         StopEnemyBullet();
@@ -66,7 +62,6 @@ public class CatController : PlayerController
     {
         chromaticAberration.active = false;
         vignette.active = false;
-        usingSkill = false;
         addSpeed = 1f;
     }
 

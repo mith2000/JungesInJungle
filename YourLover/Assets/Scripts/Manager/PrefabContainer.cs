@@ -6,8 +6,11 @@ public class PrefabContainer : MonoBehaviour
 {
     private static PrefabContainer instance;
 
+    [Header ("Character Prefabs")]
     public GameObject monkeyPrefab;
     public GameObject catPrefab;
+
+    [Header ("Canvas Prefab")]
     public GameObject damageInfoPrefab;
 
     private void Awake()

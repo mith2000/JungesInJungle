@@ -4,14 +4,13 @@ using UnityEngine;
 
 public class CasterEnemy : Enemy
 {
-    [SerializeField]
-    private float actionRange = 25f;
-    [SerializeField]
-    private float attackRate;
+    [Header ("Caster Settings")]
+    [SerializeField] float actionRange = 25f;
+    [SerializeField] float attackRate;
 
-    private float attackTime;
+    float attackTime;
 
-    public GameObject castObject;
+    [SerializeField] GameObject castObject;
 
     public override void Start()
     {

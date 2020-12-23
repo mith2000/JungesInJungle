@@ -5,8 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class MinimapCameraFollow : MonoBehaviour
 {
-    private Transform playerTransform;
-    private float speed = 1;
+    Transform playerTransform;
+    float speed = 1;
 
     void Start()
     {

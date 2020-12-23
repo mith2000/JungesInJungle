@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Theme : MonoBehaviour
 {
+    [Header ("Block")]
     public Sprite block1x5;
     public Sprite block1x9T;
     public Sprite block1x9;
@@ -17,6 +18,7 @@ public class Theme : MonoBehaviour
     public Sprite block14x1;
     public Sprite block24x1;
 
+    [Header ("Ground")]
     public Sprite groundBig;
     public Sprite groundSmall;
     public Sprite groundBridge;

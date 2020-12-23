@@ -5,14 +5,11 @@ using UnityEngine.UI;
 
 public class SkillCooldown : MonoBehaviour
 {
-    [SerializeField]
-    private Image cooldownImage;
+    [SerializeField] Image cooldownImage;
 
-    [HideInInspector]
-    public float cooldown = 0;
+    [HideInInspector] public float cooldown = 0;
 
-    [HideInInspector]
-    public bool isCooldown = false;
+    [HideInInspector] public bool isCooldown = false;
     
     void Update()
     {

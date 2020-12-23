@@ -497,6 +497,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1610605937407338675}
     m_Modifications:
+    - target: {fileID: 1277952373310590678, guid: 98d8b9ac90f8ad047a2e32d58f6071dc, type: 3}
+      propertyPath: lineLenght
+      value: 12.5
+      objectReference: {fileID: 0}
     - target: {fileID: 1277952374634064060, guid: 98d8b9ac90f8ad047a2e32d58f6071dc, type: 3}
       propertyPath: m_Name
       value: Laser

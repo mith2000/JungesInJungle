@@ -412,10 +412,11 @@ MonoBehaviour:
   forestBossPrefab: {fileID: 1610605937407338674, guid: 315ae195ade8d2d46869bb465d970c3a, type: 3}
   sandBossPrefab: {fileID: 1610605937407338674, guid: 6a54661366714c84a9bd6ed81168f3fc, type: 3}
   urbanBossPrefab: {fileID: 1610605937407338674, guid: c41902133ce4a7345bbbfa347b433762, type: 3}
-  scripts: {fileID: 6194059210909001323, guid: 583b97be58c2e2347a10471e21fa5fbe, type: 3}
+  enemySpawnScript: {fileID: 6194059210909001323, guid: 583b97be58c2e2347a10471e21fa5fbe, type: 3}
   portal: {fileID: 6649452944597733492, guid: 8f0965477638c1c429d84b393c9b9bd3, type: 3}
   roomChest: {fileID: 8166645052660604396, guid: da820daa192b02542960c6c7f9bb4002, type: 3}
   bossRoomMinimapIcon: {fileID: 4583311226275377711, guid: 8f2e94703cb32204e984076342286783, type: 3}
+  obstacleScript: {fileID: 9192106244520685181, guid: 297877c74fedf2d40ad9217752c0317c, type: 3}
 --- !u!1 &3562172535537312527
 GameObject:
   m_ObjectHideFlags: 0

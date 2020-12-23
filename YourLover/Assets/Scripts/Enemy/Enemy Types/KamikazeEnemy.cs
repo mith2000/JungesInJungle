@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class KamikazeEnemy : Enemy
 {
-    [SerializeField]
-    private GameObject bomb;
+    [Header ("Kamikaze Settings")]
+    [SerializeField] GameObject bomb;
 
     public override void Start()
     {

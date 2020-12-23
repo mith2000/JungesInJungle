@@ -4,31 +4,29 @@ using UnityEngine;
 
 public class ForestBoss : MonoBehaviour
 {
-    [SerializeField]
-    private Boss brain;
+    [SerializeField] Boss brain;
 
-    private float attackRate = 0.3f;
-    private float attackTime;
+    float attackRate = 0.3f;
+    float attackTime;
 
-    [SerializeField]
-    private GameObject castObject;
-    private int numberOfMeteorPerCast = 4;
-    private float meteorRatePerCast = 10;
+    [Header ("Cast Meteor Skill")]
+    [SerializeField] GameObject castObject;
+    int numberOfMeteorPerCast = 4;
+    float meteorRatePerCast = 10;
 
-    [SerializeField]
-    private Transform shotPoint;
-    [SerializeField]
-    private GameObject shotgunBullet;
-    private int shotgunBulletCount = 4;
-    private float spread = 10f;
-    private int shootWave = 2;
-    private float waveRatePerShoot = 10;
+    [Header ("Shotgun Skill")]
+    [SerializeField] Transform shotPoint;
+    [SerializeField] GameObject shotgunBullet;
+    int shotgunBulletCount = 4;
+    float spread = 10f;
+    int shootWave = 2;
+    float waveRatePerShoot = 10;
 
-    [SerializeField]
-    private GameObject hakiBullet;
-    private int hakiBulletCount = 12;
-    private int hakiWave = 3;
-    private float waveRatePerHaki = 5;
+    [Header ("Radiate Skill")]
+    [SerializeField] GameObject hakiBullet;
+    int hakiBulletCount = 12;
+    int hakiWave = 3;
+    float waveRatePerHaki = 5;
 
     void Update()
     {

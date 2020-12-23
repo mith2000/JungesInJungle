@@ -4,8 +4,7 @@ using UnityEngine;
 
 public class GoldMine : HitableObjects
 {
-    [SerializeField]
-    private GameObject dropper;
+    [SerializeField] GameObject dropper;
 
     public override void TakeDamage(int damageAmount)
     {

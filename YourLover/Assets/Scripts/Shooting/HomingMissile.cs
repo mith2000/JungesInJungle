@@ -5,19 +5,13 @@ using UnityEngine;
 [RequireComponent(typeof(Rigidbody2D))]
 public class HomingMissile : MonoBehaviour
 {
-	[HideInInspector]
-	public Transform target;
+	[HideInInspector] public Transform target;
 
-	[SerializeField]
-	protected int damage = 5;
-	[SerializeField]
+	[SerializeField] protected int damage = 5;
 	public float speed = 5f;
-	[SerializeField]
-	protected float lifeTime = 10;
-	[SerializeField]
-	public float rotateSpeed = 200f;
-	[SerializeField]
-	private GameObject explosionVFX;
+	[SerializeField] protected float lifeTime = 10;
+	[SerializeField] public float rotateSpeed = 200f;
+	[SerializeField] GameObject explosionVFX;
 
 	protected Rigidbody2D rb;
 

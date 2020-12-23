@@ -5,12 +5,9 @@ using UnityEngine;
 public class CharacterChoice : MonoBehaviour
 {
     //Select of choicer only for Lobby Scene
-    [HideInInspector]
-    public GameMaster.CharacterRole selectedRole;
+    [HideInInspector] public GameMaster.CharacterRole selectedRole;
 
-    [SerializeField]
     public GameObject chooseCharacterCanvas;
-    [SerializeField]
     public GameObject pauseCanvas;
 
     public void ChooseMonkey_OnClick()

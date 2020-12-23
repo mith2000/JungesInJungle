@@ -4,10 +4,8 @@ using UnityEngine;
 
 public class MeteorBehavior : MonoBehaviour
 {
-    [SerializeField]
-    private int damage = 8;
-    [SerializeField]
-    private GameObject explosion;
+    [SerializeField] int damage = 8;
+    [SerializeField] GameObject explosion;
 
     public void EndFall()
     {

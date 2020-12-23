@@ -4,13 +4,12 @@ using UnityEngine;
 
 public class RangeEnemy : Enemy
 {
-    [SerializeField]
-    private float actionRange = 10f;
+    [Header ("Range Settings")]
+    [SerializeField] float actionRange = 10f;
 
-    [SerializeField]
-    private float attackRate;
+    [SerializeField] float attackRate;
 
-    private float attackTime;
+    float attackTime;
 
     public Transform shotPoint;
     public GameObject bullet;

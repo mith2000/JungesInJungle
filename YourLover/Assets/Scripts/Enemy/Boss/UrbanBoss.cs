@@ -4,30 +4,24 @@ using UnityEngine;
 
 public class UrbanBoss : MonoBehaviour
 {
-    [SerializeField]
-    private Boss brain;
+    [SerializeField] Boss brain;
 
-    private float attackRate = 0.2f;
-    private float attackTime;
+    float attackRate = 0.2f;
+    float attackTime;
 
-    [SerializeField]
-    private Transform shotPoint;
-    [SerializeField]
-    private GameObject laser;
+    [Header ("Quarter Laser Skill")]
+    [SerializeField] Transform shotPoint;
+    [SerializeField] GameObject laser;
 
-    [SerializeField]
-    private GameObject missilePrefab;
-    [SerializeField]
-    private Transform[] missileShotPoints;
+    [Header ("Multimissile Skill")]
+    [SerializeField] GameObject missilePrefab;
+    [SerializeField] Transform[] missileShotPoints;
 
-    [HideInInspector]
-    public Vector3 originPosition;
-    [SerializeField]
-    private GameObject dropdownLaserPrefab;
-    [SerializeField]
-    private GameObject crossLaserPrefab;
-    [SerializeField]
-    private GameObject sideLaserPrefab;
+    [Header ("Laser Army Skill")]
+    [HideInInspector] Vector3 originPosition;
+    [SerializeField] GameObject dropdownLaserPrefab;
+    [SerializeField] GameObject crossLaserPrefab;
+    [SerializeField] GameObject sideLaserPrefab;
     GameObject dropdownLaser;
     GameObject crossLaser;
     GameObject sideLaser;

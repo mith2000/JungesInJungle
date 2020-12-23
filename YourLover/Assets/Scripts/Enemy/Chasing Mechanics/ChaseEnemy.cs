@@ -5,16 +5,13 @@ using UnityEngine;
 //Homemade chasing mechanic
 public class ChaseEnemy : MonoBehaviour
 {
-    [SerializeField]
-    private Enemy brain;
-    [SerializeField]
-    private Transform enemyGFX;
-    [SerializeField]
-    private float chaseRange = 20f;
-    [SerializeField]
-    private float stopRange = 2f;
-    [SerializeField]
-    private float chaseSpeed = 6f;
+    [SerializeField] Enemy brain;
+    [SerializeField] Transform enemyGFX;
+
+    [Header ("Chase Settings")]
+    [SerializeField] float chaseRange = 20f;
+    [SerializeField] float stopRange = 2f;
+    [SerializeField] float chaseSpeed = 6f;
 
     public virtual void Update()
     {

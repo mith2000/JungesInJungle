@@ -5,19 +5,14 @@ using System.Linq;
 
 public class Enemy : Entity
 {
-    [HideInInspector]
-    public Transform targetPlayer;
-    [HideInInspector]
-    public Transform target;
-    [SerializeField]
-    private GameObject deathVFX;
-    [SerializeField]
-    private GameObject deathBody;
-    [SerializeField]
-    private DropMachine dropper;
+    [Header ("Enemy Settings")]
+    [HideInInspector] public Transform targetPlayer;
+    [HideInInspector] public Transform target;
+    [SerializeField] GameObject deathVFX;
+    [SerializeField] GameObject deathBody;
+    [SerializeField] DropMachine dropper;
 
-    [HideInInspector]
-    public bool triggerAttack = false;
+    [HideInInspector] public bool triggerAttack = false;
 
     #region Finding Target
     public void FindPlayer()
@@ -116,7 +111,7 @@ public class Enemy : Entity
 
     public virtual void DieAction()
     {
-        //Die action //Instanciate die effect
+        //Die action //Instantiate die effect
         Instantiate(deathVFX, transform.position, Quaternion.identity);
         Instantiate(deathBody, transform.position, transform.rotation);
         //Drop reward

@@ -5,14 +5,11 @@ using UnityEngine.UI;
 
 public class BasicProjectile : MonoBehaviour
 {
-    [SerializeField] 
-    protected int damage = 5;
-    [SerializeField] 
-    public float speed = 15;
-    [SerializeField] 
-    protected float lifeTime = 3;
-    [SerializeField] 
-    private GameObject explosionVFX;
+    [Header ("Projectile Settings")]
+    [SerializeField] protected int damage = 5;
+    [SerializeField] public float speed = 15;
+    [SerializeField] protected float lifeTime = 3;
+    [SerializeField] GameObject explosionVFX;
 
     public virtual void Start()
     {

@@ -2,13 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+[RequireComponent(typeof(Animator))]
 public class EnemyAnimatorController : MonoBehaviour
 {
-    private Animator anim;
-    [SerializeField]
-    private Enemy attackReceiver;
-    [SerializeField]
-    private bool canMove = true;
+    Animator anim;
+    [SerializeField] Enemy attackReceiver;
+    [SerializeField] bool canMove = true;
 
     private void Awake()
     {

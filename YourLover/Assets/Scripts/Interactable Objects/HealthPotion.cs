@@ -5,8 +5,7 @@ using UnityEngine;
 public class HealthPotion : MonoBehaviour
 {
     public int healthAmount = 2;
-    [SerializeField]
-    private GameObject healVFX;
+    [SerializeField] GameObject healVFX;
 
     public void DestroyPotion()
     {

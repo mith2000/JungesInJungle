@@ -4,18 +4,14 @@ using UnityEngine;
 
 public class Coin : MonoBehaviour
 {
-    [SerializeField]
-    public int coinValue = 2;
-    [SerializeField]
-    private GameObject coinVFX;
-    [SerializeField]
-    private float chaseRange = 10f;
-    [SerializeField]
-    private float speed = 5f;
+    [SerializeField] public int coinValue = 2;
+    [SerializeField] GameObject coinVFX;
+    [SerializeField] float chaseRange = 10f;
+    [SerializeField] float speed = 5f;
 
-    private float waitTime = 1f;
-    private bool wait = false;
-    private Transform targetPlayer;
+    float waitTime = 1f;
+    bool wait = false;
+    Transform targetPlayer;
 
     private void Start()
     {

@@ -6,56 +6,50 @@ using UnityEngine.UI;
 
 public class PlayerInfo : Entity
 {
-    [SerializeField]
-    private Text healthText;
+    [SerializeField] Text healthText;
 
-    private int maxEnergy;
-    private int currentEnergy;
-    private int energyPerBar = 30;
-    [SerializeField]
-    private Slider[] energyBar;
-    private int energyPerRegen = 1;
+    [Header ("Energy")]
+    int maxEnergy;
+    int currentEnergy;
+    int energyPerBar = 30;
+    [SerializeField] Slider[] energyBar;
+    int energyPerRegen = 1;
     public float delayRegenEnergy = 0.1f;
-    private float energyRegenTime = 0;
+    float energyRegenTime = 0;
 
+    [Header ("Armor")]
     public int maxArmor = 5;
-    private int currentArmor;
-    [SerializeField]
-    private Slider armorBar;
-    [SerializeField]
-    private Text armorText;
-    private int armorPerRegen = 1;
-    private float delayRegenArmor = 2;
-    private float armorRegenTime = 0;
-    private float delayStartRegenArmor = 5;
-    private float armorRegenStartTime = 0;
+    int currentArmor;
+    [SerializeField] Slider armorBar;
+    [SerializeField] Text armorText;
+    int armorPerRegen = 1;
+    float delayRegenArmor = 2;
+    float armorRegenTime = 0;
+    float delayStartRegenArmor = 5;
+    float armorRegenStartTime = 0;
 
+    [Header ("Coin")]
     public int currentCoin = 0;
-    [SerializeField]
-    private Text coinText;
+    [SerializeField] Text coinText;
 
-    [HideInInspector]
-    public bool isGotSeriousInjury = false;
-    private float woundRecoveryTime = 0.5f;
+    [HideInInspector]public bool isGotSeriousInjury = false;
+    float woundRecoveryTime = 0.5f;
 
-    [HideInInspector]
-    public bool firstTimeHealthPotion = true;
-    [HideInInspector]
-    public bool firstTimeHealthCrystal = true;
-    [HideInInspector]
-    public bool firstTimeArmorCrystal = true;
-    [HideInInspector]
-    public bool firstTimeAttackSpeedCrystal = true;
-    [HideInInspector]
-    public bool firstTimeRainbowCrystal = true;
+    //for Game Master saver
+    [HideInInspector] public bool firstTimeHealthPotion = true;
+    [HideInInspector] public bool firstTimeHealthCrystal = true;
+    [HideInInspector] public bool firstTimeArmorCrystal = true;
+    [HideInInspector] public bool firstTimeAttackSpeedCrystal = true;
+    [HideInInspector] public bool firstTimeRainbowCrystal = true;
 
     public override void Start()
     {
         base.Start();
-        //If player is instanciated through scenes while injured, get injured
+        //Get saved data from GM
         if (SceneManager.GetActiveScene().buildIndex > 2)
         {
             maxHealth = GameMaster.GetInstance().playerStat.maxHealth;
+            //If player is instantiated through scenes while injured, get injured
             currentHealth = GameMaster.GetInstance().playerStat.currentHealth;
             healthBar.maxValue = maxHealth;
             healthBar.value = maxHealth - currentHealth;

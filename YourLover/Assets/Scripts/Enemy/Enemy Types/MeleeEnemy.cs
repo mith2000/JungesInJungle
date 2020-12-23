@@ -4,16 +4,13 @@ using UnityEngine;
 
 public class MeleeEnemy : Enemy
 {
-    [SerializeField]
-    private float attackRange = 2f;
-    [SerializeField]
-    private float attackSpeed = 5f;
-    [SerializeField]
-    private float attackRate = 2;
-    [SerializeField]
-    private int attackDamage = 1;
+    [Header ("Melee Settings")]
+    [SerializeField] float attackRange = 2f;
+    [SerializeField] float attackSpeed = 5f;
+    [SerializeField] float attackRate = 2;
+    [SerializeField] int attackDamage = 1;
 
-    private float attackTime;
+    float attackTime;
 
     public override void Start()
     {

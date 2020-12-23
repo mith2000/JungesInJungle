@@ -4,21 +4,17 @@ using UnityEngine;
 
 public class MachineGunEnemy : Enemy
 {
-    [SerializeField]
-    private float actionRange = 10f;
+    [Header ("Machine Gun Settings")]
+    [SerializeField] float actionRange = 10f;
 
-    [SerializeField]
-    private float attackRate;
+    [SerializeField] float attackRate;
 
-    [SerializeField]
-    private int numberOfBullet;
-    [SerializeField]
-    private float minFactorAngle = 85f;
-    [SerializeField]
-    private float maxFactorAngle = 95f;
-    private float rateOfFire = 7f;
+    [SerializeField] int numberOfBullet;
+    [SerializeField] float minFactorAngle = 85f;
+    [SerializeField] float maxFactorAngle = 95f;
 
-    private float attackTime;
+    float rateOfFire = 7f;
+    float attackTime;
 
     public Transform shotPoint;
     public GameObject bullet;

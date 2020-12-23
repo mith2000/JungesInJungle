@@ -4,10 +4,9 @@ using UnityEngine;
 
 public class ShotgunAimer : Aimer
 {
-    [SerializeField]
-    private int shotgunBulletCount;
-    [SerializeField]
-    private float spread = 5;
+    [Header ("Shotgun Settings")]
+    [SerializeField] int shotgunBulletCount;
+    [SerializeField] float spread = 5;
 
     public override void Shoot()
     {

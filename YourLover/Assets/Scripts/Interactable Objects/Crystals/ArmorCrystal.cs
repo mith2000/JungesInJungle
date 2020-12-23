@@ -5,8 +5,7 @@ using UnityEngine;
 public class ArmorCrystal : MonoBehaviour
 {
     public int armorAmount = 1;
-    [SerializeField]
-    private GameObject armorUpVFX;
+    [SerializeField] GameObject armorUpVFX;
 
     public void DestroyPotion()
     {

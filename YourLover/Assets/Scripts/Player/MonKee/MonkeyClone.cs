@@ -4,32 +4,31 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 
+[RequireComponent(typeof(Animator))]
+[RequireComponent(typeof(Rigidbody2D))]
 public class MonkeyClone : Entity
 {
-    [SerializeField]
-    private float speed = 3f;
-    private float addSpeed = 1f;
-    [SerializeField]
-    private float attackRange = 1f;
-    [SerializeField]
-    private float attackSpeed = 5f;
-    [SerializeField]
-    private float attackRate = .5f;
-    [SerializeField]
-    private int attackDamage = 1;
-    [SerializeField]
-    private GameObject gfx;
+    [SerializeField] float speed = 3f;
+    float addSpeed = 1f;
 
-    private float attackTime;
+    [Header ("Attack Settings")]
+    [SerializeField] float attackRange = 1f;
+    [SerializeField] float attackSpeed = 5f;
+    [SerializeField] float attackRate = .5f;
+    [SerializeField] int attackDamage = 1;
 
-    private Rigidbody2D physicBody;
-    private Animator anim;
+    [SerializeField] GameObject gfx;
 
-    private GameObject target;
-    private GameObject parent;
-    private float followParentDistance = 2f;
-    private float maxDistanceBtwParent = 12.5f;
-    private float flipYAmount = 180f;
+    float attackTime;
+
+    Rigidbody2D physicBody;
+    Animator anim;
+
+    GameObject target;
+    GameObject parent;
+    float followParentDistance = 2f;
+    float maxDistanceBtwParent = 12.5f;
+    float flipYAmount = 180f;
 
     private void Awake()
     {

@@ -4,17 +4,13 @@ using UnityEngine;
 
 public class RainbowCrystal : MonoBehaviour
 {
-    [HideInInspector]
-    public bool isGood = false;
+    [HideInInspector] public bool isGood = false;
     public int healthAmount = 1;
     public int loseHealthAmount = -2;
     public int armorAmount = 1;
-    [SerializeField]
-    private float attackSpeedPercent = 10;
-    [SerializeField]
-    private GameObject positiveVFX;
-    [SerializeField]
-    private GameObject negativeVFX;
+    [SerializeField] float attackSpeedPercent = 10;
+    [SerializeField] GameObject positiveVFX;
+    [SerializeField] GameObject negativeVFX;
 
     private void Start()
     {

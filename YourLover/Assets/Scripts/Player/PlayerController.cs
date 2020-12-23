@@ -3,25 +3,24 @@ using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
 
+[RequireComponent(typeof(Animator))]
+[RequireComponent(typeof(Rigidbody2D))]
 public class PlayerController : MonoBehaviour
 {
-    [SerializeField] 
-    protected float speed = 5f;
+    [Header ("Stats")]
+    [SerializeField] protected float speed = 5f;
     protected float baseSpeed = 5f;
     protected float addSpeed = 1f;
 
-    [SerializeField]
-    protected Joystick moveJoystick;
-    [SerializeField]
-    protected Joystick aimJoystick;
-    [SerializeField]
-    protected Button skillButton;
-    [SerializeField]
-    protected SkillCooldown skillCooldownScript;
-    [SerializeField]
-    protected float skillCooldown = 5f;
-    [SerializeField]
-    protected Button interactButton;
+    [Header ("Joysticks")]
+    [SerializeField] protected Joystick moveJoystick;
+    [SerializeField] protected Joystick aimJoystick;
+
+    [Header ("Buttons")]
+    [SerializeField] protected Button skillButton;
+    [SerializeField] protected SkillCooldown skillCooldownScript;
+    [SerializeField] protected float skillCooldown = 5f;
+    [SerializeField] protected Button interactButton;
     protected GameObject interactObject;
 
     protected Rigidbody2D physicBody;
@@ -31,8 +30,7 @@ public class PlayerController : MonoBehaviour
     protected Vector2 saveDirection;
     protected Vector2 moveAmount;
 
-    [HideInInspector]
-    public bool isStunned = false;
+    [HideInInspector] public bool isStunned = false;
 
     float flipYAmount = 180f;
 

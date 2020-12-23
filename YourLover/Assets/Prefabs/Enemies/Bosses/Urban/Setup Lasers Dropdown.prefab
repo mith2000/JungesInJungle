@@ -42,6 +42,14 @@ PrefabInstance:
       propertyPath: damage
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 1277952373310590678, guid: 98d8b9ac90f8ad047a2e32d58f6071dc, type: 3}
+      propertyPath: lineLenght
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 1277952373310590679, guid: 98d8b9ac90f8ad047a2e32d58f6071dc, type: 3}
+      propertyPath: m_Positions.Array.data[1].y
+      value: 25
+      objectReference: {fileID: 0}
     - target: {fileID: 1277952374634064060, guid: 98d8b9ac90f8ad047a2e32d58f6071dc, type: 3}
       propertyPath: m_Name
       value: Laser

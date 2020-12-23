@@ -5,8 +5,7 @@ using UnityEngine;
 
 public class EnemyProjectile : BasicProjectile
 {
-    [HideInInspector]
-    public bool isReverse = false;
+    [HideInInspector] public bool isReverse = false;
 
     public override void Start()
     {

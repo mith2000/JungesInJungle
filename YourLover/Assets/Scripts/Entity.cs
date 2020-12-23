@@ -5,13 +5,14 @@ using UnityEngine.UI;
 
 public class Entity : MonoBehaviour
 {
+    [Header ("Health")]
     public int maxHealth = 5;
     public int currentHealth;
     [SerializeField]
     protected Slider healthBar;
 
     protected int savedHealth;
-    private bool canShowDamage = true;
+    bool canShowDamage = true;
 
     public virtual void Start()
     {
@@ -23,21 +24,21 @@ public class Entity : MonoBehaviour
 
     public virtual void Update()
     {
-        if (savedHealth > currentHealth)
-        {
-            if (canShowDamage)
-            {
-                ShowDamage(savedHealth - currentHealth);
-                canShowDamage = false;
-                StartCoroutine(WaitNextTimeForShowDamage());
-            }
-        }
-        StartCoroutine(DelaySaveHealth());
+        //if (savedHealth > currentHealth)
+        //{
+        //    if (canShowDamage)
+        //    {
+        //        ShowDamage(savedHealth - currentHealth);
+        //        canShowDamage = false;
+        //        StartCoroutine(WaitNextTimeForShowDamage());
+        //    }
+        //}
+        //StartCoroutine(DelaySaveHealth());
     }
 
     IEnumerator WaitNextTimeForShowDamage()
     {
-        yield return new WaitForSeconds(.5f);
+        yield return new WaitForSeconds(.3f);
         canShowDamage = true;
     }
 

@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class BombExplosion : MonoBehaviour
 {
-    private int bombDamage = 5;
+    int bombDamage = 5;
 
     public void DestroySelf()
     {

@@ -2,44 +2,24 @@
 
 public class Aimer : MonoBehaviour
 {
-    [SerializeField] 
-    private SpriteRenderer sprite;
-    [SerializeField] 
-    private Vector2 deadZone = new Vector2(.2f,.2f);
+    [SerializeField] Joystick aimJoystick;
+    [SerializeField] GameObject aimLine;
+    [SerializeField] protected Transform shotPoint;
+    [SerializeField] protected GameObject projectile;
 
-    [SerializeField] 
-    protected GameObject projectile;
-    [SerializeField] 
-    protected Transform shotPoint;
-    private float attackRate = 6f;
-    private int shotCost = 30;
+    [SerializeField] Vector2 deadZone = new Vector2(.2f, .2f);
 
-    [SerializeField]
-    Joystick aimJoystick;
-
-    [SerializeField]
-    private PlayerInfo playerInfo;
-    [SerializeField]
-    private PlayerController playerController;
+    [Header ("Player References")]
+    [SerializeField] PlayerInfo playerInfo;
+    [SerializeField] PlayerController playerController;
 
     float shotTime;
-
-    private void Awake()
-    {
-        //Cache References
-        sprite = GetComponent<SpriteRenderer>();
-        aimJoystick.gameObject.SetActive(true);
-    }
-
-    void Start()
-    {
-        sprite.enabled = false;
-    }
+    float attackRate = 6f;
+    int shotCost = 30;
 
     void Update()
     {
         if (aimJoystick == null) return;
-        //Debug.Log(aimJoystick.isRelease);
         RenderBaseOnJoystick();
         RotateBaseOnJoystick();
         ShootWhenRelease();
@@ -54,11 +34,11 @@ public class Aimer : MonoBehaviour
     {
         if (Aiming())
         {
-            sprite.enabled = true;
+            aimLine.SetActive(true);
         }
         else
         {
-            sprite.enabled = false;
+            aimLine.SetActive(false);
         }
     }
 

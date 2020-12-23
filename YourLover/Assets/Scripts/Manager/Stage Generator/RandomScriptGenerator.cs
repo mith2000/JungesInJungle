@@ -4,13 +4,12 @@ using UnityEngine;
 
 public class RandomScriptGenerator : MonoBehaviour
 {
-    [SerializeField]
-    private StageScripts scripts;
+    [SerializeField] StageScripts scripts;
 
-    private int lv1Quantity;
-    private int lv2Quantity;
-    private int lv3Quantity;
-    private int bossQuantity;
+    int lv1Quantity;
+    int lv2Quantity;
+    int lv3Quantity;
+    int bossQuantity;
 
     void Start()
     {

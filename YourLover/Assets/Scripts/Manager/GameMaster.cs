@@ -7,6 +7,7 @@ public class GameMaster : MonoBehaviour
 {
     private static GameMaster instance;
 
+    [Header ("Save Player Data")]
     public CharacterRole playerRole;
     public PlayerStatSaver playerStat = new PlayerStatSaver();
     public int maxCrystalPlayerUse = 4;

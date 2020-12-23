@@ -4,8 +4,7 @@ using UnityEngine;
 
 public class MonkeyController : PlayerController
 {
-    [SerializeField]
-    private GameObject clone;
+    [SerializeField] GameObject clone;
 
     public override void CacheReferences()
     {

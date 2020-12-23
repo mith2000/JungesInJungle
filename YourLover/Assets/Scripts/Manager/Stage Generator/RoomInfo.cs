@@ -5,52 +5,42 @@ using UnityEngine;
 
 public class RoomInfo : MonoBehaviour
 {
-    [SerializeField]
-    private bool specialRoom = false;   //entry room
-    [SerializeField]
-    private bool hasDoorTop = false;
-    [SerializeField]
-    private bool hasDoorBottom = false;
-    [SerializeField]
-    private bool hasDoorLeft = false;
-    [SerializeField]
-    private bool hasDoorRight = false;
-    [SerializeField]
-    private GameObject doorTop;
-    [SerializeField]
-    private GameObject doorBottom;
-    [SerializeField]
-    private GameObject doorLeft;
-    [SerializeField]
-    private GameObject doorRight;
+    [SerializeField] bool specialRoom = false;   //entry room
 
-    [SerializeField]
-    private bool isBossRoom = false;
-    [SerializeField]
-    private GameObject forestBossPrefab;
-    [SerializeField]
-    private GameObject sandBossPrefab;
-    [SerializeField]
-    private GameObject urbanBossPrefab;
-    [SerializeField]
-    private SpawnScripts scripts;
-    [SerializeField]
-    private GameObject portal;
-    [SerializeField]
-    private GameObject roomChest;
-    [SerializeField]
-    private GameObject bossRoomMinimapIcon;
+    [Header ("Door Settings")]
+    [SerializeField] bool hasDoorTop = false;
+    [SerializeField] bool hasDoorBottom = false;
+    [SerializeField] bool hasDoorLeft = false;
+    [SerializeField] bool hasDoorRight = false;
+    [SerializeField] GameObject doorTop;
+    [SerializeField] GameObject doorBottom;
+    [SerializeField] GameObject doorLeft;
+    [SerializeField] GameObject doorRight;
 
-    private GameObject spawner;
-    private GameObject boss;
-    private bool isStartFightBoss = false;
+    [Header ("Boss Settings")]
+    [SerializeField] bool isBossRoom = false;
+    [SerializeField] GameObject forestBossPrefab;
+    [SerializeField] GameObject sandBossPrefab;
+    [SerializeField] GameObject urbanBossPrefab;
 
-    private GameObject minimap;
+    [Header ("Spawn Reference")]
+    [SerializeField] SpawnScripts enemySpawnScript;
+    [SerializeField] GameObject portal;
+    [SerializeField] GameObject roomChest;
+    [SerializeField] GameObject bossRoomMinimapIcon;
+    [SerializeField] ObstacleScripts obstacleScript;
 
-    private bool closed = false;
+    GameObject spawner;
+    GameObject boss;
+    bool isStartFightBoss = false;
+
+    GameObject minimap;
+
+    bool closed = false;
 
     private void Awake()
     {
+        //Close all doors except first room
         if (!specialRoom)
         {
             if (hasDoorTop)
@@ -62,8 +52,16 @@ public class RoomInfo : MonoBehaviour
             if (hasDoorRight)
                 doorRight.SetActive(true);
         }
+
+        //If boss room, instantiate boss room minimap icon
         if (isBossRoom)
             Instantiate(bossRoomMinimapIcon, transform.position, Quaternion.identity);
+
+        //If not first room and boss room, instantiate obstacles
+        if (!specialRoom && !isBossRoom)
+        {
+            GenerateObstacle();
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -191,68 +189,141 @@ public class RoomInfo : MonoBehaviour
         }
     }
 
+    private void GenerateObstacle()
+    {
+        switch (GameMaster.GetInstance().currentStage)
+        {
+            case GameMaster.Stages.Stage_1_1:
+                RandomObstacleStage1();
+                break;
+            case GameMaster.Stages.Stage_1_2:
+                RandomObstacleStage1();
+                break;
+            case GameMaster.Stages.Stage_1_3:
+                RandomObstacleStage1();
+                break;
+            case GameMaster.Stages.Stage_1_4:
+                RandomObstacleStage1();
+                break;
+            case GameMaster.Stages.Stage_1_5:
+                RandomObstacleStage1();
+                break;
+            case GameMaster.Stages.Stage_2_1:
+                RandomObstacleStage2();
+                break;
+            case GameMaster.Stages.Stage_2_2:
+                RandomObstacleStage2();
+                break;
+            case GameMaster.Stages.Stage_2_3:
+                RandomObstacleStage2();
+                break;
+            case GameMaster.Stages.Stage_2_4:
+                RandomObstacleStage2();
+                break;
+            case GameMaster.Stages.Stage_2_5:
+                RandomObstacleStage2();
+                break;
+            case GameMaster.Stages.Stage_3_1:
+                break;
+            case GameMaster.Stages.Stage_3_2:
+                break;
+            case GameMaster.Stages.Stage_3_3:
+                break;
+            case GameMaster.Stages.Stage_3_4:
+                break;
+            case GameMaster.Stages.Stage_3_5:
+                break;
+            default:
+                break;
+        }
+    }
+
     #region Script Spawner
     void RandomScriptStage1Level1()
     {
         if (ThemeManager.GetInstance().stage1Theme == ThemeManager.Stage1Themes.Forest)
         {
-            int rand = UnityEngine.Random.Range(0, scripts.forestLv1Scripts.Length);
-            spawner = Instantiate(scripts.forestLv1Scripts[rand], transform.position, Quaternion.identity);
+            int rand = UnityEngine.Random.Range(0, enemySpawnScript.forestLv1Scripts.Length);
+            spawner = Instantiate(enemySpawnScript.forestLv1Scripts[rand], transform.position, Quaternion.identity);
         }
         else if (ThemeManager.GetInstance().stage1Theme == ThemeManager.Stage1Themes.Sand)
         {
-            int rand = UnityEngine.Random.Range(0, scripts.sandLv1Scripts.Length);
-            spawner = Instantiate(scripts.sandLv1Scripts[rand], transform.position, Quaternion.identity);
+            int rand = UnityEngine.Random.Range(0, enemySpawnScript.sandLv1Scripts.Length);
+            spawner = Instantiate(enemySpawnScript.sandLv1Scripts[rand], transform.position, Quaternion.identity);
         }
     }
     void RandomScriptStage1Level2()
     {
         if (ThemeManager.GetInstance().stage1Theme == ThemeManager.Stage1Themes.Forest)
         {
-            int rand = UnityEngine.Random.Range(0, scripts.forestLv2Scripts.Length);
-            spawner = Instantiate(scripts.forestLv2Scripts[rand], transform.position, Quaternion.identity);
+            int rand = UnityEngine.Random.Range(0, enemySpawnScript.forestLv2Scripts.Length);
+            spawner = Instantiate(enemySpawnScript.forestLv2Scripts[rand], transform.position, Quaternion.identity);
         }
         else if (ThemeManager.GetInstance().stage1Theme == ThemeManager.Stage1Themes.Sand)
         {
-            int rand = UnityEngine.Random.Range(0, scripts.sandLv2Scripts.Length);
-            spawner = Instantiate(scripts.sandLv2Scripts[rand], transform.position, Quaternion.identity);
+            int rand = UnityEngine.Random.Range(0, enemySpawnScript.sandLv2Scripts.Length);
+            spawner = Instantiate(enemySpawnScript.sandLv2Scripts[rand], transform.position, Quaternion.identity);
         }
     }
     void RandomScriptStage1Level3()
     {
         if (ThemeManager.GetInstance().stage1Theme == ThemeManager.Stage1Themes.Forest)
         {
-            int rand = UnityEngine.Random.Range(0, scripts.forestLv3Scripts.Length);
-            spawner = Instantiate(scripts.forestLv3Scripts[rand], transform.position, Quaternion.identity);
+            int rand = UnityEngine.Random.Range(0, enemySpawnScript.forestLv3Scripts.Length);
+            spawner = Instantiate(enemySpawnScript.forestLv3Scripts[rand], transform.position, Quaternion.identity);
         }
         else if (ThemeManager.GetInstance().stage1Theme == ThemeManager.Stage1Themes.Sand)
         {
-            int rand = UnityEngine.Random.Range(0, scripts.sandLv3Scripts.Length);
-            spawner = Instantiate(scripts.sandLv3Scripts[rand], transform.position, Quaternion.identity);
+            int rand = UnityEngine.Random.Range(0, enemySpawnScript.sandLv3Scripts.Length);
+            spawner = Instantiate(enemySpawnScript.sandLv3Scripts[rand], transform.position, Quaternion.identity);
         }
     }
     void RandomScriptStage2Level1()
     {
         if (ThemeManager.GetInstance().stage2Theme == ThemeManager.Stage2Themes.Urban)
         {
-            int rand = UnityEngine.Random.Range(0, scripts.urbanLv1Scripts.Length);
-            spawner = Instantiate(scripts.urbanLv1Scripts[rand], transform.position, Quaternion.identity);
+            int rand = UnityEngine.Random.Range(0, enemySpawnScript.urbanLv1Scripts.Length);
+            spawner = Instantiate(enemySpawnScript.urbanLv1Scripts[rand], transform.position, Quaternion.identity);
         }
     }
     void RandomScriptStage2Level2()
     {
         if (ThemeManager.GetInstance().stage2Theme == ThemeManager.Stage2Themes.Urban)
         {
-            int rand = UnityEngine.Random.Range(0, scripts.urbanLv2Scripts.Length);
-            spawner = Instantiate(scripts.urbanLv2Scripts[rand], transform.position, Quaternion.identity);
+            int rand = UnityEngine.Random.Range(0, enemySpawnScript.urbanLv2Scripts.Length);
+            spawner = Instantiate(enemySpawnScript.urbanLv2Scripts[rand], transform.position, Quaternion.identity);
         }
     }
     void RandomScriptStage2Level3()
     {
         if (ThemeManager.GetInstance().stage2Theme == ThemeManager.Stage2Themes.Urban)
         {
-            int rand = UnityEngine.Random.Range(0, scripts.urbanLv3Scripts.Length);
-            spawner = Instantiate(scripts.urbanLv3Scripts[rand], transform.position, Quaternion.identity);
+            int rand = UnityEngine.Random.Range(0, enemySpawnScript.urbanLv3Scripts.Length);
+            spawner = Instantiate(enemySpawnScript.urbanLv3Scripts[rand], transform.position, Quaternion.identity);
+        }
+    }
+    #endregion
+
+    #region Obstacle Instantiater
+    private void RandomObstacleStage1()
+    {
+        if (ThemeManager.GetInstance().stage1Theme == ThemeManager.Stage1Themes.Forest)
+        {
+            int rand = UnityEngine.Random.Range(0, obstacleScript.forestObstacleGroups.Length);
+            Instantiate(obstacleScript.forestObstacleGroups[rand], transform.position, Quaternion.identity);
+        }
+        else if (ThemeManager.GetInstance().stage1Theme == ThemeManager.Stage1Themes.Sand)
+        {
+            int rand = UnityEngine.Random.Range(0, obstacleScript.sandObstacleGroups.Length);
+            Instantiate(obstacleScript.sandObstacleGroups[rand], transform.position, Quaternion.identity);
+        }
+    }
+    private void RandomObstacleStage2()
+    {
+        if (ThemeManager.GetInstance().stage2Theme == ThemeManager.Stage2Themes.Urban)
+        {
+            int rand = UnityEngine.Random.Range(0, obstacleScript.urbanObstacleGroups.Length);
+            Instantiate(obstacleScript.urbanObstacleGroups[rand], transform.position, Quaternion.identity);
         }
     }
     #endregion

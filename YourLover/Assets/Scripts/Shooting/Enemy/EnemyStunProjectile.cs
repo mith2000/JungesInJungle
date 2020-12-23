@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class EnemyStunProjectile : EnemyProjectile
 {
-    [SerializeField]
-    private float stunDuration = 2f;
+    [Header ("Stun Settings")]
+    [SerializeField] float stunDuration = 2f;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {

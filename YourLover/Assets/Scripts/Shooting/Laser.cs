@@ -3,54 +3,22 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Laser : MonoBehaviour
+public class Laser : AimLine
 {
-    [SerializeField]
-    private float defDistanceRay = 100;
-    public LayerMask layerMask;
-    public Transform laserPoint;
-    public LineRenderer line;
-    Transform m_transform;
     public int damage = 5;
 
-    private void Awake()
+    public override void RaycastHitted()
     {
-        m_transform = GetComponent<Transform>();
-    }
+        base.RaycastHitted();
+        RaycastHit2D _hit = Physics2D.Raycast(transform.position, transform.up, lineLenght, layerMask);
 
-    private void Update()
-    {
-        ShootLaser();
-    }
-
-    void ShootLaser()
-    {
-        if (Physics2D.Raycast(m_transform.position, transform.up))
+        if (_hit.collider.CompareTag("Player"))
         {
-            RaycastHit2D _hit = Physics2D.Raycast(laserPoint.position, transform.up, defDistanceRay, layerMask);
-            Draw2DRay(laserPoint.position, _hit.point);
-        }
-        else
-        {
-            Draw2DRay(laserPoint.position, laserPoint.transform.right * defDistanceRay);
-        }
-    }
-
-    private void Draw2DRay(Vector2 startPos, Vector2 endPos)
-    {
-        line.SetPosition(0, startPos);
-        line.SetPosition(1, endPos);
-    }
-
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (collision.CompareTag("Player"))
-        {
-            if (!collision.GetComponent<PlayerInfo>().isGotSeriousInjury)
+            if (!_hit.collider.GetComponent<PlayerInfo>().isGotSeriousInjury)
             {
-                collision.GetComponent<PlayerInfo>().TakeDamage(damage);
-                collision.GetComponent<PlayerInfo>().isGotSeriousInjury = true;
-                collision.GetComponent<PlayerInfo>().RecoveryFromOther();
+                _hit.collider.GetComponent<PlayerInfo>().TakeDamage(damage);
+                _hit.collider.GetComponent<PlayerInfo>().isGotSeriousInjury = true;
+                _hit.collider.GetComponent<PlayerInfo>().RecoveryFromOther();
             }
         }
     }

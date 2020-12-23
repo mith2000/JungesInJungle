@@ -3,32 +3,25 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+[RequireComponent(typeof(Rigidbody2D))]
 public class ChargeEnemy : Enemy
 {
-    [SerializeField]
-    private Transform enemyGFX;
-    [SerializeField]
-    private float chaseRange = 20f;
-    [SerializeField]
-    private float stopRange = 4f;
-    [SerializeField]
-    private float chaseSpeed = 4f;
+    [Header ("Chase and Charge Settings")]
+    [SerializeField] Transform enemyGFX;
+    [SerializeField] float chaseRange = 20f;
+    [SerializeField] float stopRange = 4f;
+    [SerializeField] float chaseSpeed = 4f;
 
-    [SerializeField]
-    private float attackRange = 10f;
-    [SerializeField]
-    private float attackSpeed = 5f;
-    [SerializeField]
-    private float attackRate = .3f;
-    [SerializeField]
-    private int attackDamage = 5;
-    [SerializeField]
-    private ChargeCollider chargeColPrefab;
+    [SerializeField] float attackRange = 10f;
+    [SerializeField] float attackSpeed = 5f;
+    [SerializeField] float attackRate = .3f;
+    [SerializeField] int attackDamage = 5;
+    [SerializeField] ChargeCollider chargeColPrefab;
 
-    private float attackTime;
-    private bool charging = false;
-    private Vector2 chargeDirection;
-    private Rigidbody2D body;
+    float attackTime;
+    bool charging = false;
+    Vector2 chargeDirection;
+    Rigidbody2D body;
 
     private void Awake()
     {

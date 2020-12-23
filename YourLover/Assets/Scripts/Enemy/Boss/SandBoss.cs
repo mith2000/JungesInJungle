@@ -4,26 +4,24 @@ using UnityEngine;
 
 public class SandBoss : MonoBehaviour
 {
-    [SerializeField]
-    private Boss brain;
+    [SerializeField] Boss brain;
 
-    private float attackRate = 0.3f;
-    private float attackTime;
+    float attackRate = 0.3f;
+    float attackTime;
 
-    [SerializeField]
-    private Transform shotPoint;
-    [SerializeField]
-    private GameObject hakiBullet;
-    private int hakiBulletCount = 12;
-    private float delayPerBullet = 0.1f;
+    [Header ("Radiate Skill")]
+    [SerializeField] Transform shotPoint;
+    [SerializeField] GameObject hakiBullet;
+    int hakiBulletCount = 12;
+    float delayPerBullet = 0.1f;
 
-    [SerializeField]
-    private GameObject magneticField;
+    [Header ("Magnetic Field Skill")]
+    [SerializeField] GameObject magneticField;
 
-    [SerializeField]
-    private GameObject underlingPrefab;
-    private int minNumberOfSummon = 2;
-    private int maxNumberOfSummon = 4;
+    [Header ("Summon Skill")]
+    [SerializeField] GameObject underlingPrefab;
+    int minNumberOfSummon = 2;
+    int maxNumberOfSummon = 4;
 
     void Update()
     {
@@ -32,7 +30,6 @@ public class SandBoss : MonoBehaviour
             attackTime = Time.time; //not action when dialoging
             return;
         }
-
 
         AttackTarget();
     }

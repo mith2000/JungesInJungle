@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class NextStageGate : MonoBehaviour
 {
-    private SceneLoader sceneLoader;
+    SceneLoader sceneLoader;
 
     private void Awake()
     {

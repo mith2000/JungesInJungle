@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class HitableObjects : MonoBehaviour
 {
-    [SerializeField]
     public int health = 1;
 
     public virtual void TakeDamage(int damageAmount)

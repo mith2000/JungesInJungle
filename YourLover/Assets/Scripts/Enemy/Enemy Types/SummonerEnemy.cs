@@ -4,13 +4,12 @@ using UnityEngine;
 
 public class SummonerEnemy : Enemy
 {
-    [SerializeField]
-    private float summonRate;
+    [Header ("Summon Settings")]
+    [SerializeField] float summonRate;
 
-    private float summonTime;
+    float summonTime;
 
-    [SerializeField]
-    private GameObject[] summonedPrefabs;
+    [SerializeField] GameObject[] summonedPrefabs;
 
     public override void Start()
     {
