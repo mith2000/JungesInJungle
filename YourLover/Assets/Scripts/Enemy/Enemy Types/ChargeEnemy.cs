@@ -45,7 +45,8 @@ public class ChargeEnemy : Enemy
     public override void Update()
     {
         base.Update();
-        if (target == null) return;
+        if (target == null ||
+            targetPlayer.GetComponent<PlayerInfo>().currentHealth <= 0) return;
 
         Chase();
         Charge();

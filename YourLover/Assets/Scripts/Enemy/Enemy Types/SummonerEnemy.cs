@@ -27,7 +27,8 @@ public class SummonerEnemy : Enemy
 
     private void SummonWhenTargetAlive()
     {
-        if (target != null)
+        if (target != null &&
+            targetPlayer.GetComponent<PlayerInfo>().currentHealth > 0)
         {
             if (Time.time - summonTime >= 1 / summonRate)
             {

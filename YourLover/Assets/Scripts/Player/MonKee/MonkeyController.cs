@@ -45,7 +45,8 @@ public class MonkeyController : PlayerController
             clonePos.y = Random.Range(-2f, -1f);
         else
             clonePos.y = Random.Range(2f, 1f);
-        Instantiate(clone, transform.position + clonePos, Quaternion.identity);
+        GameObject monkeyClone = Instantiate(clone, transform.position + clonePos, Quaternion.identity);
+        monkeyClone.GetComponent<MonkeyClone>().parent = gameObject;
     }
 
 }

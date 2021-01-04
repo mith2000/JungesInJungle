@@ -25,7 +25,7 @@ public class MonkeyClone : Entity
     Animator anim;
 
     GameObject target;
-    GameObject parent;
+    [HideInInspector] public GameObject parent;
     float followParentDistance = 2f;
     float maxDistanceBtwParent = 12.5f;
     float flipYAmount = 180f;
@@ -36,12 +36,10 @@ public class MonkeyClone : Entity
         physicBody = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
         InvokeRepeating("FindClosestEnemy", 0f, 2f);
-        parent = GameObject.FindGameObjectWithTag("Player");
     }
 
-    public override void Update()
+    public void Update()
     {
-        base.Update();
         Walking();
         FlipSprite();
     }

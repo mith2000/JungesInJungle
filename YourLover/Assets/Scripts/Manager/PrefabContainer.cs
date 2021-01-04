@@ -12,6 +12,7 @@ public class PrefabContainer : MonoBehaviour
 
     [Header ("Canvas Prefab")]
     public GameObject damageInfoPrefab;
+    public GameObject deadCanvasPrefab;
 
     private void Awake()
     {

@@ -16,6 +16,7 @@ public class Aimer : MonoBehaviour
     float shotTime;
     float attackRate = 6f;
     int shotCost = 30;
+    Vector2 shootDirection;
 
     void Update()
     {
@@ -44,8 +45,8 @@ public class Aimer : MonoBehaviour
 
     void RotateBaseOnJoystick()
     {
-        Vector2 direction = new Vector2(aimJoystick.Horizontal, aimJoystick.Vertical);
-        float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
+        shootDirection = new Vector2(aimJoystick.Horizontal, aimJoystick.Vertical);
+        float angle = Mathf.Atan2(shootDirection.y, shootDirection.x) * Mathf.Rad2Deg;
         Quaternion rotation = Quaternion.AngleAxis(angle - 90, Vector3.forward);
         transform.rotation = rotation;
     }
@@ -73,5 +74,24 @@ public class Aimer : MonoBehaviour
     public virtual void Shoot()
     {
         Instantiate(projectile, shotPoint.position, transform.rotation);
+        FlipPlayerByShoot();
+        AnimateAttack();
+    }
+
+    public void FlipPlayerByShoot()
+    {
+        if (shootDirection.x < 0)
+        {
+            StartCoroutine(playerController.FlipByShoot(false));
+        }
+        else
+        {
+            StartCoroutine(playerController.FlipByShoot(true));
+        }
+    }
+
+    public void AnimateAttack()
+    {
+        playerController.anim.SetTrigger("Attack");
     }
 }

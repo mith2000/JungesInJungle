@@ -35,7 +35,8 @@ public class MachineGunEnemy : Enemy
 
     private void AttackTarget()
     {
-        if (target != null)
+        if (target != null &&
+            targetPlayer.GetComponent<PlayerInfo>().currentHealth > 0)
         {
             if (Vector2.Distance(transform.position, target.position) <= actionRange)
             {

@@ -36,7 +36,8 @@ public class SandBoss : MonoBehaviour
 
     private void AttackTarget()
     {
-        if (brain.target != null)
+        if (brain.target != null &&
+            brain.targetPlayer.GetComponent<PlayerInfo>().currentHealth > 0)
         {
             if (Time.time - attackTime >= 1 / attackRate)
             {

@@ -19,5 +19,7 @@ public class ShotgunAimer : Aimer
                 transform.eulerAngles.z + addedOffset);
             Instantiate(projectile, shotPoint.position, newRot);
         }
+        FlipPlayerByShoot();
+        AnimateAttack();
     }
 }

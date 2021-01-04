@@ -24,7 +24,7 @@ public class PlayerController : MonoBehaviour
     protected GameObject interactObject;
 
     protected Rigidbody2D physicBody;
-    protected Animator anim;
+    [HideInInspector] public Animator anim;
 
     protected Vector2 direction;
     protected Vector2 saveDirection;
@@ -32,6 +32,7 @@ public class PlayerController : MonoBehaviour
 
     [HideInInspector] public bool isStunned = false;
 
+    bool isShooting = false;
     float flipYAmount = 180f;
 
     private void Awake()
@@ -104,16 +105,31 @@ public class PlayerController : MonoBehaviour
 
     public void FlipSprite()
     {
-        if (moveJoystick == null || isStunned) return;
+        if (moveJoystick == null || isStunned || isShooting) return;
 
-        if (moveJoystick.Horizontal > 0) //(Input.GetKeyDown(KeyCode.D) || Input.GetKeyDown(KeyCode.RightArrow))
+        if (moveJoystick.Horizontal > 0)
         {
             transform.rotation = new Quaternion(0, 0, 0, 1);
         }
-        else if (moveJoystick.Horizontal < 0) //(Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.LeftArrow))
+        else if (moveJoystick.Horizontal < 0)
         {
             transform.rotation = new Quaternion(0, flipYAmount, 0, 1);
         }
+    }
+
+    public IEnumerator FlipByShoot(bool isFaceToRight)
+    {
+        isShooting = true;
+        if (isFaceToRight)
+        {
+            transform.rotation = new Quaternion(0, 0, 0, 1);
+        }
+        else
+        {
+            transform.rotation = new Quaternion(0, flipYAmount, 0, 1);
+        }
+        yield return new WaitForSeconds(.2f);
+        isShooting = false;
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -166,6 +182,8 @@ public class PlayerController : MonoBehaviour
             {
                 info.ApplyHealth(-interactObject.GetComponent<HealthPotion>().healthAmount);
                 interactObject.GetComponent<HealthPotion>().DestroyPotion();
+                GameObject dmgInfo = Instantiate(PrefabContainer.GetInstance().damageInfoPrefab, transform.position, Quaternion.identity);
+                dmgInfo.GetComponent<DamageInfo>().damage = "+" + interactObject.GetComponent<HealthPotion>().healthAmount;
             }
         }
         else if (interactObject.tag == "HealthCrystal")

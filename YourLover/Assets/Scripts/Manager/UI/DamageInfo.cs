@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class DamageInfo : MonoBehaviour
 {
-    [SerializeField] Text text;
+    public Text text;
     public string damage;
 
     void Start()

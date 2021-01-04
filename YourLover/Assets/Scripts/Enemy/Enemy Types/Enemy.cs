@@ -89,9 +89,8 @@ public class Enemy : Entity
     }
     #endregion
 
-    public override void Update()
+    public virtual void Update()
     {
-        base.Update();
         CheckDied();
     }
 
@@ -99,6 +98,7 @@ public class Enemy : Entity
     {
         currentHealth = Mathf.Min(currentHealth - damageAmount, maxHealth);
         healthBar.value = maxHealth - currentHealth;
+        ShowDamage(damageAmount.ToString());
     }
 
     public void CheckDied()

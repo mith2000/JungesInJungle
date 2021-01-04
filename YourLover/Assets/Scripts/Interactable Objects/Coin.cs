@@ -50,6 +50,9 @@ public class Coin : MonoBehaviour
         if (collision.CompareTag("Player"))
         {
             collision.GetComponent<PlayerInfo>().ApplyCoin(coinValue);
+            GameObject dmgInfo = Instantiate(PrefabContainer.GetInstance().damageInfoPrefab, transform.position, Quaternion.identity);
+            dmgInfo.GetComponent<DamageInfo>().damage = "+" + coinValue;
+            dmgInfo.GetComponent<DamageInfo>().text.color = new Color(255, 255, 0);
             DestroyCoin();
         }
     }

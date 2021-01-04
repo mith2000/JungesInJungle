@@ -120,6 +120,7 @@ MonoBehaviour:
   continueButton: {fileID: 7207784660716951004}
   background: {fileID: 7207784659847235367}
   container: {fileID: 6079397086359715343, guid: 20fb629ed78b13c4b94ad70e221bd3da, type: 3}
+  isInDialog: 0
 --- !u!95 &7207784659160478464
 Animator:
   serializedVersion: 3
@@ -174,7 +175,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 238.1315}
-  m_SizeDelta: {x: 1520, y: 400}
+  m_SizeDelta: {x: 1820, y: 400}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7207784659847235386
 CanvasRenderer:
@@ -204,7 +205,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 1d2af3941d93ccd4f9dfb25f97cf41c1, type: 3}
+  m_Sprite: {fileID: 21300000, guid: f66b0f32874b93e4885dd46c2740b537, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1

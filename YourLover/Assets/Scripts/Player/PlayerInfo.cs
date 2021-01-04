@@ -32,6 +32,9 @@ public class PlayerInfo : Entity
     public int currentCoin = 0;
     [SerializeField] Text coinText;
 
+    PlayerController controller;
+    Collider2D collider;
+
     [HideInInspector]public bool isGotSeriousInjury = false;
     float woundRecoveryTime = 0.5f;
 
@@ -76,11 +79,13 @@ public class PlayerInfo : Entity
         currentArmor = maxArmor;
         armorBar.maxValue = maxArmor;
         armorBar.value = 0;
+
+        controller = GetComponent<PlayerController>();
+        collider = GetComponent<Collider2D>();
     }
 
-    public override void Update()
+    public void Update()
     {
-        base.Update();
         RegenEnergy();
         DisplayEnergyByBar();
         RegenArmor();
@@ -136,7 +141,8 @@ public class PlayerInfo : Entity
 
     private void RegenArmor()
     {
-        if (currentArmor < maxArmor)
+        if (currentArmor < maxArmor &&
+            currentHealth > 0)
         {
             //check if player is in non-combat state
             if (Time.time >= armorRegenStartTime)
@@ -155,6 +161,7 @@ public class PlayerInfo : Entity
     public override void TakeDamage(int damageAmount)
     {
         ResetDelayStartRegenArmor();
+        ShowDamage(damageAmount.ToString());
         if (currentArmor >= damageAmount)
         {
             currentArmor -= damageAmount;
@@ -179,8 +186,10 @@ public class PlayerInfo : Entity
         healthBar.value = maxHealth - currentHealth;
         if (currentHealth <= 0)
         {
-            //Die action
-            //Destroy(gameObject);
+            controller.UnableControl();
+            collider.enabled = false;
+
+            Instantiate(PrefabContainer.GetInstance().deadCanvasPrefab, Vector3.zero, Quaternion.identity);
         }
     }
 
