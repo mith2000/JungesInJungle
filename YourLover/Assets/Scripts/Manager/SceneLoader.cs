@@ -27,7 +27,7 @@ public class SceneLoader : MonoBehaviour
 
         SceneManager.LoadScene(levelIndex);
         Debug.Log("Checking What Stage ... ");
-        GameMaster.GetInstance().checkStage = true;
+        GameMaster.GetInstance().WhatCurrentStage();
     }
 
     public void LoadSceneName(string scene)
@@ -48,7 +48,7 @@ public class SceneLoader : MonoBehaviour
 
         SceneManager.LoadSceneAsync(2);
         Debug.Log("Checking What Stage ... ");
-        GameMaster.GetInstance().checkStage = true;
+        GameMaster.GetInstance().WhatCurrentStage();
     }
 
     public void BackToLobby_OnClick()

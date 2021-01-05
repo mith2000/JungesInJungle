@@ -8,7 +8,13 @@ public class PlayGate : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            GameMaster.GetInstance().enter = true;
+            StartCoroutine(DelayEnter());
         }
+    }
+
+    IEnumerator DelayEnter()
+    {
+        yield return new WaitForSeconds(.5f);
+        GameMaster.GetInstance().StartGame();
     }
 }

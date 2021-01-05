@@ -50,5 +50,10 @@ public class BasicProjectile : MonoBehaviour
         {
             Explode();
         }
+        if (collision.CompareTag("Crafts"))
+        {
+            collision.GetComponent<HitableObjects>().TakeDamage(damage);
+            Explode();
+        }
     }
 }

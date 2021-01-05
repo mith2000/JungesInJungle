@@ -12,10 +12,7 @@ public class GameMaster : MonoBehaviour
     public PlayerStatSaver playerStat = new PlayerStatSaver();
     public int maxCrystalPlayerUse = 4;
 
-    public bool checkStage = false;
     public Stages currentStage;
-
-    public bool enter = false;
 
     private void Awake()
     {
@@ -36,37 +33,17 @@ public class GameMaster : MonoBehaviour
         return instance;
     }
 
-    private void Update()
+    public void StartGame()
     {
-        if (SceneManager.GetActiveScene().buildIndex <= 1)
-        {
-            CheckEntered();
-        }
-        else
-        {
-            if (checkStage)
-            {
-                WhatCurrentStage();
-            }
-        }
+        SceneLoader sceneLoader = GameObject.FindGameObjectWithTag("SceneLoader").GetComponent<SceneLoader>();
 
+        StartCoroutine(sceneLoader.StartGame());
+        Debug.Log("Game ON !!");
     }
 
-    private void CheckEntered()
+    public Stages WhatCurrentStage()
     {
-        if (enter)
-        {
-            SceneLoader sceneLoader = GameObject.FindGameObjectWithTag("SceneLoader").GetComponent<SceneLoader>();
-
-            StartCoroutine(sceneLoader.StartGame());
-            Debug.Log("Game ON !!");
-            enter = false;
-        }
-    }
-
-    private void WhatCurrentStage()
-    {
-        switch (SceneManager.GetActiveScene().buildIndex)
+        switch (SceneManager.GetActiveScene().buildIndex + 1)
         {
             case 2:
                 currentStage = Stages.Stage_1_1;
@@ -117,7 +94,7 @@ public class GameMaster : MonoBehaviour
                 break;
         }
         Debug.Log("Stage Checked");
-        checkStage = false;
+        return currentStage;
     }
 
     public void SavePlayerInfo(PlayerInfo info)

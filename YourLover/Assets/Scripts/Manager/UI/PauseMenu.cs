@@ -4,8 +4,6 @@ using UnityEngine;
 
 public class PauseMenu : MonoBehaviour
 {
-    public static bool gamePause = false;
-
     [SerializeField] GameObject UI;
     [SerializeField] GameObject pauseButton;
     GameObject playerController;
@@ -17,21 +15,6 @@ public class PauseMenu : MonoBehaviour
         sceneLoader = GameObject.FindGameObjectWithTag("SceneLoader").GetComponent<SceneLoader>();
     }
 
-    void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.P))
-        {
-            if (gamePause)
-            {
-                ResumeGame_OnClick();
-            }
-            else
-            {
-                PauseGame_OnClick();
-            }
-        }
-    }
-
     public void PauseGame_OnClick()
     {
         UI.SetActive(true);
@@ -39,7 +22,6 @@ public class PauseMenu : MonoBehaviour
         playerController = GameObject.FindGameObjectWithTag("Player");
         playerController.GetComponent<PlayerController>().UnableControl();
         Time.timeScale = 0f;
-        gamePause = true;
     }
 
     public void ResumeGame_OnClick()
@@ -49,7 +31,6 @@ public class PauseMenu : MonoBehaviour
         pauseButton.SetActive(true);
         playerController.GetComponent<PlayerController>().EnableControl();
         Time.timeScale = 1f;
-        gamePause = false;
     }
 
     public void QuitGame_OnClick()

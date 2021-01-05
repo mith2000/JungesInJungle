@@ -21,5 +21,9 @@ public class Laser : AimLine
                 _hit.collider.GetComponent<PlayerInfo>().RecoveryFromOther();
             }
         }
+        if (_hit.collider.CompareTag("MonkeyClone"))
+        {
+            _hit.collider.GetComponent<Entity>().TakeDamage(damage);
+        }
     }
 }

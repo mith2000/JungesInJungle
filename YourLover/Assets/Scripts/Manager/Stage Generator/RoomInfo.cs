@@ -58,9 +58,16 @@ public class RoomInfo : MonoBehaviour
             Instantiate(bossRoomMinimapIcon, transform.position, Quaternion.identity);
 
         //If not first room and boss room, instantiate obstacles
-        if (!specialRoom && !isBossRoom)
+        if (!specialRoom)
         {
-            GenerateObstacle();
+            if (!isBossRoom)
+            {
+                GenerateObstacle();
+            }
+            else
+            {
+                RandomObstacleBossRoom();
+            }
         }
     }
 
@@ -326,6 +333,27 @@ public class RoomInfo : MonoBehaviour
             Instantiate(obstacleScript.urbanObstacleGroups[rand], transform.position, Quaternion.identity);
         }
     }
+    private void RandomObstacleBossRoom()
+    {
+        if (GameMaster.GetInstance().currentStage == GameMaster.Stages.Stage_1_5)
+        {
+            if (ThemeManager.GetInstance().stage1Theme == ThemeManager.Stage1Themes.Forest)
+            {
+                Instantiate(obstacleScript.forestBossOG, transform.position, Quaternion.identity);
+            }
+            else if (ThemeManager.GetInstance().stage1Theme == ThemeManager.Stage1Themes.Sand)
+            {
+                Instantiate(obstacleScript.sandBossOG, transform.position, Quaternion.identity);
+            }
+        }
+        else if(GameMaster.GetInstance().currentStage == GameMaster.Stages.Stage_2_5)
+        {
+            if (ThemeManager.GetInstance().stage2Theme == ThemeManager.Stage2Themes.Urban)
+            {
+                Instantiate(obstacleScript.urbanBossOG, transform.position, Quaternion.identity);
+            }
+        }
+    }
     #endregion
 
     private void Update()
@@ -377,5 +405,6 @@ public class RoomInfo : MonoBehaviour
             doorRight.GetComponent<Animator>().SetTrigger("Open");
         }
         minimap.SetActive(true);
+        Destroy(gameObject);
     }
 }

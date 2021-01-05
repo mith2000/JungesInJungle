@@ -45,7 +45,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   forestObstacleGroups:
   - {fileID: 2743827771529694682, guid: ebc0d0baad556964fb2ebff733e2a6db, type: 3}
+  - {fileID: 2743827771529694682, guid: bf5ff7e97f8d89140afebf69e17272d8, type: 3}
+  - {fileID: 2743827771529694682, guid: 67e7e110353d5ec4d80d244b501c165e, type: 3}
+  - {fileID: 2743827771529694682, guid: c9b1ca2666f6a7249b92931e1b885708, type: 3}
   sandObstacleGroups:
-  - {fileID: 2743827771529694682, guid: ebc0d0baad556964fb2ebff733e2a6db, type: 3}
+  - {fileID: 2743827771529694682, guid: db39729ea12ace34d97a0149435f2347, type: 3}
+  - {fileID: 2743827771529694682, guid: 2a087b5579d50174a88a197d0215b887, type: 3}
+  - {fileID: 2743827771529694682, guid: 3614ebf30466a13418d03afbc4eb4e44, type: 3}
+  - {fileID: 2743827771529694682, guid: 40cfb7fb868145244b5c01eb0290f383, type: 3}
   urbanObstacleGroups:
-  - {fileID: 2743827771529694682, guid: ebc0d0baad556964fb2ebff733e2a6db, type: 3}
+  - {fileID: 2743827771529694682, guid: b8f950cd374804e498dec1a000c963ef, type: 3}
+  - {fileID: 2743827771529694682, guid: a09b9db9d03d3bb42ae1d0d96e0077be, type: 3}
+  - {fileID: 2743827771529694682, guid: 13508fe4351fedc4eb1d5ba83e5d3059, type: 3}
+  - {fileID: 2743827771529694682, guid: 629f27e8b1a31d04b8d91d6a7cc625bb, type: 3}
+  forestBossOG: {fileID: 2743827771529694682, guid: 96854f4a5b1759949b0d397ac3fb127d, type: 3}
+  sandBossOG: {fileID: 2743827771529694682, guid: b870897ea67b39240a8a50794630f4c3, type: 3}
+  urbanBossOG: {fileID: 2743827771529694682, guid: 8ec06f6782477ac43bab2ba8d47d79e6, type: 3}
