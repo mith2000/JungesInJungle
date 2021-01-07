@@ -58,6 +58,7 @@ public class DialogSystem : MonoBehaviour
 
     IEnumerator Type()
     {
+        AudioManager.GetInstance().Play("DialogShow");
         anim.SetTrigger("Change");
         background.SetActive(true);
 

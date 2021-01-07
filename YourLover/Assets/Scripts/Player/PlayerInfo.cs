@@ -186,6 +186,7 @@ public class PlayerInfo : Entity
         healthBar.value = maxHealth - currentHealth;
         if (currentHealth <= 0)
         {
+            AudioManager.GetInstance().Play("GameOver");
             controller.UnableControl();
             collider.enabled = false;
 

@@ -21,6 +21,7 @@ public class SceneLoader : MonoBehaviour
 
     public IEnumerator LoadScene(int levelIndex)
     {
+        AudioManager.GetInstance().Play("SceneTransit");
         anim.SetTrigger("Start");
 
         yield return new WaitForSeconds(transitionTime);

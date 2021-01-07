@@ -39,6 +39,8 @@ public class GameMaster : MonoBehaviour
 
         StartCoroutine(sceneLoader.StartGame());
         Debug.Log("Game ON !!");
+
+        AudioManager.GetInstance().Play("GameBackgroundMusic", false);
     }
 
     public Stages WhatCurrentStage()

@@ -124,6 +124,7 @@ public class MonkeyClone : Entity
 
     IEnumerator Attack()
     {
+        AudioManager.GetInstance().Play("MonKeeCloneAttack");
         anim.SetTrigger("Attack");
         target.GetComponent<Enemy>().TakeDamage(attackDamage);
 

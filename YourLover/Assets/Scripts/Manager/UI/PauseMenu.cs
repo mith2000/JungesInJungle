@@ -22,19 +22,21 @@ public class PauseMenu : MonoBehaviour
         playerController = GameObject.FindGameObjectWithTag("Player");
         playerController.GetComponent<PlayerController>().UnableControl();
         Time.timeScale = 0f;
+        AudioManager.GetInstance().Pause("GameBackgroundMusic");
     }
 
     public void ResumeGame_OnClick()
     {
-        //FindObjectOfType<AudioManager>().Play("Click", true);
         UI.SetActive(false);
         pauseButton.SetActive(true);
         playerController.GetComponent<PlayerController>().EnableControl();
         Time.timeScale = 1f;
+        AudioManager.GetInstance().UnPause("GameBackgroundMusic");
     }
 
     public void QuitGame_OnClick()
     {
+        AudioManager.GetInstance().Play("Click");
         Time.timeScale = 1f;
         StartCoroutine(sceneLoader.LoadScene(0));
     }

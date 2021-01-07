@@ -67,6 +67,17 @@ public class Aimer : MonoBehaviour
                         shotTime = Time.time;
                     }
                 }
+                else
+                {
+                    if (GameMaster.GetInstance().playerRole == GameMaster.CharacterRole.Monkey)
+                    {
+                        AudioManager.GetInstance().Play("MonKeeReload");
+                    }
+                    else if (GameMaster.GetInstance().playerRole == GameMaster.CharacterRole.Cat)
+                    {
+                        AudioManager.GetInstance().Play("MonKeeReload");
+                    }
+                }
             }
         }
     }

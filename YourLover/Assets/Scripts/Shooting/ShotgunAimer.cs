@@ -10,6 +10,8 @@ public class ShotgunAimer : Aimer
 
     public override void Shoot()
     {
+        AudioManager.GetInstance().Play("MonKeeAttack");
+
         Quaternion newRot = transform.rotation;
         for (int i = 0; i < shotgunBulletCount; i++)
         {

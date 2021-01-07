@@ -27,15 +27,26 @@ public class MonkeyController : PlayerController
         if (!skillCooldownScript.CanUseSkill() || 
             GameObject.FindGameObjectWithTag("MonkeyClone") != null) return;
 
+        int rand = Random.Range(0, 100);
+        if (rand <= 50)
+        {
+            AudioManager.GetInstance().Play("MonKeeSummon1");
+        }
+        else
+        {
+            AudioManager.GetInstance().Play("MonKeeSummon2");
+        }
+
         anim.SetTrigger("Skill");
 
         skillCooldownScript.isCooldown = true;
 
-        MonkeeInstantiateClone();
+        StartCoroutine(MonkeeInstantiateClone());
     }
 
-    void MonkeeInstantiateClone()
+    IEnumerator MonkeeInstantiateClone()
     {
+        yield return new WaitForSeconds(.8f);
         Vector3 clonePos = Vector3.zero;
         if (Random.Range(0, 100) < 50)
             clonePos.x = Random.Range(-2f, -1f);

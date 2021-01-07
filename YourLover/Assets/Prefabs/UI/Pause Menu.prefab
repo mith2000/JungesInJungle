@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 4765793237712597321}
   - component: {fileID: 4765793237712597320}
   - component: {fileID: 4765793237712597327}
+  - component: {fileID: 2652404174409572124}
   m_Layer: 5
   m_Name: Resume Button
   m_TagString: Untagged
@@ -131,6 +132,30 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 2652404174409572124}
+        m_TargetAssemblyTypeName: ButtonSound, Assembly-CSharp
+        m_MethodName: PlayClickSound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &2652404174409572124
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4765793237712597325}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3dcc65960fdd9241be0307d51004492, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &4765793237719402627
 GameObject:
   m_ObjectHideFlags: 0
@@ -143,6 +168,7 @@ GameObject:
   - component: {fileID: 4765793237719402654}
   - component: {fileID: 4765793237719402653}
   - component: {fileID: 4765793237719402652}
+  - component: {fileID: 3227785256895567076}
   m_Layer: 5
   m_Name: Pause Button
   m_TagString: Untagged
@@ -262,6 +288,30 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 3227785256895567076}
+        m_TargetAssemblyTypeName: ButtonSound, Assembly-CSharp
+        m_MethodName: PlayClickSound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &3227785256895567076
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4765793237719402627}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3dcc65960fdd9241be0307d51004492, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &4765793237766683413
 GameObject:
   m_ObjectHideFlags: 0
@@ -466,6 +516,7 @@ GameObject:
   - component: {fileID: 4765793238825460545}
   - component: {fileID: 4765793238825460544}
   - component: {fileID: 4765793238825460551}
+  - component: {fileID: 9037585963536365076}
   m_Layer: 5
   m_Name: Quit Button
   m_TagString: Untagged
@@ -585,3 +636,27 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 2652404174409572124}
+        m_TargetAssemblyTypeName: ButtonSound, Assembly-CSharp
+        m_MethodName: PlayClickSound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &9037585963536365076
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4765793238825460549}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3dcc65960fdd9241be0307d51004492, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

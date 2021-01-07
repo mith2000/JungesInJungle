@@ -8,6 +8,7 @@ public class PlayGate : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
+            AudioManager.GetInstance().Play("GameStart");
             StartCoroutine(DelayEnter());
         }
     }
