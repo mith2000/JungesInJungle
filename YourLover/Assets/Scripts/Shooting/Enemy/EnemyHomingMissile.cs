@@ -7,6 +7,7 @@ public class EnemyHomingMissile : HomingMissile
     public override void Start()
     {
         base.Start();
+        AudioManager.GetInstance().Play("EnemyMissile");
         FindTarget();
     }
 
@@ -38,6 +39,7 @@ public class EnemyHomingMissile : HomingMissile
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        AudioManager.GetInstance().Play("EnemyMissileHit");
         if (collision.CompareTag("Player"))
         {
             if (!collision.GetComponent<PlayerInfo>().isGotSeriousInjury)

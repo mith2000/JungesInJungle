@@ -13,6 +13,7 @@ public class EnemyStunProjectile : EnemyProjectile
         {
             if (collision.CompareTag("Player"))
             {
+                AudioManager.GetInstance().Play("PlayerStun");
                 collision.GetComponent<PlayerInfo>().TakeDamage(damage);
                 collision.GetComponent<PlayerController>().isStunned = true;
                 collision.GetComponent<PlayerController>().UnStunFromOther(stunDuration);

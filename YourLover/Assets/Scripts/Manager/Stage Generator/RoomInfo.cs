@@ -77,6 +77,8 @@ public class RoomInfo : MonoBehaviour
 
         if (collision.CompareTag("Player"))
         {
+            AudioManager.GetInstance().Play("CloseDoor");
+
             #region Close doors
             if (hasDoorTop)
             {
@@ -109,6 +111,8 @@ public class RoomInfo : MonoBehaviour
 
     private void GenerateBoss()
     {
+        AudioManager.GetInstance().Stop("GameBackgroundMusic");
+        AudioManager.GetInstance().Play("FightBoss", false);
         if (GameMaster.GetInstance().currentStage == GameMaster.Stages.Stage_1_5)
         {
             if (ThemeManager.GetInstance().stage1Theme == ThemeManager.Stage1Themes.Forest)
@@ -141,6 +145,9 @@ public class RoomInfo : MonoBehaviour
 
     private void BossSlayed()
     {
+        AudioManager.GetInstance().Stop("FightBoss");
+        AudioManager.GetInstance().Play("EndBoss");
+        AudioManager.GetInstance().Play("GameBackgroundMusic", false);
         isStartFightBoss = false;
         Instantiate(portal, transform.position, Quaternion.identity);
 

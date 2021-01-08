@@ -303,6 +303,284 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 503b3de52b11e434c81dc61ed4d008e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1040420727
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1040420729}
+  - component: {fileID: 1040420728}
+  m_Layer: 0
+  m_Name: Audio Manager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1040420728
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1040420727}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3c69f52bdd1cd24bb56ec05ca754cde, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sounds:
+  - name: GameBackgroundMusic
+    clip: {fileID: 8300000, guid: 328b16435e81c9d41926938029e436a8, type: 3}
+    loop: 1
+    volume: 0.5
+    pitch: 1
+    source: {fileID: 0}
+  - name: TitleSong
+    clip: {fileID: 8300000, guid: 3be649410e0c8a34e9500f160e02e072, type: 3}
+    loop: 1
+    volume: 0.5
+    pitch: 1
+    source: {fileID: 0}
+  - name: LobbySong
+    clip: {fileID: 8300000, guid: 7c582353f06dd974eb23791f5de516c4, type: 3}
+    loop: 1
+    volume: 0.5
+    pitch: 1
+    source: {fileID: 0}
+  - name: EndSong
+    clip: {fileID: 8300000, guid: 0f2c1fd134faf1245acb92542e2827f1, type: 3}
+    loop: 1
+    volume: 0.5
+    pitch: 1
+    source: {fileID: 0}
+  - name: FightBoss
+    clip: {fileID: 8300000, guid: 9c5c75019959fd447805924865f9dcdb, type: 3}
+    loop: 1
+    volume: 0.5
+    pitch: 1
+    source: {fileID: 0}
+  - name: MonKeeAttack
+    clip: {fileID: 8300000, guid: aacf79e1f2f2b024597502ac642bc09b, type: 3}
+    loop: 0
+    volume: 1
+    pitch: 1
+    source: {fileID: 0}
+  - name: MonKeeReload
+    clip: {fileID: 8300000, guid: 204d4c44c5e5d6c4b86d9c7d625fafd4, type: 3}
+    loop: 0
+    volume: 1
+    pitch: 1
+    source: {fileID: 0}
+  - name: MonKeeSummon1
+    clip: {fileID: 8300000, guid: 96dfef2d5f7dfce4d812d89d00b39688, type: 3}
+    loop: 0
+    volume: 1
+    pitch: 1
+    source: {fileID: 0}
+  - name: MonKeeSummon2
+    clip: {fileID: 8300000, guid: 617af04fe1ecc9242b8dae5dda9af31e, type: 3}
+    loop: 0
+    volume: 1
+    pitch: 1
+    source: {fileID: 0}
+  - name: MonKeeCloneAttack
+    clip: {fileID: 8300000, guid: 988d08eee3f4d9e448ab535949805f81, type: 3}
+    loop: 0
+    volume: 1
+    pitch: 1
+    source: {fileID: 0}
+  - name: KatAttack
+    clip: {fileID: 8300000, guid: 578e1c9c9b1dd554780559dbd0e37dbc, type: 3}
+    loop: 0
+    volume: 1
+    pitch: 1
+    source: {fileID: 0}
+  - name: KatReload
+    clip: {fileID: 8300000, guid: f57152bfa0e597a4cabf2de584487d6d, type: 3}
+    loop: 0
+    volume: 1
+    pitch: 1
+    source: {fileID: 0}
+  - name: KatSkill1
+    clip: {fileID: 8300000, guid: 82de8a8cce5d6b94b861566531c54451, type: 3}
+    loop: 0
+    volume: 1
+    pitch: 1
+    source: {fileID: 0}
+  - name: KatSkill2
+    clip: {fileID: 8300000, guid: f274320dbf4727b4aace5f6df13d4e20, type: 3}
+    loop: 0
+    volume: 1
+    pitch: 1
+    source: {fileID: 0}
+  - name: Click
+    clip: {fileID: 8300000, guid: e0775e7b9d070bf49b0b5b63e4191db9, type: 3}
+    loop: 0
+    volume: 1
+    pitch: 1
+    source: {fileID: 0}
+  - name: CloseDoor
+    clip: {fileID: 8300000, guid: 7f6241e8e0ee74b4180316e39f66d182, type: 3}
+    loop: 0
+    volume: 1
+    pitch: 1
+    source: {fileID: 0}
+  - name: DialogShow
+    clip: {fileID: 8300000, guid: d2ccf275fbc4bf440844a751c56d47e1, type: 3}
+    loop: 0
+    volume: 1
+    pitch: 1
+    source: {fileID: 0}
+  - name: SceneTransit
+    clip: {fileID: 8300000, guid: 94c59387d6898ec4c9a8a5aa20f74299, type: 3}
+    loop: 0
+    volume: 1
+    pitch: 1
+    source: {fileID: 0}
+  - name: GameStart
+    clip: {fileID: 8300000, guid: 9262f3042f01f144f966dd3975ff5f3c, type: 3}
+    loop: 0
+    volume: 1
+    pitch: 1
+    source: {fileID: 0}
+  - name: GameOver
+    clip: {fileID: 8300000, guid: e9111029c93f6f94a9d3df05175541f2, type: 3}
+    loop: 0
+    volume: 0.5
+    pitch: 1
+    source: {fileID: 0}
+  - name: Coin
+    clip: {fileID: 8300000, guid: a8f0bad19ce9f544b9256c11d509f849, type: 3}
+    loop: 0
+    volume: 1
+    pitch: 1
+    source: {fileID: 0}
+  - name: Crystal
+    clip: {fileID: 8300000, guid: 2c364d551ed9b964d8cf63c1f3150d7c, type: 3}
+    loop: 0
+    volume: 1
+    pitch: 1
+    source: {fileID: 0}
+  - name: HealthPotion
+    clip: {fileID: 8300000, guid: 84a073036a674d94d9c946b30c252cd2, type: 3}
+    loop: 0
+    volume: 1
+    pitch: 1
+    source: {fileID: 0}
+  - name: EnemyMelee
+    clip: {fileID: 8300000, guid: cd48e28385e68ea4bb50aee0be69126e, type: 3}
+    loop: 0
+    volume: 1
+    pitch: 1
+    source: {fileID: 0}
+  - name: EnemyRange
+    clip: {fileID: 8300000, guid: 8f2c0d204a0ebb64ea48498b660f3858, type: 3}
+    loop: 0
+    volume: 1
+    pitch: 1
+    source: {fileID: 0}
+  - name: EnemyMachineGun
+    clip: {fileID: 8300000, guid: 89a4eadaa630e814abef88cc803bb9db, type: 3}
+    loop: 0
+    volume: 1
+    pitch: 1
+    source: {fileID: 0}
+  - name: EnemySummon
+    clip: {fileID: 8300000, guid: b7d61c70d21d2c8449d3942906e3864f, type: 3}
+    loop: 0
+    volume: 1
+    pitch: 1
+    source: {fileID: 0}
+  - name: PlayerStun
+    clip: {fileID: 8300000, guid: dcdef4ccebd8c244da437fc107f7b604, type: 3}
+    loop: 0
+    volume: 1
+    pitch: 1
+    source: {fileID: 0}
+  - name: BombTick
+    clip: {fileID: 8300000, guid: 7880904083e00e244881409df02f9779, type: 3}
+    loop: 1
+    volume: 1
+    pitch: 1
+    source: {fileID: 0}
+  - name: BombExplode
+    clip: {fileID: 8300000, guid: bdf5d3cb93da8cf4ea32d5f771e66535, type: 3}
+    loop: 0
+    volume: 1
+    pitch: 1
+    source: {fileID: 0}
+  - name: MeteorFall
+    clip: {fileID: 8300000, guid: dc7a5da9ef7eb0342afcd84870aacb48, type: 3}
+    loop: 0
+    volume: 1
+    pitch: 1
+    source: {fileID: 0}
+  - name: EnemyMissile
+    clip: {fileID: 8300000, guid: 5a8db91b0988a1f44819def5511e61dd, type: 3}
+    loop: 0
+    volume: 1
+    pitch: 1
+    source: {fileID: 0}
+  - name: EnemyMissileHit
+    clip: {fileID: 8300000, guid: 55a9cce14730f6b469375872a94f1476, type: 3}
+    loop: 0
+    volume: 1
+    pitch: 1
+    source: {fileID: 0}
+  - name: EnemyCharge
+    clip: {fileID: 8300000, guid: 2ce8cb968c74ac84e92fa7abfe7ef92b, type: 3}
+    loop: 0
+    volume: 1
+    pitch: 1
+    source: {fileID: 0}
+  - name: EndBoss
+    clip: {fileID: 8300000, guid: 6af590796ea1f004d979ae230e70d698, type: 3}
+    loop: 0
+    volume: 1
+    pitch: 1
+    source: {fileID: 0}
+  - name: BossShotgun
+    clip: {fileID: 8300000, guid: 93fd834b316776b4dbcf6a93cfe3dd6f, type: 3}
+    loop: 0
+    volume: 1
+    pitch: 1
+    source: {fileID: 0}
+  - name: BossHaki
+    clip: {fileID: 8300000, guid: 876203c61c4f4f946b6e1192ac6201e8, type: 3}
+    loop: 0
+    volume: 1
+    pitch: 1
+    source: {fileID: 0}
+  - name: BossMagnetic
+    clip: {fileID: 8300000, guid: d3d6780362bc1fe4bb8f2e0cfcbcdc2b, type: 3}
+    loop: 0
+    volume: 1
+    pitch: 1
+    source: {fileID: 0}
+  - name: BossLaser
+    clip: {fileID: 8300000, guid: a5ec8c86b78394b49b04d24b725eb44a, type: 3}
+    loop: 0
+    volume: 1
+    pitch: 1
+    source: {fileID: 0}
+--- !u!4 &1040420729
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1040420727}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1197265446
 GameObject:
   m_ObjectHideFlags: 0
@@ -462,7 +740,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1027940507}
         m_TargetAssemblyTypeName: SceneLoader, Assembly-CSharp
-        m_MethodName: LoadNextScene
+        m_MethodName: EnterLobby
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -963,6 +1241,49 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1540552335}
   m_CullTransparentMesh: 0
+--- !u!1 &1682380523
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1682380524}
+  - component: {fileID: 1682380525}
+  m_Layer: 0
+  m_Name: Title Scene Control
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1682380524
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1682380523}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1682380525
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1682380523}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8bbbe3c5f04ddf64da7a21cc12a0e5bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &9079842658876539507
 PrefabInstance:
   m_ObjectHideFlags: 0

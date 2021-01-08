@@ -8,6 +8,7 @@ public class MeteorExplosion : MonoBehaviour
 
     public void DestroySelf()
     {
+        AudioManager.GetInstance().Play("BombExplode");
         Destroy(gameObject);
     }
 

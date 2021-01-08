@@ -38,6 +38,7 @@ public class EnemyMiniHomingMissile : EnemyHomingMissile
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        AudioManager.GetInstance().Play("EnemyMissileHit");
         if (collision.CompareTag("Player"))
         {
             if (!collision.GetComponent<PlayerInfo>().isGotSeriousInjury)

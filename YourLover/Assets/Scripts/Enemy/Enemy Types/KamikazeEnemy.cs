@@ -15,6 +15,8 @@ public class KamikazeEnemy : Enemy
         danger.GetComponent<Bomb>().isTaken = true;
         danger.GetComponent<Bomb>().ownerTransform = transform;
 
+        AudioManager.GetInstance().Play("BombTick");
+
         InvokeRepeating("FindTarget", 0f, 1f);
     }
 

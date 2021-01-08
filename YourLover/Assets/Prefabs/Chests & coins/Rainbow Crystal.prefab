@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 2524049422368834315}
   - component: {fileID: 6384942509443971508}
   - component: {fileID: 7741097874117906087}
-  m_Layer: 0
+  m_Layer: 15
   m_Name: Rainbow Crystal
   m_TagString: RainbowCrystal
   m_Icon: {fileID: 0}
@@ -71,7 +71,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1057214911
-  m_SortingLayer: 8
+  m_SortingLayer: 10
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 9968899a94c6c7e4aac8f97ea51099d0, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}

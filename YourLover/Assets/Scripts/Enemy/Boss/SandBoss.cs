@@ -75,6 +75,7 @@ public class SandBoss : MonoBehaviour
         Quaternion newRot = transform.rotation;
         for (int i = 0; i < hakiBulletCount; i++)
         {
+            AudioManager.GetInstance().Play("EnemyRange");
             float addedOffset = (i - (hakiBulletCount / 2)) * (360 / hakiBulletCount);
             newRot = Quaternion.Euler(shotPoint.transform.eulerAngles.x,
                 shotPoint.transform.eulerAngles.y,
@@ -87,6 +88,7 @@ public class SandBoss : MonoBehaviour
 
     private void PlaceMagneticField(Transform targetTransform)
     {
+        AudioManager.GetInstance().Play("BossMagnetic");
         brain.anim.SetTrigger("Stun");
 
         Instantiate(magneticField, targetTransform.position, Quaternion.identity);
@@ -99,6 +101,7 @@ public class SandBoss : MonoBehaviour
         int randNumberOfSummon = Random.Range(minNumberOfSummon, maxNumberOfSummon + 1);
         for (int i = 0; i < randNumberOfSummon; i++)
         {
+            AudioManager.GetInstance().Play("EnemySummon");
             Vector3 offsetPos = Vector3.zero;
             if (Random.Range(0, 100) < 50)
                 offsetPos.x = Random.Range(-1f, -1f);

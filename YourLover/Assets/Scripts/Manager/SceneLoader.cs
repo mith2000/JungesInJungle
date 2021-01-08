@@ -31,14 +31,24 @@ public class SceneLoader : MonoBehaviour
         GameMaster.GetInstance().WhatCurrentStage();
     }
 
-    public void LoadSceneName(string scene)
-    {
-        SceneManager.LoadScene(scene);
-    }
-
     public void QuitGame()
     {
         Application.Quit();
+    }
+
+    public void EnterLobby()
+    {
+        StartCoroutine(LoadLobbyScene());
+    }
+
+    IEnumerator LoadLobbyScene()
+    {
+        AudioManager.GetInstance().Play("SceneTransit");
+        anim.SetTrigger("Start");
+
+        yield return new WaitForSeconds(transitionTime);
+
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 
     public IEnumerator StartGame()
@@ -54,6 +64,8 @@ public class SceneLoader : MonoBehaviour
 
     public void BackToLobby_OnClick()
     {
+        AudioManager.GetInstance().Stop("EndSong");
+        AudioManager.GetInstance().Play("TitleSong", false);
         StartCoroutine(LoadScene(1));
     }
 }

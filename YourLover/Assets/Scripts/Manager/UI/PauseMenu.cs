@@ -37,6 +37,7 @@ public class PauseMenu : MonoBehaviour
     public void QuitGame_OnClick()
     {
         AudioManager.GetInstance().Play("Click");
+        AudioManager.GetInstance().Stop("GameBackgroundMusic");
         Time.timeScale = 1f;
         StartCoroutine(sceneLoader.LoadScene(0));
     }

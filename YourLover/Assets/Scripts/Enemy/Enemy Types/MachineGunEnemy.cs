@@ -51,6 +51,7 @@ public class MachineGunEnemy : Enemy
 
     public void Shoot(Transform targetTransform)
     {
+        AudioManager.GetInstance().Play("EnemyMachineGun");
         triggerAttack = true;
 
         StartCoroutine(MachineGunReleaseBullet(targetTransform));

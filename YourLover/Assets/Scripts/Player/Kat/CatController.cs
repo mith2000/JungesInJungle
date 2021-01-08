@@ -27,6 +27,16 @@ public class CatController : PlayerController
     {
         if (!skillCooldownScript.CanUseSkill()) return;
 
+        int rand = Random.Range(0, 100);
+        if (rand <= 50)
+        {
+            AudioManager.GetInstance().Play("KatSkill1");
+        }
+        else
+        {
+            AudioManager.GetInstance().Play("KatSkill2");
+        }
+
         anim.SetTrigger("Skill");
 
         skillCooldownScript.isCooldown = true;

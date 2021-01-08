@@ -49,6 +49,7 @@ public class MagneticField : MonoBehaviour
 
             if (currentTick == maxNumberOfTick)
             {
+                AudioManager.GetInstance().Play("PlayerStun");
                 canTick = false;
                 currentTick = 0;
                 collision.GetComponent<PlayerController>().isStunned = true;

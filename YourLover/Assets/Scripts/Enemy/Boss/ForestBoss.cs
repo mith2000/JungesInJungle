@@ -86,6 +86,7 @@ public class ForestBoss : MonoBehaviour
             else
                 offsetPos.y = Random.Range(1f, 1f);
 
+            AudioManager.GetInstance().Play("MeteorFall");
             Instantiate(castObject, targetTransform.position + offsetPos, Quaternion.identity);
 
             yield return new WaitForSeconds(1 / meteorRatePerCast);
@@ -103,6 +104,7 @@ public class ForestBoss : MonoBehaviour
         Quaternion newRot = transform.rotation;
         for (int j = 0; j < shootWave; j++)
         {
+            AudioManager.GetInstance().Play("BossShotgun");
             for (int i = 0; i < shotgunBulletCount; i++)
             {
                 float addedOffset = (i - (shotgunBulletCount / 2)) * spread;
@@ -126,6 +128,7 @@ public class ForestBoss : MonoBehaviour
         Quaternion newRot = transform.rotation;
         for (int j = 0; j < hakiWave; j++)
         {
+            AudioManager.GetInstance().Play("BossHaki");
             for (int i = 0; i < hakiBulletCount; i++)
             {
                 float addedOffset = (i - (hakiBulletCount / 2)) * (360 / hakiBulletCount);

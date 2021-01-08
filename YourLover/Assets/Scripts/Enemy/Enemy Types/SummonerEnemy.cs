@@ -40,6 +40,7 @@ public class SummonerEnemy : Enemy
 
     public void Summon()
     {
+        AudioManager.GetInstance().Play("EnemySummon");
         triggerAttack = true;
 
         Vector3 summonedObjAddPos = Vector3.zero;

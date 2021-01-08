@@ -27,7 +27,7 @@ public class MonkeyClone : Entity
     GameObject target;
     [HideInInspector] public GameObject parent;
     float followParentDistance = 2f;
-    float maxDistanceBtwParent = 12.5f;
+    float maxDistanceBtwParent = 10f;
     float flipYAmount = 180f;
 
     private void Awake()

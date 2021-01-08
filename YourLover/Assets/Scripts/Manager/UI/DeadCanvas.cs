@@ -13,6 +13,7 @@ public class DeadCanvas : MonoBehaviour
 
     public void QuitGame_OnClick()
     {
+        AudioManager.GetInstance().Stop("GameBackgroundMusic");
         Time.timeScale = 1f;
         StartCoroutine(sceneLoader.LoadScene(0));
     }

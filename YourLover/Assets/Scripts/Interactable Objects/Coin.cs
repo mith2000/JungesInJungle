@@ -49,6 +49,8 @@ public class Coin : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
+            AudioManager.GetInstance().Play("Coin");
+
             collision.GetComponent<PlayerInfo>().ApplyCoin(coinValue);
             GameObject dmgInfo = Instantiate(PrefabContainer.GetInstance().damageInfoPrefab, transform.position, Quaternion.identity);
             dmgInfo.GetComponent<DamageInfo>().damage = "+" + coinValue;

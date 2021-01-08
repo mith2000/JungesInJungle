@@ -86,6 +86,7 @@ public class UrbanBoss : MonoBehaviour
 
     IEnumerator ShootLaser(Transform targetTransform)
     {
+        AudioManager.GetInstance().Play("BossLaser");
         brain.anim.SetTrigger("Laser");
 
         laser.SetActive(true);
@@ -117,6 +118,7 @@ public class UrbanBoss : MonoBehaviour
 
     private void ShootMissiles(Transform targetTransform)
     {
+        AudioManager.GetInstance().Play("EnemyMissile");
         brain.anim.SetTrigger("Missile");
 
         Vector2 direction = targetTransform.position - shotPoint.position;
@@ -138,25 +140,28 @@ public class UrbanBoss : MonoBehaviour
         Quaternion dropRotate = Quaternion.identity;
         if (rand1 < 50)
             dropRotate = Quaternion.Euler(180, 0, 0);
+        AudioManager.GetInstance().Play("BossLaser");
         dropdownLaser = Instantiate(dropdownLaserPrefab, originPosition, dropRotate);
+        Destroy(dropdownLaser, 1f);
         yield return new WaitForSeconds(1f);
-        Destroy(dropdownLaser);
 
         int rand2 = Random.Range(0, 100);
         Quaternion crossRotate = Quaternion.identity;
         if (rand2 < 50)
             crossRotate = Quaternion.Euler(180, 0, 0);
+        AudioManager.GetInstance().Play("BossLaser");
         crossLaser = Instantiate(crossLaserPrefab, originPosition, crossRotate);
+        Destroy(crossLaser, .5f);
         yield return new WaitForSeconds(.5f);
-        Destroy(crossLaser);
 
         int rand3 = Random.Range(0, 100);
         Quaternion sideRotate = Quaternion.identity;
         if (rand3 < 50)
             sideRotate = Quaternion.Euler(0, 180, 0);
+        AudioManager.GetInstance().Play("BossLaser");
         sideLaser = Instantiate(sideLaserPrefab, originPosition, sideRotate);
+        Destroy(sideLaser, 1f);
         yield return new WaitForSeconds(1f);
-        Destroy(sideLaser);
     }
 
     //For animator

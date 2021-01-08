@@ -5,6 +5,8 @@ using UnityEngine.UI;
 
 [RequireComponent(typeof(Animator))]
 [RequireComponent(typeof(Rigidbody2D))]
+[RequireComponent(typeof(Collider2D))]
+[RequireComponent(typeof(PlayerInfo))]
 public class PlayerController : MonoBehaviour
 {
     [Header ("Stats")]
@@ -25,6 +27,8 @@ public class PlayerController : MonoBehaviour
 
     protected Rigidbody2D physicBody;
     [HideInInspector] public Animator anim;
+    Collider2D collider;
+    PlayerInfo info;
 
     protected Vector2 direction;
     protected Vector2 saveDirection;
@@ -45,6 +49,8 @@ public class PlayerController : MonoBehaviour
         //Cache References
         physicBody = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
+        info = this.gameObject.GetComponent<PlayerInfo>();
+        collider = GetComponent<Collider2D>();
 
         moveJoystick.gameObject.SetActive(true);
         skillButton.gameObject.SetActive(true);
@@ -75,7 +81,7 @@ public class PlayerController : MonoBehaviour
     public virtual void Moving()
     {
         if (DialogSystem.GetInstance() != null && DialogSystem.GetInstance().isInDialog) return;
-        if (!isStunned)
+        if (!isStunned && info.currentHealth > 0)
         {
             physicBody.MovePosition(physicBody.position + moveAmount * Time.fixedDeltaTime);
         }
@@ -169,7 +175,6 @@ public class PlayerController : MonoBehaviour
 
     public void Interact_OnClick()
     {
-        PlayerInfo info = this.gameObject.GetComponent<PlayerInfo>();
         if (interactObject.tag == "HealthPotion")
         {
             if (info.firstTimeHealthPotion == true)
@@ -180,6 +185,8 @@ public class PlayerController : MonoBehaviour
             }
             else
             {
+                AudioManager.GetInstance().Play("HealthPotion");
+
                 info.ApplyHealth(-interactObject.GetComponent<HealthPotion>().healthAmount);
                 interactObject.GetComponent<HealthPotion>().DestroyPotion();
                 GameObject dmgInfo = Instantiate(PrefabContainer.GetInstance().damageInfoPrefab, transform.position, Quaternion.identity);
@@ -203,6 +210,8 @@ public class PlayerController : MonoBehaviour
             }
             else
             {
+                AudioManager.GetInstance().Play("Crystal");
+
                 GameMaster.GetInstance().playerStat.useCrystalTime++;
                 info.IncreaseHealth(interactObject.GetComponent<HealthCrystal>().healthAmount);
                 interactObject.GetComponent<HealthCrystal>().DestroyPotion();
@@ -225,6 +234,8 @@ public class PlayerController : MonoBehaviour
             }
             else
             {
+                AudioManager.GetInstance().Play("Crystal");
+
                 GameMaster.GetInstance().playerStat.useCrystalTime++;
                 info.IncreaseArmor(interactObject.GetComponent<ArmorCrystal>().armorAmount);
                 interactObject.GetComponent<ArmorCrystal>().DestroyPotion();
@@ -247,6 +258,8 @@ public class PlayerController : MonoBehaviour
             }
             else
             {
+                AudioManager.GetInstance().Play("Crystal");
+
                 GameMaster.GetInstance().playerStat.useCrystalTime++;
                 info.IncreaseAttackSpeed(interactObject.GetComponent<AttackSpeedCrystal>().DecreaseDREPercent());
                 interactObject.GetComponent<AttackSpeedCrystal>().DestroyPotion();
@@ -269,6 +282,8 @@ public class PlayerController : MonoBehaviour
             }
             else
             {
+                AudioManager.GetInstance().Play("Crystal");
+
                 GameMaster.GetInstance().playerStat.useCrystalTime++;
                 if (interactObject.GetComponent<RainbowCrystal>().isGood)
                 {
@@ -331,6 +346,9 @@ public class PlayerController : MonoBehaviour
     {
         moveJoystick.gameObject.SetActive(true);
         aimJoystick.gameObject.SetActive(true);
-        skillButton.gameObject.SetActive(true);
+        if (!collider.IsTouchingLayers(LayerMask.GetMask("InteractObject")))
+            skillButton.gameObject.SetActive(true);
+        else
+            interactButton.gameObject.SetActive(true);
     }
 }

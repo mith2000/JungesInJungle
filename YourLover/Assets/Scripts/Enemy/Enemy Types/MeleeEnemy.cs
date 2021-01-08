@@ -53,6 +53,7 @@ public class MeleeEnemy : Enemy
             target.GetComponent<Entity>().TakeDamage(attackDamage);
         }
 
+        AudioManager.GetInstance().Play("EnemyMelee");
         triggerAttack = true;
 
         Vector2 originalPosition = transform.position;

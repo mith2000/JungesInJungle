@@ -44,6 +44,7 @@ public class CasterEnemy : Enemy
 
     public void Cast(Transform targetTransform)
     {
+        AudioManager.GetInstance().Play("MeteorFall");
         triggerAttack = true;
 
         Instantiate(castObject, targetTransform.position, Quaternion.identity);

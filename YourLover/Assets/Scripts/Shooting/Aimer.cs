@@ -75,7 +75,8 @@ public class Aimer : MonoBehaviour
                     }
                     else if (GameMaster.GetInstance().playerRole == GameMaster.CharacterRole.Cat)
                     {
-                        AudioManager.GetInstance().Play("MonKeeReload");
+                        AudioManager.GetInstance().Play("KatReload");
+                        Debug.Log("Cat reload");
                     }
                 }
             }
@@ -84,6 +85,12 @@ public class Aimer : MonoBehaviour
 
     public virtual void Shoot()
     {
+        if (GameMaster.GetInstance().playerRole == GameMaster.CharacterRole.Cat)
+        {
+            AudioManager.GetInstance().Play("KatAttack");
+            Debug.Log("Cat attack");
+        }
+
         Instantiate(projectile, shotPoint.position, transform.rotation);
         FlipPlayerByShoot();
         AnimateAttack();

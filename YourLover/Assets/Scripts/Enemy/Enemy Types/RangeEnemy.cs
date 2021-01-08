@@ -46,6 +46,7 @@ public class RangeEnemy : Enemy
 
     public void Shoot(Transform targetTransform)
     {
+        AudioManager.GetInstance().Play("EnemyRange");
         triggerAttack = true;
 
         Vector2 direction = targetTransform.position - shotPoint.position;

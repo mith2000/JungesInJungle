@@ -79,6 +79,7 @@ public class ChargeEnemy : Enemy
 
     IEnumerator Attack()
     {
+        AudioManager.GetInstance().Play("EnemyCharge");
         triggerAttack = true;
         charging = true;
 

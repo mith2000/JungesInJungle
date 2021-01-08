@@ -40,6 +40,9 @@ public class GameMaster : MonoBehaviour
         StartCoroutine(sceneLoader.StartGame());
         Debug.Log("Game ON !!");
 
+        //AudioManager.GetInstance().Stop("LobbySong");
+        AudioManager.GetInstance().Stop("TitleSong");
+        AudioManager.GetInstance().Play("SceneTransit");
         AudioManager.GetInstance().Play("GameBackgroundMusic", false);
     }
 

@@ -29,6 +29,8 @@ public class Bomb : MonoBehaviour
     {
         yield return new WaitForSeconds(lifeTime);
 
+        AudioManager.GetInstance().Stop("BombTick");
+        AudioManager.GetInstance().Play("BombExplode");
         Instantiate(explosion, transform.position, Quaternion.identity);
         Destroy(gameObject);
     }
