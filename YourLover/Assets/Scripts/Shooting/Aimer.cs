@@ -88,7 +88,6 @@ public class Aimer : MonoBehaviour
         if (GameMaster.GetInstance().playerRole == GameMaster.CharacterRole.Cat)
         {
             AudioManager.GetInstance().Play("KatAttack");
-            Debug.Log("Cat attack");
         }
 
         Instantiate(projectile, shotPoint.position, transform.rotation);

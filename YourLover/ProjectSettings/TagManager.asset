@@ -110,6 +110,9 @@ TagManager:
   - name: Projectiles
     uniqueID: 1607900739
     locked: 0
+  - name: Aim
+    uniqueID: 1791961437
+    locked: 0
   - name: Lights
     uniqueID: 1902649407
     locked: 0

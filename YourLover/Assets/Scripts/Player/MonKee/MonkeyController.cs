@@ -40,13 +40,10 @@ public class MonkeyController : PlayerController
         anim.SetTrigger("Skill");
 
         skillCooldownScript.isCooldown = true;
-
-        StartCoroutine(MonkeeInstantiateClone());
     }
 
-    IEnumerator MonkeeInstantiateClone()
+    public void MonkeeInstantiateClone()
     {
-        yield return new WaitForSeconds(.8f);
         Vector3 clonePos = Vector3.zero;
         if (Random.Range(0, 100) < 50)
             clonePos.x = Random.Range(-2f, -1f);

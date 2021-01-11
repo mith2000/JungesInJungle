@@ -1,0 +1,664 @@
+fileFormatVersion: 2
+guid: 8ddd031c7db93ac4b97c0995175a505c
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4297926137468750326
+    second: Kat Avatar
+  - first:
+      213: -1112135859078609305
+    second: Kat MoonFishStaff
+  - first:
+      213: -8775054532366323597
+    second: Kat Nose
+  - first:
+      213: 1296267435265132728
+    second: Kat Bell
+  - first:
+      213: 4069071645983338099
+    second: Kat_VectorPart_4
+  - first:
+      213: -1177533598152785570
+    second: Kat_VectorPart_5
+  - first:
+      213: 2965937349822907353
+    second: Kat_VectorPart_6
+  - first:
+      213: 4744859050867682350
+    second: Kat_VectorPart_7
+  - first:
+      213: 4369740488791190109
+    second: Kat_VectorPart_8
+  - first:
+      213: 3751612401749871439
+    second: Kat_VectorPart_9
+  - first:
+      213: -6517580800940319415
+    second: Kat_VectorPart_10
+  - first:
+      213: 3192127636323021704
+    second: Kat Ear L
+  - first:
+      213: -1786914383929326149
+    second: Kat Ear R
+  - first:
+      213: -3363885879264772112
+    second: Kat Ear L 2
+  - first:
+      213: 3349967665204626275
+    second: Kat Ear R 2
+  - first:
+      213: 6165862371963784963
+    second: Kat Eye
+  - first:
+      213: 7579601773090765209
+    second: Kat Hat
+  - first:
+      213: -7061755282518360576
+    second: Kat Head 3
+  - first:
+      213: -6962932313954871538
+    second: Kat Head Walk
+  - first:
+      213: -3491819130673951598
+    second: Kat Head Walk 2
+  - first:
+      213: -5713794635889375963
+    second: Kat Eye 2
+  - first:
+      213: 4657516628567622798
+    second: Kat Cloak
+  - first:
+      213: 4995012081189783506
+    second: Kat Body Walk 2
+  - first:
+      213: -9135467800383501162
+    second: Kat_VectorPart_23
+  - first:
+      213: -7409796274840001979
+    second: Kat_VectorPart_24
+  - first:
+      213: 4198008111340445457
+    second: Kat_VectorPart_25
+  - first:
+      213: -2747753139770725319
+    second: Kat_VectorPart_26
+  - first:
+      213: -8458847113289392602
+    second: Kat Body Walk 3
+  - first:
+      213: 5556551830212122084
+    second: Kat Body Walk
+  - first:
+      213: 6452003101587662260
+    second: Kat_VectorPart_29
+  - first:
+      213: 5849392146774286137
+    second: Kat_VectorPart_30
+  - first:
+      213: 6981651323682772960
+    second: Kat_VectorPart_31
+  - first:
+      213: -11020055478774946
+    second: Kat Tail
+  - first:
+      213: 8579090477504801340
+    second: Kat Tail 2
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 400
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Kat Avatar
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 2255
+        width: 573
+        height: 635
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f901b6fc0d45ab30800000000000000
+      internalID: 4297926137468750326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kat MoonFishStaff
+      rect:
+        serializedVersion: 2
+        x: 792
+        y: 2156
+        width: 767
+        height: 716
+      alignment: 9
+      pivot: {x: 0.27863473, y: 0.24194404}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76645a91456e090f0800000000000000
+      internalID: -1112135859078609305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kat Bell
+      rect:
+        serializedVersion: 2
+        x: 2782
+        y: 2663
+        width: 185
+        height: 171
+      alignment: 9
+      pivot: {x: 0.37420556, y: 0.8984275}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b882ec4d544df110800000000000000
+      internalID: 1296267435265132728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kat Ear L
+      rect:
+        serializedVersion: 2
+        x: 1839
+        y: 2079
+        width: 124
+        height: 143
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 883bdb03c27bc4c20800000000000000
+      internalID: 3192127636323021704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kat Ear R
+      rect:
+        serializedVersion: 2
+        x: 2098
+        y: 2087
+        width: 128
+        height: 143
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb54bd5d5da9337e0800000000000000
+      internalID: -1786914383929326149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kat Ear L 2
+      rect:
+        serializedVersion: 2
+        x: 2807
+        y: 2080
+        width: 135
+        height: 141
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ff787d8d931151d0800000000000000
+      internalID: -3363885879264772112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kat Ear R 2
+      rect:
+        serializedVersion: 2
+        x: 3077
+        y: 2095
+        width: 126
+        height: 142
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3630195b7d97d7e20800000000000000
+      internalID: 3349967665204626275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kat Eye
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 1397
+        width: 300
+        height: 151
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30f49deb82b819550800000000000000
+      internalID: 6165862371963784963
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kat Hat
+      rect:
+        serializedVersion: 2
+        x: 666
+        y: 1391
+        width: 578
+        height: 409
+      alignment: 9
+      pivot: {x: 0.5, y: -0.45}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 999fef777a7203960800000000000000
+      internalID: 7579601773090765209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kat Head 3
+      rect:
+        serializedVersion: 2
+        x: 1589
+        y: 1282
+        width: 579
+        height: 555
+      alignment: 9
+      pivot: {x: 0.5, y: 0.03}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00e31ce3cfa9ffd90800000000000000
+      internalID: -7061755282518360576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kat Head Walk
+      rect:
+        serializedVersion: 2
+        x: 2282
+        y: 1269
+        width: 575
+        height: 595
+      alignment: 9
+      pivot: {x: 0.5, y: 0.03}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0791af93f1be5f90800000000000000
+      internalID: -6962932313954871538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kat Head Walk 2
+      rect:
+        serializedVersion: 2
+        x: 2969
+        y: 1305
+        width: 577
+        height: 616
+      alignment: 9
+      pivot: {x: 0.525, y: 0.03}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29c044840019a8fc0800000000000000
+      internalID: -3491819130673951598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kat Eye 2
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 1100
+        width: 314
+        height: 115
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52508483d0684b0b0800000000000000
+      internalID: -5713794635889375963
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kat Cloak
+      rect:
+        serializedVersion: 2
+        x: 620
+        y: 720
+        width: 732
+        height: 437
+      alignment: 9
+      pivot: {x: 0.65, y: 0.7}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e848f3572b2d2a040800000000000000
+      internalID: 4657516628567622798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kat Body Walk 2
+      rect:
+        serializedVersion: 2
+        x: 2946
+        y: 692
+        width: 590
+        height: 411
+      alignment: 9
+      pivot: {x: 0.675, y: 0.7}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d70a1ce509d15540800000000000000
+      internalID: 4995012081189783506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kat Body Walk 3
+      rect:
+        serializedVersion: 2
+        x: 1462
+        y: 650
+        width: 644
+        height: 414
+      alignment: 9
+      pivot: {x: 0.75, y: 0.7}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62e1c0b0e532c9a80800000000000000
+      internalID: -8458847113289392602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kat Body Walk
+      rect:
+        serializedVersion: 2
+        x: 2199
+        y: 681
+        width: 615
+        height: 410
+      alignment: 9
+      pivot: {x: 0.7, y: 0.7}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e517df1376dc1d40800000000000000
+      internalID: 5556551830212122084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kat Tail
+      rect:
+        serializedVersion: 2
+        x: 1917
+        y: 264
+        width: 230
+        height: 199
+      alignment: 9
+      pivot: {x: 0.81445843, y: 0.046556637}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5358c36159d8dff0800000000000000
+      internalID: -11020055478774946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kat Tail 2
+      rect:
+        serializedVersion: 2
+        x: 2946
+        y: 141
+        width: 160
+        height: 254
+      alignment: 9
+      pivot: {x: 0.7961731, y: 0.20812713}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3a2c97d55d0f0770800000000000000
+      internalID: 8579090477504801340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kat Nose
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 805
+        width: 373
+        height: 139
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 370bf91256eb83680800000000000000
+      internalID: -8775054532366323597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

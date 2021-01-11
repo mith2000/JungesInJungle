@@ -147,11 +147,11 @@ public class MonkeyClone : Entity
         {
             if (target.transform.position.x > transform.position.x)
             {
-                gfx.transform.rotation = new Quaternion(0, 0, 0, 1);
+                gfx.transform.localScale = new Vector3(1f, 1f, 1f);
             }
             else
             {
-                gfx.transform.rotation = new Quaternion(0, flipYAmount, 0, 1);
+                gfx.transform.localScale = new Vector3(-1f, 1f, 1f);
             }
         }
         else
@@ -160,11 +160,11 @@ public class MonkeyClone : Entity
             {
                 if (parent.transform.position.x > transform.position.x)
                 {
-                    gfx.transform.rotation = new Quaternion(0, 0, 0, 1);
+                    gfx.transform.localScale = new Vector3(1f, 1f, 1f);
                 }
                 else
                 {
-                    gfx.transform.rotation = new Quaternion(0, flipYAmount, 0, 1);
+                    gfx.transform.localScale = new Vector3(-1f, 1f, 1f);
                 }
             }
         }

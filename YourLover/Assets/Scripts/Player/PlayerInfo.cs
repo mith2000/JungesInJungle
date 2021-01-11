@@ -189,9 +189,16 @@ public class PlayerInfo : Entity
             AudioManager.GetInstance().Play("GameOver");
             controller.UnableControl();
             collider.enabled = false;
+            controller.anim.SetTrigger("Die");
 
-            Instantiate(PrefabContainer.GetInstance().deadCanvasPrefab, Vector3.zero, Quaternion.identity);
+            StartCoroutine(DelayShowDeadCanvas());
         }
+    }
+
+    IEnumerator DelayShowDeadCanvas()
+    {
+        yield return new WaitForSeconds(1.5f);
+        Instantiate(PrefabContainer.GetInstance().deadCanvasPrefab, Vector3.zero, Quaternion.identity);
     }
 
     public void IncreaseHealth(int increaseAmount)

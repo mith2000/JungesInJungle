@@ -4,97 +4,136 @@ TextureImporter:
   internalIDToNameTable:
   - first:
       213: 8761772433841763754
-    second: MonKee_VectorPart_0
+    second: MonKee Headban
   - first:
       213: 8439922631964544960
-    second: MonKee_VectorPart_1
+    second: MonKee Avatar
   - first:
       213: 2932648337623068122
-    second: MonKee_VectorPart_2
+    second: MonKee Body
   - first:
       213: -1897419774913790362
-    second: MonKee_VectorPart_3
+    second: MonKee Body 2
   - first:
       213: -186306890577406868
-    second: MonKee_VectorPart_4
+    second: MonKee Body 3
   - first:
       213: -8948337971682452176
     second: MonKee_VectorPart_5
   - first:
       213: 7122239704631069411
-    second: MonKee_VectorPart_6
+    second: MonKee Body 4
   - first:
       213: 5488995885532145873
-    second: MonKee_VectorPart_7
+    second: MonKee Bullet
   - first:
       213: -2752601083375630459
-    second: MonKee_VectorPart_8
+    second: MonKee Feet Idle L
   - first:
       213: 1692396348574139922
-    second: MonKee_VectorPart_9
+    second: MonKee  Feet Idle R
   - first:
       213: 5474980861111713843
-    second: MonKee_VectorPart_10
+    second: MonKee Tail Die
   - first:
       213: 8668221660590211398
-    second: MonKee_VectorPart_11
+    second: MonKee Tail Die 2
   - first:
       213: 6646577824192370760
-    second: MonKee_VectorPart_12
+    second: MonKee Tail
   - first:
       213: 8872707494601011920
-    second: MonKee_VectorPart_13
+    second: MonKee Face
   - first:
       213: 6336828722225132696
-    second: MonKee_VectorPart_14
+    second: MonKee Tail 2
   - first:
       213: -4051075459310190458
-    second: MonKee_VectorPart_15
+    second: MonKee Face 2
   - first:
       213: -6378129953489031041
-    second: MonKee_VectorPart_16
+    second: MonKee Feet Die R
   - first:
       213: -2008534997804865401
-    second: MonKee_VectorPart_17
+    second: MonKee Face Die
   - first:
       213: 6434764030584852987
-    second: MonKee_VectorPart_18
+    second: MonKee Face Die 2
   - first:
       213: 7978042127543810350
-    second: MonKee_VectorPart_19
+    second: MonKee Feet Die R2
   - first:
       213: 7162798490621936837
-    second: MonKee_VectorPart_20
+    second: MonKee Feet Walk L
   - first:
       213: 7385380279266240282
-    second: MonKee_VectorPart_21
+    second: MonKee Feet Walk R
   - first:
       213: 7706645414498119524
-    second: MonKee_VectorPart_22
+    second: MonKee Feet Walk L2
   - first:
       213: 5032893243918212156
-    second: MonKee_VectorPart_23
+    second: MonKee Feet Walk R2
   - first:
       213: -3559012789393873455
-    second: MonKee_VectorPart_24
+    second: MonKee Feet Die L
   - first:
       213: -3261533167428149632
-    second: MonKee_VectorPart_25
+    second: MonKee Feet Die L2
   - first:
       213: 2199591031327158845
-    second: MonKee_VectorPart_26
+    second: MomKee Body
   - first:
       213: -5212950088373181215
     second: MonKee_VectorPart_27
   - first:
       213: 5055548308974620693
-    second: MonKee_VectorPart_28
+    second: MonKee Body 5
   - first:
       213: 8541080867276570012
-    second: MonKee_VectorPart_29
+    second: MomKee Headban
   - first:
       213: 7710623861113699760
-    second: MonKee_VectorPart_30
+    second: MonKee Feet Skill L
+  - first:
+      213: -3068474775225526734
+    second: MonKee Feet Skill R
+  - first:
+      213: 4640403913742791787
+    second: MomKee Face
+  - first:
+      213: -6041180311243714487
+    second: MomKee Feet Idle L
+  - first:
+      213: -4640212934211829745
+    second: MomKee Feet Idle R
+  - first:
+      213: 8928243873172818811
+    second: MomKee Face 2
+  - first:
+      213: -5704297557084398087
+    second: MomKee Tail
+  - first:
+      213: -9005827612416220749
+    second: MonKee Tail Skill
+  - first:
+      213: -6916177430198538443
+    second: MonKee Face Skill
+  - first:
+      213: 1224908712816981005
+    second: MomKee Feet Walk L
+  - first:
+      213: -3240061578278760771
+    second: MomKee Feet Walk R
+  - first:
+      213: 3496027693164207013
+    second: MomKee Feet Walk L 2
+  - first:
+      213: 3810431036383000474
+    second: MomKee Feet Walk R 2
+  - first:
+      213: -6096203760201041872
+    second: MomKee Tail 2
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -218,15 +257,15 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: MonKee_VectorPart_0
+      name: MonKee Headban
       rect:
         serializedVersion: 2
-        x: 119
-        y: 723
-        width: 687
-        height: 699
+        x: 192
+        y: 3017
+        width: 235
+        height: 209
       alignment: 9
-      pivot: {x: 0.5, y: 0.28833967}
+      pivot: {x: 0.5471737, y: 0.10218278}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -239,15 +278,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MonKee_VectorPart_1
+      name: MonKee Avatar
       rect:
         serializedVersion: 2
-        x: 962
-        y: 712
-        width: 689
-        height: 662
-      alignment: 9
-      pivot: {x: 0.5, y: 0.31482247}
+        x: 546
+        y: 2880
+        width: 624
+        height: 593
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -260,15 +299,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MonKee_VectorPart_2
+      name: MonKee Body
       rect:
         serializedVersion: 2
-        x: 1805
-        y: 713
-        width: 694
-        height: 672
+        x: 1376
+        y: 2819
+        width: 688
+        height: 693
       alignment: 9
-      pivot: {x: 0.5, y: 0.29241624}
+      pivot: {x: 0.55, y: 0.3}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -281,15 +320,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MonKee_VectorPart_3
+      name: MonKee Body 2
       rect:
         serializedVersion: 2
-        x: 2612
-        y: 722
-        width: 687
-        height: 695
+        x: 2239
+        y: 2805
+        width: 715
+        height: 707
       alignment: 9
-      pivot: {x: 0.5, y: 0.3175328}
+      pivot: {x: 0.55, y: 0.3}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -302,15 +341,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MonKee_VectorPart_4
+      name: MonKee Body 3
       rect:
         serializedVersion: 2
-        x: 3361
-        y: 651
-        width: 654
-        height: 768
+        x: 3082
+        y: 2704
+        width: 653
+        height: 767
       alignment: 9
-      pivot: {x: 0.5, y: 0.41193438}
+      pivot: {x: 0.55, y: 0.3}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -323,13 +362,34 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MonKee_VectorPart_7
+      name: MonKee Body 4
       rect:
         serializedVersion: 2
-        x: 204
-        y: 486
-        width: 126
-        height: 80
+        x: 3886
+        y: 2795
+        width: 903
+        height: 627
+      alignment: 9
+      pivot: {x: 0.75781035, y: 0.48231947}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3eac7bfa64747d260800000000000000
+      internalID: 7122239704631069411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonKee Bullet
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 2433
+        width: 299
+        height: 353
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -344,12 +404,12 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MonKee_VectorPart_8
+      name: MonKee Feet Idle L
       rect:
         serializedVersion: 2
-        x: 482
-        y: 486
-        width: 126
+        x: 1468
+        y: 2580
+        width: 124
         height: 80
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -365,15 +425,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MonKee_VectorPart_9
+      name: MonKee  Feet Idle R
       rect:
         serializedVersion: 2
-        x: 3393
-        y: 451
-        width: 353
-        height: 155
-      alignment: 9
-      pivot: {x: 0.9430751, y: 0.25455186}
+        x: 1739
+        y: 2580
+        width: 126
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -386,15 +446,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MonKee_VectorPart_10
+      name: MonKee Tail Die
       rect:
         serializedVersion: 2
-        x: 4443
-        y: 561
-        width: 366
-        height: 127
+        x: 3118
+        y: 2503
+        width: 353
+        height: 154
       alignment: 9
-      pivot: {x: 0.026467245, y: 0.79956293}
+      pivot: {x: 0.97107035, y: 0.21205674}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -407,15 +467,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MonKee_VectorPart_11
+      name: MonKee Tail Die 2
       rect:
         serializedVersion: 2
-        x: 1095
-        y: 451
-        width: 125
-        height: 82
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 4243
+        y: 2613
+        width: 365
+        height: 124
+      alignment: 9
+      pivot: {x: 0.07478864, y: 0.6341041}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -428,15 +488,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MonKee_VectorPart_12
+      name: MonKee Tail
       rect:
         serializedVersion: 2
-        x: 1373
-        y: 451
-        width: 123
-        height: 82
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 1297
+        y: 2143
+        width: 240
+        height: 318
+      alignment: 9
+      pivot: {x: 0.9157186, y: 0.15138792}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -449,13 +509,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MonKee_VectorPart_13
+      name: MonKee Face
       rect:
         serializedVersion: 2
-        x: 1920
-        y: 451
-        width: 126
-        height: 82
+        x: 1591
+        y: 2124
+        width: 421
+        height: 370
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -470,15 +530,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MonKee_VectorPart_14
+      name: MonKee Tail 2
       rect:
         serializedVersion: 2
-        x: 2193
-        y: 456
-        width: 125
-        height: 75
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 2099
+        y: 2183
+        width: 290
+        height: 271
+      alignment: 9
+      pivot: {x: 0.9969516, y: 0.1522888}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -491,14 +551,14 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MonKee_VectorPart_15
+      name: MonKee Face 2
       rect:
         serializedVersion: 2
-        x: 2708
-        y: 453
-        width: 127
-        height: 80
-      alignment: 0
+        x: 2445
+        y: 2131
+        width: 421
+        height: 353
+      alignment: 9
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
@@ -512,13 +572,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MonKee_VectorPart_16
+      name: MonKee Feet Die R
       rect:
         serializedVersion: 2
-        x: 2991
-        y: 453
-        width: 125
-        height: 80
+        x: 3235
+        y: 2288
+        width: 115
+        height: 114
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -533,13 +593,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MonKee_VectorPart_17
+      name: MonKee Face Die
       rect:
         serializedVersion: 2
-        x: 3808
-        y: 31
-        width: 449
-        height: 457
+        x: 3528
+        y: 2085
+        width: 451
+        height: 455
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -554,15 +614,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MonKee_VectorPart_18
+      name: MonKee Face Die 2
       rect:
         serializedVersion: 2
-        x: 39
-        y: 49
-        width: 242
-        height: 319
-      alignment: 9
-      pivot: {x: 0.9192229, y: 0.12896329}
+        x: 4168
+        y: 2078
+        width: 364
+        height: 427
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -575,13 +635,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MonKee_VectorPart_19
+      name: MonKee Feet Die R2
       rect:
         serializedVersion: 2
-        x: 332
-        y: 29
-        width: 424
-        height: 369
+        x: 4641
+        y: 2374
+        width: 79
+        height: 122
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -596,15 +656,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MonKee_VectorPart_20
+      name: MonKee Feet Walk L
       rect:
         serializedVersion: 2
-        x: 821
-        y: 89
-        width: 291
-        height: 271
-      alignment: 9
-      pivot: {x: 0.96484333, y: 0.15683569}
+        x: 0
+        y: 2094
+        width: 122
+        height: 79
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -617,15 +677,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MonKee_VectorPart_21
+      name: MonKee Feet Walk R
       rect:
         serializedVersion: 2
-        x: 1163
-        y: 41
-        width: 422
-        height: 353
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 270
+        y: 2095
+        width: 126
+        height: 76
+      alignment: 9
+      pivot: {x: 0.5, y: 0.4}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -638,15 +698,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MonKee_VectorPart_22
+      name: MonKee Feet Walk L2
       rect:
         serializedVersion: 2
-        x: 1649
-        y: 72
-        width: 291
-        height: 271
-      alignment: 9
-      pivot: {x: 0.9503174, y: 0.15683527}
+        x: 787
+        y: 2094
+        width: 126
+        height: 77
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -659,13 +719,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MonKee_VectorPart_23
+      name: MonKee Feet Walk R2
       rect:
         serializedVersion: 2
-        x: 1962
-        y: 40
-        width: 422
-        height: 353
+        x: 1070
+        y: 2094
+        width: 124
+        height: 77
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -680,15 +740,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MonKee_VectorPart_24
+      name: MonKee Feet Die L
       rect:
         serializedVersion: 2
-        x: 2479
-        y: 67
-        width: 241
-        height: 316
-      alignment: 9
-      pivot: {x: 0.95604354, y: 0.12544107}
+        x: 3029
+        y: 2106
+        width: 117
+        height: 112
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -701,13 +761,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MonKee_VectorPart_25
+      name: MonKee Feet Die L2
       rect:
         serializedVersion: 2
-        x: 2740
-        y: 52
-        width: 421
-        height: 368
+        x: 4657
+        y: 2094
+        width: 132
+        height: 124
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -722,15 +782,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MonKee_VectorPart_26
+      name: MomKee Body
       rect:
         serializedVersion: 2
-        x: 3512
-        y: 241
-        width: 118
-        height: 113
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 597
+        y: 1016
+        width: 854
+        height: 905
+      alignment: 9
+      pivot: {x: 0.55, y: 0.3}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -743,36 +803,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MonKee_VectorPart_27
+      name: MonKee Body 5
       rect:
         serializedVersion: 2
-        x: 4370
-        y: 29
-        width: 365
-        height: 427
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1e4eca69381e7a7b0800000000000000
-      internalID: -5212950088373181215
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: MonKee_VectorPart_28
-      rect:
-        serializedVersion: 2
-        x: 4841
-        y: 325
-        width: 81
-        height: 123
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 3644
+        y: 1187
+        width: 688
+        height: 696
+      alignment: 9
+      pivot: {x: 0.55, y: 0.3}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -785,13 +824,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MonKee_VectorPart_29
+      name: MomKee Headban
       rect:
         serializedVersion: 2
-        x: 3309
-        y: 54
-        width: 115
-        height: 113
+        x: 825
+        y: 686
+        width: 262
+        height: 107
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -806,13 +845,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MonKee_VectorPart_30
+      name: MonKee Feet Skill L
       rect:
         serializedVersion: 2
-        x: 4859
-        y: 44
-        width: 80
-        height: 123
+        x: 3925
+        y: 588
+        width: 124
+        height: 77
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -827,22 +866,274 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MonKee_VectorPart_5
+      name: MonKee Feet Skill R
       rect:
         serializedVersion: 2
-        x: 4077
-        y: 743
-        width: 917
-        height: 672
-      alignment: 9
-      pivot: {x: 0.75353885, y: 0.44338644}
+        x: 4202
+        y: 588
+        width: 125
+        height: 77
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 03d5abb660e11d380800000000000000
-      internalID: -8948337971682452176
+      spriteID: 2369f6c03769a65d0800000000000000
+      internalID: -3068474775225526734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MomKee Face
+      rect:
+        serializedVersion: 2
+        x: 686
+        y: 81
+        width: 512
+        height: 465
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b64b8fc06c6066040800000000000000
+      internalID: 4640403913742791787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MomKee Feet Idle L
+      rect:
+        serializedVersion: 2
+        x: 1332
+        y: 396
+        width: 154
+        height: 98
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9401c34b38a692ca0800000000000000
+      internalID: -6041180311243714487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MomKee Feet Idle R
+      rect:
+        serializedVersion: 2
+        x: 1681
+        y: 399
+        width: 156
+        height: 98
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f008126dbe6aa9fb0800000000000000
+      internalID: -4640212934211829745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MomKee Face 2
+      rect:
+        serializedVersion: 2
+        x: 1936
+        y: 78
+        width: 513
+        height: 466
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7b0680bf7e77eb70800000000000000
+      internalID: 8928243873172818811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MomKee Tail
+      rect:
+        serializedVersion: 2
+        x: 2658
+        y: 298
+        width: 418
+        height: 234
+      alignment: 9
+      pivot: {x: 1, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9fd1bd0389346d0b0800000000000000
+      internalID: -5704297557084398087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonKee Tail Skill
+      rect:
+        serializedVersion: 2
+        x: 3824
+        y: 141
+        width: 199
+        height: 272
+      alignment: 9
+      pivot: {x: 0.91780925, y: 0.94691175}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b1e68d508fd40380800000000000000
+      internalID: -9005827612416220749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonKee Face Skill
+      rect:
+        serializedVersion: 2
+        x: 4105
+        y: 92
+        width: 421
+        height: 370
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53f217d454dc400a0800000000000000
+      internalID: -6916177430198538443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MomKee Feet Walk L
+      rect:
+        serializedVersion: 2
+        x: 1332
+        y: 228
+        width: 154
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d04bcb50cffbff010800000000000000
+      internalID: 1224908712816981005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MomKee Feet Walk R
+      rect:
+        serializedVersion: 2
+        x: 1681
+        y: 230
+        width: 155
+        height: 91
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dbe8d40492df803d0800000000000000
+      internalID: -3240061578278760771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MomKee Feet Walk L 2
+      rect:
+        serializedVersion: 2
+        x: 1332
+        y: 67
+        width: 153
+        height: 92
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ab1bf70aa2648030800000000000000
+      internalID: 3496027693164207013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MomKee Feet Walk R 2
+      rect:
+        serializedVersion: 2
+        x: 1680
+        y: 65
+        width: 150
+        height: 95
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a977bbcc6de51e430800000000000000
+      internalID: 3810431036383000474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MomKee Tail 2
+      rect:
+        serializedVersion: 2
+        x: 2536
+        y: 0
+        width: 419
+        height: 230
+      alignment: 9
+      pivot: {x: 1, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 038f0daaafee56ba0800000000000000
+      internalID: -6096203760201041872
       vertices: []
       indices: 
       edges: []
