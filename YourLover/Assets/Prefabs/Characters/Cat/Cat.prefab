@@ -1861,8 +1861,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 8
-  moveJoystick: {fileID: 7574425013560081522}
-  aimJoystick: {fileID: 7574425013188091824}
+  moveJoystick: {fileID: 1760760373520028842}
+  aimJoystick: {fileID: 5460870506413318902}
   skillButton: {fileID: 7574425013223753282}
   skillCooldownScript: {fileID: 9043156809321457362}
   skillCooldown: 8
@@ -2295,9 +2295,9 @@ RectTransform:
   m_Father: {fileID: 7574425013188091839}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 224.8786, y: 130.49423}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 25, y: -50}
   m_SizeDelta: {x: 256, y: 256}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7574425013101346705
@@ -2438,7 +2438,7 @@ GameObject:
   - component: {fileID: 7574425013188091839}
   - component: {fileID: 7574425013188091838}
   - component: {fileID: 7574425013188091825}
-  - component: {fileID: 7574425013188091824}
+  - component: {fileID: 5460870506413318902}
   m_Layer: 8
   m_Name: Aim Joystickk
   m_TagString: AimJoystick
@@ -2504,7 +2504,7 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &7574425013188091824
+--- !u!114 &5460870506413318902
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2513,7 +2513,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 7574425013188091827}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7a47f546fc70ec8428172694e78e4288, type: 3}
+  m_Script: {fileID: 11500000, guid: 42844a4fccbd54746b90cade4ff70f73, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   isRelease: 0
@@ -2524,6 +2524,8 @@ MonoBehaviour:
   snapY: 0
   background: {fileID: 7574425013101346707}
   handle: {fileID: 7574425013716531296}
+  moveThreshold: 1
+  joystickType: 0
 --- !u!1 &7574425013206126568
 GameObject:
   m_ObjectHideFlags: 0
@@ -3019,9 +3021,9 @@ RectTransform:
   m_Father: {fileID: 7574425013560081527}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -150, y: -150}
   m_SizeDelta: {x: 256, y: 256}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7574425013482634914
@@ -3148,7 +3150,7 @@ GameObject:
   - component: {fileID: 7574425013560081527}
   - component: {fileID: 7574425013560081525}
   - component: {fileID: 7574425013560081524}
-  - component: {fileID: 7574425013560081522}
+  - component: {fileID: 1760760373520028842}
   m_Layer: 8
   m_Name: Move Joystick
   m_TagString: MoveJoystick
@@ -3214,7 +3216,7 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &7574425013560081522
+--- !u!114 &1760760373520028842
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3223,7 +3225,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 7574425013560081526}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7a47f546fc70ec8428172694e78e4288, type: 3}
+  m_Script: {fileID: 11500000, guid: 42844a4fccbd54746b90cade4ff70f73, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   isRelease: 0
@@ -3234,6 +3236,8 @@ MonoBehaviour:
   snapY: 0
   background: {fileID: 7574425013482634916}
   handle: {fileID: 7574425013815465303}
+  moveThreshold: 1
+  joystickType: 0
 --- !u!1 &7574425013582340630
 GameObject:
   m_ObjectHideFlags: 0
@@ -3278,7 +3282,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a3a94c1d9bf74fd4cb27b4edbb376efe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  aimJoystick: {fileID: 7574425013188091824}
+  aimJoystick: {fileID: 5460870506413318902}
   aimLine: {fileID: 1607071823998969938}
   shotPoint: {fileID: 7574425014059264239}
   projectile: {fileID: 7262854994460389988, guid: 676bca7dd7bfca24d8fb874a20410029, type: 3}

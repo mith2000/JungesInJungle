@@ -27,6 +27,10 @@ public class NextStageGate : MonoBehaviour
         GameObject player = GameObject.FindGameObjectWithTag("Player");
         GameMaster.GetInstance().SavePlayerInfo(player.GetComponent<PlayerInfo>());
 
+        PlayerPrefs.SetInt("PlayerCoins", GameMaster.GetInstance().playerStat.currentCoin);
+        PlayerPrefs.Save();
+        Debug.Log("Saved player data");
+
         sceneLoader.LoadNextScene();
     }
 }

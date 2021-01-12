@@ -63,6 +63,9 @@ public class ThemeManager : MonoBehaviour
         Urban = 0
     }
 
+    //Khi lam stage 3 thi nho chinh Pathfinder lai cho Level2 + Level3 + LevelBoss
+    //Obstacle layer mask = wall + obstacle
+    //Hien tai cac obstacle dang co layer la wall do luoi` chinh
     public enum Stage3Themes
     {
         DeepForest = 0,

@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 689186661751709858}
   - component: {fileID: 689186661751709857}
   - component: {fileID: 689186661751709856}
-  m_Layer: 12
+  m_Layer: 11
   m_Name: Stone
   m_TagString: Block
   m_Icon: {fileID: 0}
@@ -90,7 +90,7 @@ GameObject:
   m_Component:
   - component: {fileID: 689186662532507122}
   - component: {fileID: 689186662532507123}
-  m_Layer: 12
+  m_Layer: 11
   m_Name: GFX
   m_TagString: Untagged
   m_Icon: {fileID: 0}

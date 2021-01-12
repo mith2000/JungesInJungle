@@ -14,11 +14,22 @@ public class AudioManager : MonoBehaviour
 
         public bool loop = false;
 
+        public SoundType type = SoundType.SFX;
+
         [Range(0f, 1f)] public float volume = 1f;
         [Range(.1f, 3f)] public float pitch = 1f;
 
         [HideInInspector] public AudioSource source;
+
+        public enum SoundType
+        {
+            Music = 0,
+            SFX = 1
+        }
     }
+
+    public float musicVolumn = 0.5f;
+    public float SFXVolumn = 1f;
 
     public Sound[] sounds;
 
@@ -36,11 +47,21 @@ public class AudioManager : MonoBehaviour
 
         DontDestroyOnLoad(gameObject);
 
+        musicVolumn = PlayerPrefs.GetFloat("MusicVolumn");
+        SFXVolumn = PlayerPrefs.GetFloat("SFXVolumn");
+
         foreach (Sound s in sounds)
         {
             s.source = gameObject.AddComponent<AudioSource>();
             s.source.clip = s.clip;
-            s.source.volume = s.volume;
+            if (s.type == Sound.SoundType.Music)
+            {
+                s.source.volume = s.volume * musicVolumn;
+            }
+            else if (s.type == Sound.SoundType.SFX)
+            {
+                s.source.volume = s.volume * SFXVolumn;
+            }
             s.source.pitch = s.pitch;
             s.source.loop = s.loop;
         }
@@ -91,5 +112,27 @@ public class AudioManager : MonoBehaviour
             return;
 
         s.source.UnPause();
+    }
+
+    public void MusicVolumn_OnChange()
+    {
+        foreach (Sound s in sounds)
+        {
+            if (s.type == Sound.SoundType.Music)
+            {
+                s.source.volume = s.volume * musicVolumn;
+            }
+        }
+    }
+
+    public void SFXVolumn_OnChange()
+    {
+        foreach (Sound s in sounds)
+        {
+            if (s.type == Sound.SoundType.SFX)
+            {
+                s.source.volume = s.volume * SFXVolumn;
+            }
+        }
     }
 }

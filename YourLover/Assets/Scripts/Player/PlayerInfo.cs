@@ -58,7 +58,6 @@ public class PlayerInfo : Entity
             healthBar.value = maxHealth - currentHealth;
             maxArmor = GameMaster.GetInstance().playerStat.maxArmor;
             delayRegenEnergy = GameMaster.GetInstance().playerStat.delayRegenEnergy;
-            currentCoin = GameMaster.GetInstance().playerStat.currentCoin;
 
             firstTimeHealthPotion = GameMaster.GetInstance().playerStat.firstTimeHealthPotion;
             firstTimeHealthCrystal = GameMaster.GetInstance().playerStat.firstTimeHealthCrystal;
@@ -79,6 +78,8 @@ public class PlayerInfo : Entity
         currentArmor = maxArmor;
         armorBar.maxValue = maxArmor;
         armorBar.value = 0;
+
+        currentCoin = GameMaster.GetInstance().playerStat.currentCoin;
 
         controller = GetComponent<PlayerController>();
         collider = GetComponent<Collider2D>();

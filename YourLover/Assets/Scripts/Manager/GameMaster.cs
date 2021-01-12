@@ -25,6 +25,9 @@ public class GameMaster : MonoBehaviour
         {
             Destroy(gameObject);
         }
+
+        playerStat.currentCoin = PlayerPrefs.GetInt("PlayerCoins");
+        Debug.Log("Game data loaded");
     }
 
     public static GameMaster GetInstance()
