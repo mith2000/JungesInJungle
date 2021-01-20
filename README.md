@@ -1,8 +1,8 @@
 # JungesInJungle
-Đồ án Lập trình trên thiết bị di động - Game Junges In Jungle
+Đồ án Nhập môn phát triển ứng dụng trên thiết bị di động - Game Junges In Jungle
 
 ## Giảng viên hướng dẫn
-Thầy **Huỳnh Tuấn Anh**
+Cô **Phan Nguyệt Minh**
 
 # Chủ đề game
 Cuộc phiêu lưu của các loài thú trong rừng. Người chơi sẽ hóa thân thành một trong các loài thú và vượt qua các màn chơi được sắp xếp ngẫu nhiên để về đích.
