@@ -1,0 +1,844 @@
+fileFormatVersion: 2
+guid: ac73a395a702c594499aa13bcec53b37
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3163096131746423116
+    second: DesertEnemies_0
+  - first:
+      213: -4255073525487279315
+    second: DesertEnemies_1
+  - first:
+      213: -3920408582141782277
+    second: DesertEnemies_2
+  - first:
+      213: -1124365849640177719
+    second: DesertEnemies_3
+  - first:
+      213: 2592651496657784693
+    second: DesertEnemies_4
+  - first:
+      213: -897770210534955092
+    second: DesertEnemies_5
+  - first:
+      213: 2856409337642994467
+    second: DesertEnemies_6
+  - first:
+      213: -3451957038399787892
+    second: DesertEnemies_7
+  - first:
+      213: 5508088693763186775
+    second: DesertEnemies_8
+  - first:
+      213: -5857051374269635286
+    second: DesertEnemies_9
+  - first:
+      213: 195482220790821265
+    second: DesertEnemies_10
+  - first:
+      213: -3246586201589165052
+    second: DesertEnemies_11
+  - first:
+      213: -1678124347497875743
+    second: DesertEnemies_12
+  - first:
+      213: -7755695027608512942
+    second: DesertEnemies_13
+  - first:
+      213: 5459180803622045583
+    second: DesertEnemies_14
+  - first:
+      213: 6299659339980136061
+    second: DesertEnemies_15
+  - first:
+      213: 2688717101483601794
+    second: DesertEnemies_16
+  - first:
+      213: -5483552293870082482
+    second: DesertEnemies_17
+  - first:
+      213: 1266569823575905054
+    second: DesertEnemies_18
+  - first:
+      213: 6962058187407529508
+    second: DesertEnemies_19
+  - first:
+      213: -3742383847210476102
+    second: DesertEnemies_20
+  - first:
+      213: -3933153884275797882
+    second: DesertEnemies_21
+  - first:
+      213: -812853105965651612
+    second: DesertEnemies_22
+  - first:
+      213: -1763021261605563407
+    second: DesertEnemies_23
+  - first:
+      213: 277969988094940633
+    second: DesertEnemies_24
+  - first:
+      213: -7293283846955506703
+    second: DesertEnemies_25
+  - first:
+      213: 5963952895873139232
+    second: DesertEnemies_26
+  - first:
+      213: 817724494161253817
+    second: DesertEnemies_27
+  - first:
+      213: -7509991015367644539
+    second: DesertEnemies_28
+  - first:
+      213: -5443382832602675970
+    second: DesertEnemies_29
+  - first:
+      213: 4169733388412411439
+    second: DesertEnemies_30
+  - first:
+      213: 6468772433034801986
+    second: DesertEnemies_31
+  - first:
+      213: 4963255700722334093
+    second: DesertEnemies_32
+  - first:
+      213: 8513682763818193823
+    second: DesertEnemies_33
+  - first:
+      213: 7331028633357447576
+    second: DesertEnemies_34
+  - first:
+      213: -3752060962835072928
+    second: DesertEnemies_35
+  - first:
+      213: -4592953168905736702
+    second: DesertEnemies_36
+  - first:
+      213: -2543400660639870740
+    second: DesertEnemies_37
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: DesertEnemies_0
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 1596
+        width: 234
+        height: 216
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4be97d4b3dc6a14d0800000000000000
+      internalID: -3163096131746423116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DesertEnemies_1
+      rect:
+        serializedVersion: 2
+        x: 401
+        y: 1596
+        width: 235
+        height: 216
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2369244c21f2f4c0800000000000000
+      internalID: -4255073525487279315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DesertEnemies_2
+      rect:
+        serializedVersion: 2
+        x: 742
+        y: 1596
+        width: 234
+        height: 215
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf6db0f6a29e799c0800000000000000
+      internalID: -3920408582141782277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DesertEnemies_3
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 1270
+        width: 214
+        height: 278
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9cfed9687337560f0800000000000000
+      internalID: -1124365849640177719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DesertEnemies_4
+      rect:
+        serializedVersion: 2
+        x: 397
+        y: 1258
+        width: 214
+        height: 279
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57f0cacbcc2faf320800000000000000
+      internalID: 2592651496657784693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DesertEnemies_5
+      rect:
+        serializedVersion: 2
+        x: 684
+        y: 1260
+        width: 214
+        height: 279
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca7e22700ca7a83f0800000000000000
+      internalID: -897770210534955092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DesertEnemies_6
+      rect:
+        serializedVersion: 2
+        x: 1105
+        y: 1474
+        width: 96
+        height: 109
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32bc15f982104a720800000000000000
+      internalID: 2856409337642994467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DesertEnemies_7
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 838
+        width: 266
+        height: 307
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8c6542ec5f2810d0800000000000000
+      internalID: -3451957038399787892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DesertEnemies_8
+      rect:
+        serializedVersion: 2
+        x: 382
+        y: 826
+        width: 282
+        height: 307
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 750a91fdb79a07c40800000000000000
+      internalID: 5508088693763186775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DesertEnemies_9
+      rect:
+        serializedVersion: 2
+        x: 754
+        y: 820
+        width: 228
+        height: 306
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a25e17d9ec297bea0800000000000000
+      internalID: -5857051374269635286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DesertEnemies_10
+      rect:
+        serializedVersion: 2
+        x: 1153
+        y: 975
+        width: 119
+        height: 94
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 191342a4b0e76b200800000000000000
+      internalID: 195482220790821265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DesertEnemies_19
+      rect:
+        serializedVersion: 2
+        x: 1335
+        y: 970
+        width: 119
+        height: 91
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 426960ee8033e9060800000000000000
+      internalID: 6962058187407529508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DesertEnemies_22
+      rect:
+        serializedVersion: 2
+        x: 1129
+        y: 883
+        width: 53
+        height: 57
+      alignment: 9
+      pivot: {x: 0.92139596, y: 0.384756}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4692854286a28b4f0800000000000000
+      internalID: -812853105965651612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DesertEnemies_23
+      rect:
+        serializedVersion: 2
+        x: 1219
+        y: 880
+        width: 53
+        height: 60
+      alignment: 9
+      pivot: {x: 0.9337872, y: 0.4452586}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f31a82e08d7887e0800000000000000
+      internalID: -1763021261605563407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DesertEnemies_24
+      rect:
+        serializedVersion: 2
+        x: 1336
+        y: 872
+        width: 36
+        height: 41
+      alignment: 9
+      pivot: {x: 0.17075263, y: 0.13079834}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d55e9e3b3c8bd300800000000000000
+      internalID: 277969988094940633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DesertEnemies_25
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 480
+        width: 400
+        height: 218
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f36f109bfc09ca90800000000000000
+      internalID: -7293283846955506703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DesertEnemies_26
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 495
+        width: 401
+        height: 218
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0224ea77f8734c250800000000000000
+      internalID: 5963952895873139232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DesertEnemies_27
+      rect:
+        serializedVersion: 2
+        x: 950
+        y: 540
+        width: 191
+        height: 137
+      alignment: 9
+      pivot: {x: 0.99853516, y: 0.39648438}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b51e9e4814295b00800000000000000
+      internalID: 817724494161253817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DesertEnemies_28
+      rect:
+        serializedVersion: 2
+        x: 1189
+        y: 508
+        width: 133
+        height: 190
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58ae2ae06f627c790800000000000000
+      internalID: -7509991015367644539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DesertEnemies_29
+      rect:
+        serializedVersion: 2
+        x: 1426
+        y: 543
+        width: 185
+        height: 139
+      alignment: 9
+      pivot: {x: 0.007198849, y: 0.16476946}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef4024e67283574b0800000000000000
+      internalID: -5443382832602675970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DesertEnemies_30
+      rect:
+        serializedVersion: 2
+        x: 1691
+        y: 503
+        width: 133
+        height: 190
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2e5860bc6eddd930800000000000000
+      internalID: 4169733388412411439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DesertEnemies_31
+      rect:
+        serializedVersion: 2
+        x: 1278
+        y: 468
+        width: 18
+        height: 29
+      alignment: 9
+      pivot: {x: 0.10571289, y: 0.92826056}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 243f0eb3142b5c950800000000000000
+      internalID: 6468772433034801986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DesertEnemies_32
+      rect:
+        serializedVersion: 2
+        x: 1319
+        y: 476
+        width: 22
+        height: 22
+      alignment: 9
+      pivot: {x: 0.073713824, y: 0.94931585}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d89bcfa63c601e440800000000000000
+      internalID: 4963255700722334093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DesertEnemies_33
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 91
+        width: 250
+        height: 251
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f93dfb3cd5da62670800000000000000
+      internalID: 8513682763818193823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DesertEnemies_34
+      rect:
+        serializedVersion: 2
+        x: 529
+        y: 86
+        width: 249
+        height: 251
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 891fc7953bb0db560800000000000000
+      internalID: 7331028633357447576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DesertEnemies_35
+      rect:
+        serializedVersion: 2
+        x: 957
+        y: 98
+        width: 137
+        height: 144
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 068fa9efe600eebc0800000000000000
+      internalID: -3752060962835072928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DesertEnemies_36
+      rect:
+        serializedVersion: 2
+        x: 1302
+        y: 90
+        width: 137
+        height: 140
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20e6e596d6d8240c0800000000000000
+      internalID: -4592953168905736702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DesertEnemies_37
+      rect:
+        serializedVersion: 2
+        x: 1603
+        y: 93
+        width: 138
+        height: 139
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce0111d139604bcd0800000000000000
+      internalID: -2543400660639870740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

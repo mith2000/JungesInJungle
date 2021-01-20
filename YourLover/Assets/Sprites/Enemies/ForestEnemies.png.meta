@@ -1,0 +1,792 @@
+fileFormatVersion: 2
+guid: 3615f54af19666748a1e3c44b6f82b36
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -6046771601180337398
+    second: MushroomRedOV
+  - first:
+      213: 4708072551925644369
+    second: MushroomBlueOV
+  - first:
+      213: 734938753445105186
+    second: Mushroom RedHat
+  - first:
+      213: -8079766292659130033
+    second: Mushroom BlueHat
+  - first:
+      213: 4407350128264497070
+    second: Mushroom RedBody
+  - first:
+      213: -917119034223049935
+    second: Mushroom RedBody2
+  - first:
+      213: 3233763096781461175
+    second: Mushroom BlueBody
+  - first:
+      213: 6522743214717197348
+    second: Mushroom BlueBody2
+  - first:
+      213: -3320293624785978346
+    second: Wood OV
+  - first:
+      213: -9061889831296452303
+    second: Wood Body
+  - first:
+      213: 4303119713534381675
+    second: Wood Body2
+  - first:
+      213: -1566626433901981899
+    second: Wood Hand
+  - first:
+      213: -1971423375592578484
+    second: Bee OV
+  - first:
+      213: 2311712916434207013
+    second: Bee Body
+  - first:
+      213: 7900027079056584320
+    second: Bee Wing Left
+  - first:
+      213: 5189681921255234123
+    second: Bee Wing Right
+  - first:
+      213: 4305776622750357809
+    second: Bee Nose Right
+  - first:
+      213: -4430102203326132119
+    second: Bee Spike
+  - first:
+      213: 3824195163487899140
+    second: Bee Nose Left
+  - first:
+      213: -3845134988980666086
+    second: Hedgehog OV
+  - first:
+      213: 6920795351611390182
+    second: Hedgehog Body
+  - first:
+      213: -6101796145854793166
+    second: Hedgehog Tail
+  - first:
+      213: 741409644266172426
+    second: Hedgehog Roll
+  - first:
+      213: -2323773970251632150
+    second: Hedgehog Feet
+  - first:
+      213: -8889394179489730532
+    second: Hedgehog Feet 2
+  - first:
+      213: 6605780137065868471
+    second: Hedgehog Feet 3
+  - first:
+      213: -2057810310821773401
+    second: Hedgehog Feet 4
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: MushroomRedOV
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 1615
+        width: 230
+        height: 235
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0bd9b1144d851ca0800000000000000
+      internalID: -6046771601180337398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MushroomBlueOV
+      rect:
+        serializedVersion: 2
+        x: 366
+        y: 1616
+        width: 230
+        height: 236
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15c7b42aa0f665140800000000000000
+      internalID: 4708072551925644369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mushroom RedHat
+      rect:
+        serializedVersion: 2
+        x: 708
+        y: 1778
+        width: 229
+        height: 148
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22e83c207e6033a00800000000000000
+      internalID: 734938753445105186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mushroom BlueHat
+      rect:
+        serializedVersion: 2
+        x: 1230
+        y: 1765
+        width: 229
+        height: 148
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f41b0e18d57eedf80800000000000000
+      internalID: -8079766292659130033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mushroom RedBody
+      rect:
+        serializedVersion: 2
+        x: 725
+        y: 1577
+        width: 152
+        height: 176
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea74afb279d0a2d30800000000000000
+      internalID: 4407350128264497070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mushroom RedBody2
+      rect:
+        serializedVersion: 2
+        x: 1003
+        y: 1566
+        width: 152
+        height: 176
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 133c264f81db543f0800000000000000
+      internalID: -917119034223049935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mushroom BlueBody
+      rect:
+        serializedVersion: 2
+        x: 1257
+        y: 1568
+        width: 152
+        height: 176
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b61d6f3762a0ec20800000000000000
+      internalID: 3233763096781461175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mushroom BlueBody2
+      rect:
+        serializedVersion: 2
+        x: 1567
+        y: 1562
+        width: 152
+        height: 176
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42cde421560758a50800000000000000
+      internalID: 6522743214717197348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wood OV
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 1148
+        width: 257
+        height: 243
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61c33a83a82fbe1d0800000000000000
+      internalID: -3320293624785978346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wood Body
+      rect:
+        serializedVersion: 2
+        x: 556
+        y: 1139
+        width: 192
+        height: 222
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 139b9dbd533bd3280800000000000000
+      internalID: -9061889831296452303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wood Body2
+      rect:
+        serializedVersion: 2
+        x: 956
+        y: 1136
+        width: 190
+        height: 222
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6e823f9490c7bb30800000000000000
+      internalID: 4303119713534381675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wood Hand
+      rect:
+        serializedVersion: 2
+        x: 1418
+        y: 1177
+        width: 77
+        height: 133
+      alignment: 9
+      pivot: {x: 0.0020672686, y: 0.15547444}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53f09870f89324ae0800000000000000
+      internalID: -1566626433901981899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bee OV
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 644
+        width: 367
+        height: 335
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4227eb82e814a4e0800000000000000
+      internalID: -1971423375592578484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bee Body
+      rect:
+        serializedVersion: 2
+        x: 571
+        y: 684
+        width: 286
+        height: 258
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5214eb646aad41020800000000000000
+      internalID: 2311712916434207013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bee Wing Left
+      rect:
+        serializedVersion: 2
+        x: 1006
+        y: 745
+        width: 121
+        height: 151
+      alignment: 9
+      pivot: {x: 0.499999, y: 0.27367923}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08e6223b5c882ad60800000000000000
+      internalID: 7900027079056584320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bee Wing Right
+      rect:
+        serializedVersion: 2
+        x: 1174
+        y: 775
+        width: 174
+        height: 126
+      alignment: 9
+      pivot: {x: 0.4576374, y: 0.09050206}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4a5fa51634750840800000000000000
+      internalID: 5189681921255234123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bee Nose Right
+      rect:
+        serializedVersion: 2
+        x: 1514
+        y: 823
+        width: 22
+        height: 84
+      alignment: 9
+      pivot: {x: 0.9339988, y: 0.0074622743}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1395731860131cb30800000000000000
+      internalID: 4305776622750357809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bee Spike
+      rect:
+        serializedVersion: 2
+        x: 1604
+        y: 806
+        width: 43
+        height: 42
+      alignment: 9
+      pivot: {x: 0.657783, y: 0.72028023}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 960121c848d1582c0800000000000000
+      internalID: -4430102203326132119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bee Nose Left
+      rect:
+        serializedVersion: 2
+        x: 1431
+        y: 778
+        width: 85
+        height: 25
+      alignment: 9
+      pivot: {x: 0.9868997, y: 0.63370115}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40e867f5d35421530800000000000000
+      internalID: 3824195163487899140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hedgehog OV
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 222
+        width: 572
+        height: 283
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a11c164991653aac0800000000000000
+      internalID: -3845134988980666086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hedgehog Body
+      rect:
+        serializedVersion: 2
+        x: 745
+        y: 240
+        width: 568
+        height: 259
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e8b8ff44ba9b0060800000000000000
+      internalID: 6920795351611390182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hedgehog Tail
+      rect:
+        serializedVersion: 2
+        x: 1343
+        y: 263
+        width: 39
+        height: 34
+      alignment: 9
+      pivot: {x: 0.0013052133, y: 0.3212388}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23a3a7aebb0125ba0800000000000000
+      internalID: -6101796145854793166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hedgehog Roll
+      rect:
+        serializedVersion: 2
+        x: 1520
+        y: 156
+        width: 356
+        height: 354
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a00b88fa4240a4a00800000000000000
+      internalID: 741409644266172426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hedgehog Feet
+      rect:
+        serializedVersion: 2
+        x: 918
+        y: 191
+        width: 61
+        height: 33
+      alignment: 9
+      pivot: {x: 0.9453265, y: 1.0047103}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae13adcc2eb40cfd0800000000000000
+      internalID: -2323773970251632150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hedgehog Feet 2
+      rect:
+        serializedVersion: 2
+        x: 1101
+        y: 193
+        width: 55
+        height: 30
+      alignment: 9
+      pivot: {x: 0.9012451, y: 0.98232067}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c10f61f771782a480800000000000000
+      internalID: -8889394179489730532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hedgehog Feet 3
+      rect:
+        serializedVersion: 2
+        x: 914
+        y: 124
+        width: 67
+        height: 49
+      alignment: 9
+      pivot: {x: 0.86741436, y: 0.99876684}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7bc642629027cab50800000000000000
+      internalID: 6605780137065868471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hedgehog Feet 4
+      rect:
+        serializedVersion: 2
+        x: 1102
+        y: 125
+        width: 52
+        height: 47
+      alignment: 9
+      pivot: {x: 0.937108, y: 0.9646723}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7aff450dc603173e0800000000000000
+      internalID: -2057810310821773401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures:
+    - texture: {fileID: 2800000, guid: 47db05ee4c22b1640882bb0aa78e6135, type: 3}
+      name: _Emission
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

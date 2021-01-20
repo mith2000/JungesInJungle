@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using TMPro;
 
 public class PlayerInfo : Entity
 {
@@ -30,7 +31,7 @@ public class PlayerInfo : Entity
 
     [Header ("Coin")]
     public int currentCoin = 0;
-    [SerializeField] Text coinText;
+    [SerializeField] TextMeshProUGUI coinText;
 
     PlayerController controller;
     Collider2D collider;

@@ -3,10 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using TMPro;
 
 public class CurrentStageReceiver : MonoBehaviour
 {
-    [SerializeField] Text stageText; 
+    [SerializeField] TextMeshProUGUI stageText; 
 
     void Start()
     {

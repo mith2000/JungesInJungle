@@ -2,10 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class DamageInfo : MonoBehaviour
 {
-    public Text text;
+    public TextMeshProUGUI text;
     public string damage;
 
     void Start()

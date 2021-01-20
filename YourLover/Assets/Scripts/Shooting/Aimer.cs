@@ -10,7 +10,7 @@ public class Aimer : MonoBehaviour
     [SerializeField] Vector2 deadZone = new Vector2(.2f, .2f);
 
     [Header ("Player References")]
-    [SerializeField] PlayerInfo playerInfo;
+    [SerializeField] protected PlayerInfo playerInfo;
     [SerializeField] PlayerController playerController;
 
     float shotTime;
@@ -87,7 +87,8 @@ public class Aimer : MonoBehaviour
     {
         if (GameMaster.GetInstance().playerRole == GameMaster.CharacterRole.Cat)
         {
-            AudioManager.GetInstance().Play("KatAttack");
+            if (playerInfo.currentHealth > 0)
+                AudioManager.GetInstance().Play("KatAttack");
         }
 
         Instantiate(projectile, shotPoint.position, transform.rotation);

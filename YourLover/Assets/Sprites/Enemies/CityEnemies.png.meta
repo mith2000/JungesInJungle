@@ -1,0 +1,775 @@
+fileFormatVersion: 2
+guid: a43fc39442582ed4ebc13f24f8ee63f2
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3450884727495822593
+    second: CityEnemies_0
+  - first:
+      213: -6814376767418754426
+    second: CityEnemies_1
+  - first:
+      213: 566070146593823228
+    second: CityEnemies_2
+  - first:
+      213: -3714973464941681384
+    second: CityEnemies_3
+  - first:
+      213: 157228099750277344
+    second: CityEnemies_4
+  - first:
+      213: 1723039819593669022
+    second: CityEnemies_5
+  - first:
+      213: -963594266296308661
+    second: CityEnemies_6
+  - first:
+      213: -6269841244951574548
+    second: CityEnemies_7
+  - first:
+      213: 1075883416849632988
+    second: CityEnemies_8
+  - first:
+      213: -8254065366771984243
+    second: CityEnemies_9
+  - first:
+      213: -8254923369032884838
+    second: CityEnemies_10
+  - first:
+      213: -2588622352952966367
+    second: CityEnemies_11
+  - first:
+      213: 7972387835431928418
+    second: CityEnemies_12
+  - first:
+      213: -4680908038683230027
+    second: CityEnemies_13
+  - first:
+      213: -6824766166600336601
+    second: CityEnemies_14
+  - first:
+      213: -8559183398654352932
+    second: CityEnemies_15
+  - first:
+      213: -2630951218468128900
+    second: CityEnemies_16
+  - first:
+      213: -1955363481828913465
+    second: CityEnemies_17
+  - first:
+      213: 1570886621407496419
+    second: CityEnemies_18
+  - first:
+      213: 5124661136313765348
+    second: CityEnemies_19
+  - first:
+      213: -3386550241941755943
+    second: CityEnemies_20
+  - first:
+      213: 8853169263431252382
+    second: CityEnemies_21
+  - first:
+      213: -6227876969360256024
+    second: CityEnemies_22
+  - first:
+      213: -200797715268436295
+    second: CityEnemies_23
+  - first:
+      213: 415569288520053043
+    second: CityEnemies_24
+  - first:
+      213: 6924898354208784948
+    second: CityEnemies_25
+  - first:
+      213: 7241548349705716081
+    second: CityEnemies_26
+  - first:
+      213: 3550034032641282114
+    second: CityEnemies_27
+  - first:
+      213: -8956219930141373071
+    second: CityEnemies_28
+  - first:
+      213: -5903727051042131276
+    second: CityEnemies_29
+  - first:
+      213: -5286743693206723177
+    second: CityEnemies_30
+  - first:
+      213: -3155663832059942204
+    second: CityEnemies_31
+  - first:
+      213: 5165930651521555677
+    second: CityEnemies_32
+  - first:
+      213: -2563727088693227973
+    second: CityEnemies_33
+  - first:
+      213: -3574035304925874103
+    second: CityEnemies_34
+  - first:
+      213: -8825993568448322534
+    second: CityEnemies_35
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: CityEnemies_0
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 1567
+        width: 269
+        height: 331
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10d8537406104ef20800000000000000
+      internalID: 3450884727495822593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CityEnemies_1
+      rect:
+        serializedVersion: 2
+        x: 771
+        y: 1648
+        width: 270
+        height: 231
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68a94542f687e61a0800000000000000
+      internalID: -6814376767418754426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CityEnemies_2
+      rect:
+        serializedVersion: 2
+        x: 1385
+        y: 1718
+        width: 51
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf99da59cc51bd700800000000000000
+      internalID: 566070146593823228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CityEnemies_3
+      rect:
+        serializedVersion: 2
+        x: 1496
+        y: 1717
+        width: 58
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81526200153c17cc0800000000000000
+      internalID: -3714973464941681384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CityEnemies_4
+      rect:
+        serializedVersion: 2
+        x: 771
+        y: 1548
+        width: 270
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e0335aaf169e2200800000000000000
+      internalID: 157228099750277344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CityEnemies_5
+      rect:
+        serializedVersion: 2
+        x: 1347
+        y: 1598
+        width: 245
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e99dbbc369779e710800000000000000
+      internalID: 1723039819593669022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CityEnemies_6
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 1139
+        width: 309
+        height: 284
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4c2ec1ce10a0a2f0800000000000000
+      internalID: -963594266296308661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CityEnemies_8
+      rect:
+        serializedVersion: 2
+        x: 828
+        y: 1315
+        width: 168
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cde4e01744e4eee00800000000000000
+      internalID: 1075883416849632988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CityEnemies_9
+      rect:
+        serializedVersion: 2
+        x: 1331
+        y: 1160
+        width: 56
+        height: 202
+      alignment: 9
+      pivot: {x: 0.9622825, y: 0.004915445}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8893b4e74ba37d80800000000000000
+      internalID: -8254065366771984243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CityEnemies_11
+      rect:
+        serializedVersion: 2
+        x: 1640
+        y: 1173
+        width: 65
+        height: 199
+      alignment: 9
+      pivot: {x: 0.32287598, y: 0.024222676}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1234a926fad531cd0800000000000000
+      internalID: -2588622352952966367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CityEnemies_12
+      rect:
+        serializedVersion: 2
+        x: 881
+        y: 1220
+        width: 66
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 262c09e2f7c93ae60800000000000000
+      internalID: 7972387835431928418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CityEnemies_15
+      rect:
+        serializedVersion: 2
+        x: 808
+        y: 1044
+        width: 224
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd169c32c0ca73980800000000000000
+      internalID: -8559183398654352932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CityEnemies_19
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 660
+        width: 455
+        height: 321
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ed4b30e6247e1740800000000000000
+      internalID: 5124661136313765348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CityEnemies_20
+      rect:
+        serializedVersion: 2
+        x: 607
+        y: 700
+        width: 151
+        height: 110
+      alignment: 9
+      pivot: {x: 0.9743834, y: 0.9601801}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d76c076f7e8001d0800000000000000
+      internalID: -3386550241941755943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CityEnemies_21
+      rect:
+        serializedVersion: 2
+        x: 916
+        y: 704
+        width: 146
+        height: 111
+      alignment: 9
+      pivot: {x: 0.015913453, y: 0.9216171}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e99f93bf986ccda70800000000000000
+      internalID: 8853169263431252382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CityEnemies_22
+      rect:
+        serializedVersion: 2
+        x: 1140
+        y: 754
+        width: 28
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e31270a4e22299a0800000000000000
+      internalID: -6227876969360256024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CityEnemies_23
+      rect:
+        serializedVersion: 2
+        x: 1206
+        y: 755
+        width: 30
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9bef6b5ba8f963df0800000000000000
+      internalID: -200797715268436295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CityEnemies_24
+      rect:
+        serializedVersion: 2
+        x: 1268
+        y: 768
+        width: 37
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 331bccde01664c500800000000000000
+      internalID: 415569288520053043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CityEnemies_25
+      rect:
+        serializedVersion: 2
+        x: 1340
+        y: 768
+        width: 36
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4324d4c0d5e2a1060800000000000000
+      internalID: 6924898354208784948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CityEnemies_26
+      rect:
+        serializedVersion: 2
+        x: 1421
+        y: 748
+        width: 31
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17186005bd52f7460800000000000000
+      internalID: 7241548349705716081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CityEnemies_27
+      rect:
+        serializedVersion: 2
+        x: 1487
+        y: 751
+        width: 32
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2409120d421444130800000000000000
+      internalID: 3550034032641282114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CityEnemies_28
+      rect:
+        serializedVersion: 2
+        x: 1570
+        y: 651
+        width: 192
+        height: 321
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17d46a5fc6d15b380800000000000000
+      internalID: -8956219930141373071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CityEnemies_29
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 102
+        width: 166
+        height: 326
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b2f4cfb68fb11ea0800000000000000
+      internalID: -5903727051042131276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CityEnemies_30
+      rect:
+        serializedVersion: 2
+        x: 599
+        y: 97
+        width: 165
+        height: 323
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79560e31f96b1a6b0800000000000000
+      internalID: -5286743693206723177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CityEnemies_31
+      rect:
+        serializedVersion: 2
+        x: 836
+        y: 338
+        width: 57
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4cae483d674d434d0800000000000000
+      internalID: -3155663832059942204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -46,6 +46,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   explosion: {fileID: 8546984158959298067, guid: 2b5be8ed6ff30664996f354ff6545707, type: 3}
+  isTaken: 0
+  ownerTransform: {fileID: 0}
 --- !u!95 &7068636773714688546
 Animator:
   serializedVersion: 3
@@ -134,9 +136,9 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1057214911
-  m_SortingLayer: 8
+  m_SortingLayer: 10
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: bb5499df847717d4cb2285f1ad9c8ae6, type: 3}
+  m_Sprite: {fileID: -3752060962835072928, guid: ac73a395a702c594499aa13bcec53b37, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
