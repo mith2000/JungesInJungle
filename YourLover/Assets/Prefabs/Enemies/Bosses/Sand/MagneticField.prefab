@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 6003458556817623952}
   - component: {fileID: 6003458556817623955}
   - component: {fileID: 6003458556817623954}
+  - component: {fileID: 4196115546054628139}
   m_Layer: 0
   m_Name: MagneticField
   m_TagString: Untagged
@@ -73,7 +74,7 @@ SpriteRenderer:
   m_SortingLayerID: -723622153
   m_SortingLayer: 3
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: d08a9785462f8cb4ea2ec48f2f2612ef, type: 3}
+  m_Sprite: {fileID: 891286308768384962, guid: 45773f3643d33524a8f7deaa28dc1dcc, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -112,3 +113,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6720eb5c4a20d004694dd4b2c2442480, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!95 &4196115546054628139
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6003458556817623957}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 3335cc25da9ce8046b07924412ffe600, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0

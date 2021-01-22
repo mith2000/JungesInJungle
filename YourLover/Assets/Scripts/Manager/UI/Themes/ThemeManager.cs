@@ -38,7 +38,7 @@ public class ThemeManager : MonoBehaviour
     private void GenerateTheme()
     {
         int rand1 = Random.Range(0, 100);
-        if (rand1 < 50)
+        if (rand1 < 65)
             stage1Theme = Stage1Themes.Forest;
         else
             stage1Theme = Stage1Themes.Sand;

@@ -1,0 +1,574 @@
+fileFormatVersion: 2
+guid: 39f58b6abb030c14085e94f11bec2240
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8999651009758000569
+    second: DesertBoss_0
+  - first:
+      213: 9024683224372324009
+    second: DesertBoss_1
+  - first:
+      213: -5448081115895426009
+    second: DesertBoss_2
+  - first:
+      213: -1632988621495414707
+    second: DesertBoss_3
+  - first:
+      213: -3137427085453823628
+    second: DesertBoss_4
+  - first:
+      213: -7415792390479457607
+    second: DesertBoss_5
+  - first:
+      213: 6365877965610454752
+    second: DesertBoss_6
+  - first:
+      213: -6700951701642758064
+    second: DesertBoss_7
+  - first:
+      213: -8794204446393757501
+    second: DesertBoss_8
+  - first:
+      213: -3058996150803077854
+    second: DesertBoss_9
+  - first:
+      213: 9081554214162864751
+    second: DesertBoss_10
+  - first:
+      213: -3436663020179987277
+    second: DesertBoss_11
+  - first:
+      213: 1081544914978998696
+    second: DesertBoss_12
+  - first:
+      213: -1430302913808662166
+    second: DesertBoss_13
+  - first:
+      213: 5939702463442456573
+    second: DesertBoss_14
+  - first:
+      213: 7545286631239061064
+    second: DesertBoss_15
+  - first:
+      213: -2025136294280796339
+    second: DesertBoss_16
+  - first:
+      213: 1680362864957051054
+    second: DesertBoss_17
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 600
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: DesertBoss_0
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 1874
+        width: 1431
+        height: 1760
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74a83ecb611da1380800000000000000
+      internalID: -8999651009758000569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DesertBoss_1
+      rect:
+        serializedVersion: 2
+        x: 1790
+        y: 2761
+        width: 417
+        height: 1118
+      alignment: 9
+      pivot: {x: 0.1946837, y: 0.21333873}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a6a327e39d1e3d70800000000000000
+      internalID: 9024683224372324009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DesertBoss_2
+      rect:
+        serializedVersion: 2
+        x: 2323
+        y: 2124
+        width: 1009
+        height: 1367
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7241a8b17178464b0800000000000000
+      internalID: -5448081115895426009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DesertBoss_3
+      rect:
+        serializedVersion: 2
+        x: 1722
+        y: 1908
+        width: 147
+        height: 145
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d40d28d20857659e0800000000000000
+      internalID: -1632988621495414707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DesertBoss_4
+      rect:
+        serializedVersion: 2
+        x: 2041
+        y: 1913
+        width: 147
+        height: 147
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 471f5d640be9574d0800000000000000
+      internalID: -3137427085453823628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DesertBoss_5
+      rect:
+        serializedVersion: 2
+        x: 2484
+        y: 1675
+        width: 261
+        height: 457
+      alignment: 9
+      pivot: {x: 0.61774594, y: 0.7305601}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b25d658c10d51990800000000000000
+      internalID: -7415792390479457607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DesertBoss_6
+      rect:
+        serializedVersion: 2
+        x: 3060
+        y: 1720
+        width: 180
+        height: 220
+      alignment: 9
+      pivot: {x: 0.5731717, y: 0.8791576}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ee82b72844285850800000000000000
+      internalID: 6365877965610454752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DesertBoss_7
+      rect:
+        serializedVersion: 2
+        x: 357
+        y: 1140
+        width: 667
+        height: 620
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 058b8863eef6103a0800000000000000
+      internalID: -6700951701642758064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DesertBoss_8
+      rect:
+        serializedVersion: 2
+        x: 1271
+        y: 923
+        width: 401
+        height: 944
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c01a8256a5b4f580800000000000000
+      internalID: -8794204446393757501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DesertBoss_9
+      rect:
+        serializedVersion: 2
+        x: 1811
+        y: 1337
+        width: 209
+        height: 350
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 225681645334c85d0800000000000000
+      internalID: -3058996150803077854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DesertBoss_10
+      rect:
+        serializedVersion: 2
+        x: 2451
+        y: 1271
+        width: 249
+        height: 290
+      alignment: 9
+      pivot: {x: 0.60578936, y: 0.95416343}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6a11af0179280e70800000000000000
+      internalID: 9081554214162864751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DesertBoss_11
+      rect:
+        serializedVersion: 2
+        x: 2994
+        y: 1322
+        width: 249
+        height: 290
+      alignment: 9
+      pivot: {x: 0.60578936, y: 0.95416343}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b4637df0358e40d0800000000000000
+      internalID: -3436663020179987277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DesertBoss_12
+      rect:
+        serializedVersion: 2
+        x: 1095
+        y: 1122
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a904f1be5b620f00800000000000000
+      internalID: 1081544914978998696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DesertBoss_13
+      rect:
+        serializedVersion: 2
+        x: 1929
+        y: 755
+        width: 827
+        height: 456
+      alignment: 9
+      pivot: {x: 0.94592565, y: 0.82734305}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a618a35f31b862ce0800000000000000
+      internalID: -1430302913808662166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DesertBoss_14
+      rect:
+        serializedVersion: 2
+        x: 3158
+        y: 744
+        width: 573
+        height: 504
+      alignment: 9
+      pivot: {x: 0.13989343, y: 0.84843177}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dff000dabef0e6250800000000000000
+      internalID: 5939702463442456573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DesertBoss_15
+      rect:
+        serializedVersion: 2
+        x: 417
+        y: 446
+        width: 667
+        height: 618
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84e0287e63e36b860800000000000000
+      internalID: 7545286631239061064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DesertBoss_16
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 96
+        width: 164
+        height: 286
+      alignment: 9
+      pivot: {x: 0.6065711, y: 0.92777747}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4764ad154545e3e0800000000000000
+      internalID: -2025136294280796339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DesertBoss_17
+      rect:
+        serializedVersion: 2
+        x: 863
+        y: 96
+        width: 165
+        height: 286
+      alignment: 9
+      pivot: {x: 0.42938232, y: 0.9074071}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea0d58b6f19d15710800000000000000
+      internalID: 1680362864957051054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

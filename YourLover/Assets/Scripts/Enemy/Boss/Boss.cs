@@ -46,11 +46,11 @@ public class Boss : Enemy
             anim.SetBool("Walk", true);
             if (target.position.x > transform.position.x)
             {
-                enemyGFX.rotation = new Quaternion(0, 180, 0, 1);
+                enemyGFX.localScale = new Vector3(-1f, 1f, 1f);
             }
             else
             {
-                enemyGFX.rotation = new Quaternion(0, 0, 0, 1);
+                enemyGFX.localScale = new Vector3(1f, 1f, 1f);
             }
         }
         else
